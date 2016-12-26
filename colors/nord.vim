@@ -7,7 +7,7 @@
 " copyright  Copyright (C) 2016                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 let g:colors_name = "nord"
-let s:nord_vim_version="0.1.0"
+let s:nord_vim_version="0.1.1"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
