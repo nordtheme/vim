@@ -85,7 +85,7 @@ Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
 ```
 
 ## Plugin Support
-Nord Vim provides support for many third-party plugins for languages and the UI.  
+Nord Vim provides support for many third-party language- and the UI plugins.  
 
 ### UI Plugins
 <p align="center"><a href="https://github.com/itchyny/lightline.vim">lightline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
