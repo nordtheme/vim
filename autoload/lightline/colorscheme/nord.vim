@@ -6,7 +6,7 @@
 " email      development@arcticicestudio.com             +
 " copyright  Copyright (C) 2016                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let s:nord_vim_version="0.1.0"
+let s:nord_vim_version="0.1.1"
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:nord0 = ["#2E3440", "NONE"]

@@ -46,21 +46,22 @@ Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 
 A specific version can be installed via git tags.  
 ```sh
-Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.1.0' }
+Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.1.1' }
 ```
 
-Of course it can be installed with any of your favorite tools:
-  - [`pathogen`](https://github.com/tpope/vim-pathogen)  
-    ```sh
-    cd ~/.vim/bundle
-    git clone git://github.com/arcticicestudio/nord-vim.git
-    ```
-  - [`Vundle`](https://github.com/VundleVim/Vundle.vim)
-    Add Nord Vim to your `.vimrc`
-    ```sh
-    Plugin 'dracula/vim'
-    ```
-    and install via `:PluginInstall`.
+Of course it can be installed with any of your favorite tools:  
+[`pathogen`](https://github.com/tpope/vim-pathogen)  
+```sh
+cd ~/.vim/bundle
+git clone git://github.com/arcticicestudio/nord-vim.git
+```
+
+[`Vundle`](https://github.com/VundleVim/Vundle.vim)  
+Add Nord Vim to your `.vimrc`
+```sh
+Plugin 'dracula/vim'
+```
+and install via `:PluginInstall`.
 
 #### Manual
 [Download](https://github.com/arcticicestudio/nord-vim/releases/latest) the latest version or clone the repository and copy the [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim) theme file to your `~/.vim/colors` directory.
@@ -84,7 +85,7 @@ Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
 ```
 
 ## Plugin Support
-Nord Vim provides support for many third-party plugins for languages and the UI.  
+Nord Vim provides support for many third-party language- and the UI plugins.  
 
 ### UI Plugins
 <p align="center"><a href="https://github.com/itchyny/lightline.vim">lightline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
@@ -117,7 +118,7 @@ Detailed descriptions for supported languages can be found in the [project wiki]
 ![][scrot-lang-ruby]
 
 ## Development
-[![](https://img.shields.io/badge/Changelog-0.1.0-blue.svg)](https://github.com/arcticicestudio/nord-vim/blob/v0.1.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
+[![](https://img.shields.io/badge/Changelog-0.1.1-blue.svg)](https://github.com/arcticicestudio/nord-vim/blob/v0.1.1/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
 
 ### Contribution
 Please report issues/bugs, feature requests and suggestions for improvements to the [issue tracker](https://github.com/arcticicestudio/nord-vim/issues).
