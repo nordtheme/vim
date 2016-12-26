@@ -49,18 +49,19 @@ A specific version can be installed via git tags.
 Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.1.0' }
 ```
 
-Of course it can be installed with any of your favorite tools:
-  - [`pathogen`](https://github.com/tpope/vim-pathogen)  
-    ```sh
-    cd ~/.vim/bundle
-    git clone git://github.com/arcticicestudio/nord-vim.git
-    ```
-  - [`Vundle`](https://github.com/VundleVim/Vundle.vim)
-    Add Nord Vim to your `.vimrc`
-    ```sh
-    Plugin 'dracula/vim'
-    ```
-    and install via `:PluginInstall`.
+Of course it can be installed with any of your favorite tools:  
+[`pathogen`](https://github.com/tpope/vim-pathogen)  
+```sh
+cd ~/.vim/bundle
+git clone git://github.com/arcticicestudio/nord-vim.git
+```
+
+[`Vundle`](https://github.com/VundleVim/Vundle.vim)  
+Add Nord Vim to your `.vimrc`
+```sh
+Plugin 'dracula/vim'
+```
+and install via `:PluginInstall`.
 
 #### Manual
 [Download](https://github.com/arcticicestudio/nord-vim/releases/latest) the latest version or clone the repository and copy the [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim) theme file to your `~/.vim/colors` directory.
