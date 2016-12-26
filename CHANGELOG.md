@@ -4,6 +4,10 @@
 
 ---
 
+# 0.1.1 (2016-12-26)
+## Bug Fixes
+Fixed wrong color variables (`*_term` to `*_gui`) for the `guisp` attribute of all `Spell*` highlighting groups which caused error logs while loading `vim`/`gvim`/MacVim. (@kamwitsta, #4, 4d642b9b)
+
 # 0.1.0 (2016-12-25)
 ## Features
 Detailed information about features, supported plugins/languages and install instructions can be found in the [README](https://github.com/arcticicestudio/nord-vim/blob/develop/README.md#installation) and in the [project wiki](https://github.com/arcticicestudio/nord-vim/wiki).
