@@ -9,9 +9,9 @@ Based on the <a href="https://github.com/arcticicestudio/nord">Nord</a> color pa
 
 ---
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-javascript.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
+Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with support for many third-party plugins and styles for [lightline.vim](https://github.com/itchyny/lightline.vim) and  [vim-airline](https://github.com/vim-airline/vim-airline).
 
-Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with support for many third-party plugins and styles for [`lightline.vim`](https://github.com/itchyny/lightline.vim) and  [`vim-airline`](https://github.com/vim-airline/vim-airline).
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-javascript.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
 
 ## Getting started
 ### Installation
