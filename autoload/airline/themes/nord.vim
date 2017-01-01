@@ -6,7 +6,7 @@
 " email      development@arcticicestudio.com             +
 " copyright  Copyright (C) 2016                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let s:nord_vim_version="0.1.1"
+let s:nord_vim_version="0.1.2"
 let g:airline#themes#nord#palette = {}
 
 let s:nord0_gui = "#2E3440"
