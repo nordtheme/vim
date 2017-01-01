@@ -4,6 +4,11 @@
 
 ---
 
+# 0.1.2 (2017-01-01)
+## Bug Fixes
+Fixed a bug where the `g:colors_name` variable has been unset caused by the `syntax reset` call due to the execution
+order. (@shuei72, #5, f8ffce24)
+
 # 0.1.1 (2016-12-26)
 ## Bug Fixes
 Fixed wrong color variables (`*_term` to `*_gui`) for the `guisp` attribute of all `Spell*` highlighting groups which caused error logs while loading `vim`/`gvim`/MacVim. (@kamwitsta, #4, 4d642b9b)

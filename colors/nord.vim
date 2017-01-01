@@ -6,8 +6,15 @@
 " email      development@arcticicestudio.com             +
 " copyright  Copyright (C) 2016                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+if version > 580
+  hi clear
+  if exists("syntax_on")
+    syntax reset
+  endif
+endif
+
 let g:colors_name = "nord"
-let s:nord_vim_version="0.1.1"
+let s:nord_vim_version="0.1.2"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -40,13 +47,6 @@ let s:nord12_term = "11"
 let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
-
-if version > 580
-  hi clear
-  if exists("syntax_on")
-    syntax reset
-  endif
-endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
   if a:guifg != ""
