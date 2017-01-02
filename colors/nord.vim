@@ -95,8 +95,8 @@ call s:hi("SpellBad", "", s:nord0_gui, "", "NONE", "undercurl", s:nord11_gui)
 call s:hi("SpellCap", "", s:nord0_gui, "", "NONE", "undercurl", s:nord13_gui)
 call s:hi("SpellLocal", "", s:nord0_gui, "", "NONE", "undercurl", s:nord5_gui)
 call s:hi("SpellRare", "", s:nord0_gui, "", "NONE", "undercurl", s:nord6_gui)
-call s:hi("Visual", "", s:nord2_gui, "", s:nord3_term, "", "")
-call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord3_term, "", "")
+call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
+call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
