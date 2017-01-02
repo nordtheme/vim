@@ -79,9 +79,9 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 
 "+--- Editor ---+
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
-call s:hi("Cursor", "", s:nord4_gui, "", "NONE", "", "")
+call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("iCursor", "", s:nord4_gui, "", "NONE", "", "")
+call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nord0_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "", "")
 call s:hi("NonText", s:nord2_gui, "", s:nord3_term, "", "", "")
