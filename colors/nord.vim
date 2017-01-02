@@ -14,7 +14,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.1.2"
+let s:nord_vim_version="0.2.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -79,9 +79,9 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 
 "+--- Editor ---+
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
-call s:hi("Cursor", "", s:nord4_gui, "", "NONE", "", "")
+call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("iCursor", "", s:nord4_gui, "", "NONE", "", "")
+call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nord0_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "", "")
 call s:hi("NonText", s:nord2_gui, "", s:nord3_term, "", "", "")
@@ -95,8 +95,8 @@ call s:hi("SpellBad", "", s:nord0_gui, "", "NONE", "undercurl", s:nord11_gui)
 call s:hi("SpellCap", "", s:nord0_gui, "", "NONE", "undercurl", s:nord13_gui)
 call s:hi("SpellLocal", "", s:nord0_gui, "", "NONE", "undercurl", s:nord5_gui)
 call s:hi("SpellRare", "", s:nord0_gui, "", "NONE", "undercurl", s:nord6_gui)
-call s:hi("Visual", "", s:nord2_gui, "", s:nord3_term, "", "")
-call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord3_term, "", "")
+call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
+call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
