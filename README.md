@@ -59,7 +59,7 @@ git clone git://github.com/arcticicestudio/nord-vim.git
 [`Vundle`](https://github.com/VundleVim/Vundle.vim)  
 Add Nord Vim to your `.vimrc`
 ```sh
-Plugin 'dracula/vim'
+Plugin 'arcticicestudio/nord-vim'
 ```
 and install via `:PluginInstall`.
 
