@@ -1,8 +1,23 @@
 <p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-vim/develop/assets/nord-vim-banner.svg"/></p>
 
-<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-blue.svg"/></a></p>
+<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg"/></a></p>
 
 ---
+
+# 0.3.0
+*2017-01-24*
+## Improvements
+### Plugin Support
+❯ The [Nord lightline.vim][nord-lightline] UI plugin theme now includes better support for the [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) plugin. Before this implementation text shown in the main segment of the tmuxline, generated via the `:Tmuxline lightline` command, has been colorized using `nord0` which  resulted in unreadable text due to a `nord3` background.  
+This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11, 4ea37f7e)
+
+<p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/9512557/21741900/4f792f5e-d537-11e6-9e69-09ff11b60c4e.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954034/15b87d1e-da47-11e6-9e70-a74aea14c378.png"/><br><strong>With unicode separators</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954058/7a7c5266-da47-11e6-8f1f-0203d5270c51.png"/><br><strong>Without specified configurations (tmuxline.vim autodetect)</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954072/931669e2-da47-11e6-8db3-cbdf9d6681f1.png"/></p>
+
+## Bug Fixes
+### Documentation
+❯ Fixed a typo in the [README installation guide](https://github.com/arcticicestudio/nord-vim#via-pluginruntimepath-manager) for Vundle. (@kepbod, #10, 29145bbb)
+
+❯ Fixed the banner of the [Nord iTerm2](https://github.com/arcticicestudio/nord-iterm2) port project showing the [Nord GNOME Terminal](https://github.com/arcticicestudio/nord-gnome-terminal) banner instead. (@shvetsovdm, #8 / [nord/#9](https://github.com/arcticicestudio/nord/issues/9), 7a447b40)
 
 # 0.2.0
 *2017-01-02*
@@ -49,5 +64,6 @@ Detailed information about features, supported plugins/languages and install ins
 
 # 0.0.0
 *2016-12-25*
-
 **Project Initialization**
+
+[nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
