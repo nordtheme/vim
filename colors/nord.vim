@@ -208,6 +208,9 @@ hi! link cssPseudoClass cssDefinition
 hi! link cssPseudoClassId cssPseudoClass
 hi! link cssVendor Keyword
 
+call s:hi("dosiniHeader", s:nord8_gui, "", s:nord8_term, "", "", "")
+hi! link dosiniLabel Type
+
 call s:hi("dtBooleanKey", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("dtExecKey", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("dtLocaleKey", s:nord7_gui, "", s:nord7_term, "", "", "")
