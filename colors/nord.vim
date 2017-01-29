@@ -170,6 +170,23 @@ hi! link PreCondit PreProc
 "+-----------+
 "+ Languages +
 "+-----------+
+call s:hi("awkCharClass", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", "bold", "")
+hi! link awkArrayElement Identifier
+hi! link awkBoolLogic Keyword
+hi! link awkBrktRegExp SpecialChar
+hi! link awkComma Delimiter
+hi! link awkExpression Keyword
+hi! link awkFieldVars Identifier
+hi! link awkLineSkip Keyword
+hi! link awkOperator Operator
+hi! link awkRegExp SpecialChar
+hi! link awkSearch Keyword
+hi! link awkSemicolon Delimiter
+hi! link awkSpecialCharacter SpecialChar
+hi! link awkSpecialPrintf SpecialChar
+hi! link awkVariables Identifier
+
 call s:hi("cIncluded", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link cOperator Operator
 hi! link cPreCondit PreCondit
