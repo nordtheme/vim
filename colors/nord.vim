@@ -255,6 +255,12 @@ hi! link lessCssAttribute Delimiter
 hi! link lessFunction Function
 hi! link cssSelectorOp Keyword
 
+hi! link lispAtomBarSymbol SpecialChar
+hi! link lispAtomList SpecialChar
+hi! link lispAtomMark Keyword
+hi! link lispBarSymbol SpecialChar
+hi! link lispFunc Function
+
 hi! link luaFunc Function
 
 call s:hi("markdownBlockquote", s:nord7_gui, "", s:nord7_term, "", "", "")
