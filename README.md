@@ -49,18 +49,18 @@ Make sure to install one of the currently supported terminal themes listed below
 #### Via plugin/runtimepath manager
 I recommend to use [`vim-plug`](https://github.com/junegunn/vim-plug).  
 Add Nord Vim to your `.vimrc`
-```sh
+```vim
 Plug 'arcticicestudio/nord-vim'
 ```
 and install via `:PlugInstall`.
 
 You can specify the `develop` branch to install the latest development version.  
-```sh
+```vim
 Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 ```
 
 A specific version can be installed via git tags.  
-```sh
+```vim
 Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.3.0' }
 ```
 
@@ -73,7 +73,7 @@ git clone git://github.com/arcticicestudio/nord-vim.git
 
 [`Vundle`](https://github.com/VundleVim/Vundle.vim)  
 Add Nord Vim to your `.vimrc`
-```sh
+```vim
 Plugin 'arcticicestudio/nord-vim'
 ```
 and install via `:PluginInstall`.
@@ -83,18 +83,18 @@ and install via `:PluginInstall`.
 
 ### Activation
 Use Nord Vim as your default color theme by adding it to your `.vimrc`
-```sh
+```vim
 colorscheme nord
 ```
 or change it on-the-fly by running `:colorscheme nord`.
 
 [`vim-plug`](https://github.com/junegunn/vim-plug) also provides options to enable it on-demand for specific languages
-```sh
+```vim
 " Activate Nord Vim when editing Java files
 Plug 'arcticicestudio/nord-vim', { 'for': 'java' }
 ```
 or on specific events.
-```sh
+```vim
 " Activate Nord Vim when toggling the NERDTree
 Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
 ```
