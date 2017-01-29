@@ -272,7 +272,7 @@ call s:hi("markdownCodeDelimiter", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownFootnote", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownId", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownIdDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("markdownH1", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("markdownH1", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("markdownLinkText", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownUrl", s:nord4_gui, "", "NONE", "", "NONE", "")
 hi! link markdownFootnoteDefinition markdownFootnote
