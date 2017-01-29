@@ -48,7 +48,16 @@ let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
 
+if !exists('g:nord_italic_comments')
+  let g:nord_italic_comments = 0
+endif
+
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
+  let l:attr = a:attr
+  if g:nord_italic_comments == 0 && l:attr ==? 'italic'
+    let l:attr= 'NONE'
+  endif
+
   if a:guifg != ""
     exec "hi " . a:group . " guifg=" . a:guifg
   endif
@@ -62,7 +71,7 @@ function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
     exec "hi " . a:group . " ctermbg=" . a:ctermbg
   endif
   if a:attr != ""
-    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
+    exec "hi " . a:group . " gui=" . l:attr . " cterm=" . l:attr
   endif
   if a:guisp != ""
     exec "hi " . a:group . " guisp=" . a:guisp
@@ -137,7 +146,7 @@ call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NO
 "+----------------------+
 call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Comment", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("Comment", s:nord3_gui, "", s:nord3_term, "", "italic", "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -155,7 +164,7 @@ call s:hi("PreProc", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Repeat", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Special", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("SpecialChar", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("SpecialComment", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("SpecialComment", s:nord8_gui, "", s:nord8_term, "", "italic", "")
 call s:hi("Statement", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
