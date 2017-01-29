@@ -13,6 +13,21 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
 
 <p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-javascript.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
 
+  - [Getting started](#getting-started)
+    - [Installation](#installation)
+      - [Via plugin/runtimepath manager](#via-pluginruntimepath-manager)
+      - [Manual](#manual)
+    - [Activation](#activation)
+    - [Configuration](#configuration)
+      - [Italic comments](#italic-comments)
+  - [Plugin Support](#plugin-support)
+    - [UI Plugins](#ui-plugins)
+    - [Language Plugins](#language-plugins)
+      - [JavaScript](#javascript)
+  - [Languages](#languages)
+  - [Development](#development)
+    - [Contribution](#contribution)
+
 ## Getting started
 ### Installation
 **NOTE**: Nord Vim in terminal mode **MUST** be used with the associated terminal emulator theme in order to work properly!  
