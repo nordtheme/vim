@@ -99,6 +99,20 @@ or on specific events.
 Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
 ```
 
+### Configuration
+All options should be set **before** the [activation](#activation) command!
+
+#### Italic comments
+**This option should only be enabled if your terminal emulator supports italics!**
+
+Enable to use italic font for all comments.
+
+To adhere to the Nord style guide this option is disabled by default.
+It can be enabled by setting the `g:nord_italic_comments` variable to `1`.  
+```vim
+let g:nord_italic_comments = 1
+```
+
 ## Plugin Support
 Nord Vim provides support for many third-party language- and the UI plugins.  
 
