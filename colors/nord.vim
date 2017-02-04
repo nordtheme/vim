@@ -339,6 +339,7 @@ hi! link shDerefSimple Identifier
 hi! link shDerefVar Identifier
 
 hi! link sqlKeyword Keyword
+hi! link sqlSpecial Keyword
 
 call s:hi("vimAugroup", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("vimMapRhs", s:nord7_gui, "", s:nord7_term, "", "", "")
