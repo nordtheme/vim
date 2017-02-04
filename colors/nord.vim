@@ -373,6 +373,10 @@ call s:hi("GitGutterChange", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("GitGutterChangeDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("GitGutterDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
 
+" davidhalter/jedi-vim
+call s:hi("jediFunction", s:nord4_gui, s:nord3_gui, "", s:nord3_term, "", "")
+call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "bold,underline", "")
+
 " NERDTree
 " > scrooloose/nerdtree
 call s:hi("NERDTreeExecFile", s:nord7_gui, "", s:nord7_term, "", "", "")
