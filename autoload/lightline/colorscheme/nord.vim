@@ -4,9 +4,9 @@
 " repository https://github.com/arcticicestudio/nord-vim +
 " author     Arctic Ice Studio                           +
 " email      development@arcticicestudio.com             +
-" copyright  Copyright (C) 2016                          +
+" copyright  Copyright (C) 2017                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let s:nord_vim_version="0.3.0"
+let s:nord_vim_version="0.4.0"
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:nord0 = ["#2E3440", "NONE"]

@@ -4,7 +4,7 @@
 " repository https://github.com/arcticicestudio/nord-vim +
 " author     Arctic Ice Studio                           +
 " email      development@arcticicestudio.com             +
-" copyright  Copyright (C) 2016                          +
+" copyright  Copyright (C) 2017                          +
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 if version > 580
   hi clear
@@ -14,7 +14,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.3.0"
+let s:nord_vim_version="0.4.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
