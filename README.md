@@ -13,6 +13,21 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
 
 <p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-javascript.png"/><br><blockquote>Font: <a href="https://adobe-fonts.github.io/source-code-pro">Source Code Pro</a> 20px</blockquote></p>
 
+  - [Getting started](#getting-started)
+    - [Installation](#installation)
+      - [Via plugin/runtimepath manager](#via-pluginruntimepath-manager)
+      - [Manual](#manual)
+    - [Activation](#activation)
+    - [Configuration](#configuration)
+      - [Italic comments](#italic-comments)
+  - [Plugin Support](#plugin-support)
+    - [UI Plugins](#ui-plugins)
+    - [Language Plugins](#language-plugins)
+      - [JavaScript](#javascript)
+  - [Languages](#languages)
+  - [Development](#development)
+    - [Contribution](#contribution)
+
 ## Getting started
 ### Installation
 **NOTE**: Nord Vim in terminal mode **MUST** be used with the associated terminal emulator theme in order to work properly!  
@@ -20,6 +35,7 @@ Make sure to install one of the currently supported terminal themes listed below
 
 [![Nord GNOME Terminal](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-gnome-terminal-banner.svg)](https://github.com/arcticicestudio/nord-gnome-terminal)  
 [![Nord Guake](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-guake-banner.svg)](https://github.com/arcticicestudio/nord-guake)  
+[![Nord Hyper](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)  
 [![Nord iTerm2](https://cdn.rawgit.com/arcticicestudio/nord/0971858f496823fd916f3368961f16ef2c7aad1e/src/assets/nord-iterm2-banner.svg)](https://github.com/arcticicestudio/nord-iterm2)  
 [![Nord Konsole](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-konsole-banner.svg)](https://github.com/arcticicestudio/nord-konsole)  
 [![Nord Mintty](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-mintty-banner.svg)](https://github.com/arcticicestudio/nord-mintty)  
@@ -34,19 +50,19 @@ Make sure to install one of the currently supported terminal themes listed below
 #### Via plugin/runtimepath manager
 I recommend to use [`vim-plug`](https://github.com/junegunn/vim-plug).  
 Add Nord Vim to your `.vimrc`
-```sh
+```vim
 Plug 'arcticicestudio/nord-vim'
 ```
 and install via `:PlugInstall`.
 
 You can specify the `develop` branch to install the latest development version.  
-```sh
+```vim
 Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 ```
 
 A specific version can be installed via git tags.  
-```sh
-Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.3.0' }
+```vim
+Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.4.0' }
 ```
 
 Of course it can be installed with any of your favorite tools:  
@@ -58,7 +74,7 @@ git clone git://github.com/arcticicestudio/nord-vim.git
 
 [`Vundle`](https://github.com/VundleVim/Vundle.vim)  
 Add Nord Vim to your `.vimrc`
-```sh
+```vim
 Plugin 'arcticicestudio/nord-vim'
 ```
 and install via `:PluginInstall`.
@@ -68,20 +84,34 @@ and install via `:PluginInstall`.
 
 ### Activation
 Use Nord Vim as your default color theme by adding it to your `.vimrc`
-```sh
+```vim
 colorscheme nord
 ```
 or change it on-the-fly by running `:colorscheme nord`.
 
 [`vim-plug`](https://github.com/junegunn/vim-plug) also provides options to enable it on-demand for specific languages
-```sh
+```vim
 " Activate Nord Vim when editing Java files
 Plug 'arcticicestudio/nord-vim', { 'for': 'java' }
 ```
 or on specific events.
-```sh
+```vim
 " Activate Nord Vim when toggling the NERDTree
 Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
+```
+
+## Configuration
+All options should be set **before** the [activation](#activation) command!
+
+### Italic comments
+**This option should only be enabled if your terminal emulator supports italics!**
+
+Enable to use italic font for all comments.
+
+To adhere to the Nord style guide this option is disabled by default.
+It can be enabled by setting the `g:nord_italic_comments` variable to `1`.  
+```vim
+let g:nord_italic_comments = 1
 ```
 
 ## Plugin Support
@@ -118,16 +148,16 @@ Detailed descriptions for supported languages can be found in the [project wiki]
 ![][scrot-lang-ruby]
 
 ## Development
-[![](https://img.shields.io/badge/Changelog-0.3.0-blue.svg)](https://github.com/arcticicestudio/nord-vim/blob/v0.3.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-blue.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-blue.svg)](https://github.com/arcticicestudio/arcver)
+[![](https://img.shields.io/badge/Changelog-0.4.0-81A1C1.svg)](https://github.com/arcticicestudio/nord-vim/blob/v0.4.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-81A1C1.svg)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-81A1C1.svg)](https://github.com/arcticicestudio/arcver)
 
 ### Contribution
 Please report issues/bugs, feature requests and suggestions for improvements to the [issue tracker](https://github.com/arcticicestudio/nord-vim/issues).
 
 <p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/banner-footer-mountains.svg" /></p>
 
-<p align="center"> <img src="http://arcticicestudio.com/favicon.ico" width=16 height=16/> Copyright &copy; 2016 Arctic Ice Studio</p>
+<p align="center"> <img src="http://arcticicestudio.com/favicon.ico" width=16 height=16/> Copyright &copy; 2017 Arctic Ice Studio</p>
 
-<p align="center"><a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-blue.svg"/></a></p>
+<p align="center"><a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-5E81AC.svg"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg"/></a></p>
 
 [scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-default-profile.png
 [scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-lazy-profile-change.png

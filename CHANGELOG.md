@@ -4,6 +4,33 @@
 
 ---
 
+# 0.4.0
+*2017-02-23*
+## Features
+### [Configurations][readme-configuration]
+❯ Added a configuration to enable [italic comments](https://github.com/arcticicestudio/nord-vim#italic-comments).  
+To adhere to the Nord style guide this option is disabled by default. It can be enabled by setting the `g:nord_italic_comments` variable to `1`.  
+```vim
+let g:nord_italic_comments = 1
+```
+(@kepbod, #13 (PR #16), dc6149f4)
+
+## Improvements
+### Plugin Support
+❯ The method/function signature live preview of the [`jedi-vim`](https://github.com/davidhalter/jedi-vim) plugin is now colorized correctly. (@mkalinski, #14, a5c3459a)
+
+<p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/22618347/4857d88e-eada-11e6-9696-83a8886f5771.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/22618354/63ddffde-eada-11e6-8a60-52a39642728e.png"/></p>
+
+### Language Support
+❯ Implemented optimized styles for the Python syntax group `pythonEscape`. (@mkalinski, #22, 360a76ea)
+![ghi-22-scrot-pythonescape](https://cloud.githubusercontent.com/assets/7836623/22618370/ad74e7fc-eada-11e6-89f2-23b351e8aa2b.png)
+
+❯ Implemented optimized styles for the SQL syntax groups `sqlSpecial` which is now linked to the `sqlKeyword` group to colorize constants like `true`/`false` and `null` as keywords. (@mkalinski, #23, dcfb441e)
+
+### Documentation
+❯ Added the new terminal emulator port project [Nord Hyper](https://github.com/arcticicestudio/nord-hyper)  
+[![Nord Hyper](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)
+
 # 0.3.0
 *2017-01-24*
 ## Improvements
@@ -67,3 +94,4 @@ Detailed information about features, supported plugins/languages and install ins
 **Project Initialization**
 
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
+[readme-configuration]: https://github.com/arcticicestudio/nord-vim#configuration
