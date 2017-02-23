@@ -309,6 +309,7 @@ call s:hi("podVerbatimLine", s:nord4_gui, "", "NONE", "", "", "")
 hi! link podFormat Keyword
 
 hi! link pythonBuiltin Type
+hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link rubyAttribute Identifier
