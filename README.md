@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg"/></a></p>
 
-<p align="center">A arctic, north-bluish clean and elegant <a href="http://www.vim.org">Vim</a> color theme.</p>
+<p align="center">An arctic, north-bluish clean and elegant <a href="http://www.vim.org">Vim</a> color theme.</p>
 
 <p align="center">Designed for a fluent and clear workflow.<br>
 Based on the <a href="https://github.com/arcticicestudio/nord">Nord</a> color palette.</p>
