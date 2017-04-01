@@ -317,6 +317,7 @@ hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
 hi! link rubyKeywordAsMethod Function
+hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
