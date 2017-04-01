@@ -312,11 +312,11 @@ hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", "bold", "")
 hi! link rubyAttribute Identifier
 hi! link rubyInterpolationDelimiter Keyword
 hi! link rubyKeywordAsMethod Function
 hi! link rubyRegexp SpecialChar
-hi! link rubySymbol Identifier
 
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", "underline", "")
