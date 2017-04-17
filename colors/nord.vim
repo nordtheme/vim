@@ -14,7 +14,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.4.0"
+let s:nord_vim_version="0.5.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -312,11 +312,14 @@ hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", "bold", "")
 hi! link rubyAttribute Identifier
+hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
 hi! link rubyKeywordAsMethod Function
+hi! link rubyLocalVariableOrMethod Function
+hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
-hi! link rubySymbol Identifier
 
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", "underline", "")
