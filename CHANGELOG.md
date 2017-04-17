@@ -4,6 +4,21 @@
 
 ---
 
+# 0.5.0
+*2017-04-17*
+## Improvements
+### Language Support
+❯ Implemented optimized styles for Ruby (@hahuang65, #29, 085c1337)
+  - Symbols (`rubySymbol`) now have a bold font style
+  - Block parameter list symbols (`rubyBlockParameterList`) are now colorized as keywords
+  - Local (variable) methods (`rubyLocalVariableOrMethod`) are now colorized as methods
+
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/7836623/25083146/af02dd0a-2355-11e7-8adc-f53b0803a484.png"/></p>
+
+## Bug Fixes
+### Documentation
+❯ Fixed a typo in the project description. (@arcticicestudio, #28, b2134029)
+
 # 0.4.0
 *2017-02-23*
 ## Features
