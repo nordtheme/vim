@@ -388,6 +388,11 @@ call s:hi("NERDTreeExecFile", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link NERDTreeDirSlash Keyword
 hi! link NERDTreeHelp Comment
 
+" CtrlP
+" > ctrlpvim/ctrlp.vim
+hi! link CtrlPMatch Keyword
+hi! link CtrlPBufferHid Normal
+
 "+--- Languages ---+
 " JavaScript
 " > pangloss/vim-javascript
