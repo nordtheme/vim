@@ -393,6 +393,11 @@ hi! link NERDTreeHelp Comment
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
 
+" Ale
+" > cw0rp/ale
+call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+
 "+--- Languages ---+
 " JavaScript
 " > pangloss/vim-javascript
