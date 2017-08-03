@@ -62,7 +62,7 @@ Plug 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 
 A specific version can be installed via git tags.  
 ```vim
-Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.5.0' }
+Plug 'arcticicestudio/nord-vim', { 'tag': 'v0.6.0' }
 ```
 
 Of course it can be installed with any of your favorite tools:  
@@ -148,7 +148,7 @@ Detailed descriptions for supported languages can be found in the [project wiki]
 ![][scrot-lang-ruby]
 
 ## Development
-[![](https://img.shields.io/badge/Changelog-0.5.0-81A1C1.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/blob/v0.5.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-81A1C1.svg?style=flat-square)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-81A1C1.svg?style=flat-square)](https://github.com/arcticicestudio/arcver)
+[![](https://img.shields.io/badge/Changelog-0.6.0-81A1C1.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/blob/v0.6.0/CHANGELOG.md) [![](https://img.shields.io/badge/Workflow-gitflow--branching--model-81A1C1.svg?style=flat-square)](http://nvie.com/posts/a-successful-git-branching-model) [![](https://img.shields.io/badge/Versioning-ArcVer_0.8.0-81A1C1.svg?style=flat-square)](https://github.com/arcticicestudio/arcver)
 
 ### Contribution
 Please report issues/bugs, feature requests and suggestions for improvements to the [issue tracker](https://github.com/arcticicestudio/nord-vim/issues).
