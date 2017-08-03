@@ -110,8 +110,8 @@ call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
-call s:hi("Folded", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
-call s:hi("FoldColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
+call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "bold", "")
+call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
 
 "+--- Navigation ---+
