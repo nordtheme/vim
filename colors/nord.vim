@@ -371,6 +371,11 @@ hi! link yamlDocumentStart Keyword
 "+ Plugin Support +
 "+----------------+
 "+--- UI ---+
+" ALE
+" > w0rp/ale
+call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+
 " GitGutter
 " > airblade/vim-gitgutter
 call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
