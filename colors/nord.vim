@@ -14,7 +14,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.5.0"
+let s:nord_vim_version="0.6.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -106,12 +106,16 @@ call s:hi("SpellLocal", "", s:nord0_gui, "", "NONE", "undercurl", s:nord5_gui)
 call s:hi("SpellRare", "", s:nord0_gui, "", "NONE", "undercurl", s:nord6_gui)
 call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
 call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
+"+- Neovim Support -+
+call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
+call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
+call s:hi("healthWarning", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
-call s:hi("Folded", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
-call s:hi("FoldColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
+call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "bold", "")
+call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
 
 "+--- Navigation ---+
@@ -129,8 +133,8 @@ call s:hi("WarningMsg", s:nord0_gui, s:nord13_gui, s:nord1_term, s:nord13_term, 
 call s:hi("WildMenu", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", s:nord4_gui, s:nord8_gui, "NONE", s:nord8_term, "NONE", "")
-call s:hi("Search", s:nord4_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "NONE", "")
+call s:hi("IncSearch", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "underline", "")
+call s:hi("Search", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "NONE", "")
 
 "+--- Tabs ---+
 call s:hi("TabLine", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
@@ -371,6 +375,11 @@ hi! link yamlDocumentStart Keyword
 "+ Plugin Support +
 "+----------------+
 "+--- UI ---+
+" ALE
+" > w0rp/ale
+call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+
 " GitGutter
 " > airblade/vim-gitgutter
 call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
@@ -387,6 +396,11 @@ call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "bold
 call s:hi("NERDTreeExecFile", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link NERDTreeDirSlash Keyword
 hi! link NERDTreeHelp Comment
+
+" CtrlP
+" > ctrlpvim/ctrlp.vim
+hi! link CtrlPMatch Keyword
+hi! link CtrlPBufferHid Normal
 
 "+--- Languages ---+
 " JavaScript

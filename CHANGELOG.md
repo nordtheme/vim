@@ -1,8 +1,52 @@
 <p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-vim/develop/assets/nord-vim-banner.svg"/></p>
 
-<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg"/></a></p>
+<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg?style=flat-square"/></a></p>
 
 ---
+
+# 0.6.0
+<details>
+  <summary>Version Details</summary>
+  <p>
+    Release Date: *2017-08-03*
+    <a href="https://github.com/arcticicestudio/nord-vim/milestone/8">Milestone</a>
+    <a href="https://github.com/arcticicestudio/nord-vim/projects/9">Project Board</a>
+  </p>
+</details>
+
+## Features
+### Plugin Support
+#### UI
+❯ Added basic support for [CtrlP][plugin-ctrlp]. (PR #33, @syedelec)
+
+* Matched characters are using the keyword color instead of the normal text color to make matched characters visible
+* Already opened buffers now take the normal text color instead of the comment color
+
+❯ Added basic support [ALE][plugin-ale]. (PR #44, @meck)
+
+* Warning signs are colorized using a `nord13` foreground
+* Error signs are colorized using a `nord11` foreground instead of a red background with a white foreground
+
+## Improvements
+### UI
+❯ The fold marker foreground has been adjusted to match the comment color instead of `nord1` which has been too dark causing them to be unreadable in bright environments. The background color has also been changed to `nord1` to differ from normal comments and the font style is now bold for better legibility. (#38 in PR #40, @dylnmc)
+
+![](https://user-images.githubusercontent.com/7836623/28256249-ad23fa02-6ac0-11e7-873d-584303677662.png)
+
+❯ The highlight text of a active substitute search result is now underlined in order to make it more recognizable. (#35 in PR #41, @KevinSjoberg)
+
+![](https://user-images.githubusercontent.com/7836623/28245896-ebd3abae-6a10-11e7-9e83-85b69cb62455.gif)
+
+#### Neovim
+❯ Addded support for the Neovim specific `:CheckHealth` status highlight groups. (#31 in PR #42, @syedelec, Thanks to @dylnmc)
+
+<p align="center"><strong>Before</strong<br><img src="https://user-images.githubusercontent.com/7836623/28258007-150c94d6-6acf-11e7-92ee-c830e26067e4.png"/><br><strong>After</strong><br><img src="https://user-images.githubusercontent.com/7836623/28258017-21c124a8-6acf-11e7-9e93-dfacf0ad8b15.png"/></p>
+
+## Bug Fixes
+### UI
+❯ Fixed unreadable text color on pending search result highlights. (#32 in PR #39, @syedelec)
+
+<p align="center">Before<br><img src="https://user-images.githubusercontent.com/7836623/28238074-20069028-694c-11e7-985f-f46f8c343ac5.png"/><br>After<br><img src="https://user-images.githubusercontent.com/7836623/28238077-297ccec4-694c-11e7-91cf-dcaae7aefb6d.png"/></p>
 
 # 0.5.0
 *2017-04-17*
@@ -109,4 +153,6 @@ Detailed information about features, supported plugins/languages and install ins
 **Project Initialization**
 
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
+[plugin-ale]: https://github.com/w0rp/ale
+[plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [readme-configuration]: https://github.com/arcticicestudio/nord-vim#configuration
