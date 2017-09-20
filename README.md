@@ -20,6 +20,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
     - [Activation](#activation)
   - [Configuration](#configuration)
     - [Italic comments](#italic-comments)
+    - [Comment contrast](#comment-contrast)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -112,6 +113,17 @@ To adhere to the Nord style guide this option is disabled by default.
 It can be enabled by setting the `g:nord_italic_comments` variable to `1`.  
 ```vim
 let g:nord_italic_comments = 1
+```
+
+### Comment contrast
+**This option should only be enabled if your terminal emulator supports 16-bit
+color!**
+
+The comment brightness can be increased by 1 - 20 percent. It can be enabled by
+setting the `g:nord_comment_brightness` variable to a number between `1` and
+`20`.
+```vim
+let g:nord_comment_brightness = 15
 ```
 
 ## Plugin Support
