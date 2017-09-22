@@ -48,8 +48,35 @@ let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
 
+let s:nord3_gui_brightened = {
+      \ 0: s:nord3_gui,
+      \ 1: "#4e586d",
+      \ 2: "#505b70",
+      \ 3: "#525d73",
+      \ 4: "#556076",
+      \ 5: "#576279",
+      \ 6: "#59647c",
+      \ 7: "#5b677f",
+      \ 8: "#5d6982",
+      \ 9: "#5f6c85",
+      \ 10: "#616e88",
+      \ 11: "#63718b",
+      \ 12: "#66738e",
+      \ 13: "#687591",
+      \ 14: "#6a7894",
+      \ 15: "#6d7a96",
+      \ 16: "#6f7d98",
+      \ 17: "#72809a",
+      \ 18: "#75829c",
+      \ 19: "#78859e",
+      \ 20: "#7b88a1", }
+
 if !exists('g:nord_italic_comments')
   let g:nord_italic_comments = 0
+endif
+
+if !exists('g:nord_comment_brightness')
+  let g:nord_comment_brightness = 0
 endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -150,7 +177,7 @@ call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NO
 "+----------------------+
 call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Comment", s:nord3_gui, "", s:nord3_term, "", "italic", "")
+call s:hi("Comment", s:nord3_gui_brightened[g:nord_comment_brightness], "", s:nord3_term, "", "italic", "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -233,15 +260,18 @@ hi! link dtDelim Delimiter
 hi! link dtLocaleValue Keyword
 hi! link dtTypeValue Keyword
 
-call s:hi("diffAdded", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("diffChanged", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("diffNewFile", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("diffOldFile", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("diffRemoved", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("DiffChange", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("DiffDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffText", s:nord4_gui, "", "NONE", "", "", "")
+"+------+
+"+ Diff +
+"+------+
+call s:hi("diffAdded", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
+call s:hi("diffChanged", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+call s:hi("diffNewFile", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord1_term, "", "")
+call s:hi("diffOldFile", s:nord7_gui, s:nord1_gui, s:nord7_term, s:nord1_term, "", "")
+call s:hi("diffRemoved", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
+call s:hi("DiffAdd", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
+call s:hi("DiffChange", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
+call s:hi("DiffText", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "", "")
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
