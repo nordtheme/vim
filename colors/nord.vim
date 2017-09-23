@@ -48,8 +48,36 @@ let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
 
-if !exists('g:nord_italic_comments')
+let s:nord3_gui_brightened = [
+  \ s:nord3_gui,
+  \ "#4e586d",
+  \ "#505b70",
+  \ "#525d73",
+  \ "#556076",
+  \ "#576279",
+  \ "#59647c",
+  \ "#5b677f",
+  \ "#5d6982",
+  \ "#5f6c85",
+  \ "#616e88",
+  \ "#63718b",
+  \ "#66738e",
+  \ "#687591",
+  \ "#6a7894",
+  \ "#6d7a96",
+  \ "#6f7d98",
+  \ "#72809a",
+  \ "#75829c",
+  \ "#78859e",
+  \ "#7b88a1",
+\ ]
+
+if !exists("g:nord_italic_comments")
   let g:nord_italic_comments = 0
+endif
+
+if !exists("g:nord_comment_brightness")
+  let g:nord_comment_brightness = 0
 endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -150,7 +178,7 @@ call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NO
 "+----------------------+
 call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Comment", s:nord3_gui, "", s:nord3_term, "", "italic", "")
+call s:hi("Comment", s:nord3_gui_brightened[g:nord_comment_brightness], "", s:nord3_term, "", "italic", "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
