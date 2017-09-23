@@ -203,7 +203,7 @@ call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
-call s:hi("Todo", s:nord13_gui, "", s:nord13_term, "NONE", "", "")
+call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
 call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
 hi! link Macro Define
@@ -262,18 +262,15 @@ hi! link dtDelim Delimiter
 hi! link dtLocaleValue Keyword
 hi! link dtTypeValue Keyword
 
-"+------+
-"+ Diff +
-"+------+
-call s:hi("diffAdded", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
-call s:hi("diffChanged", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
-call s:hi("diffNewFile", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord1_term, "", "")
-call s:hi("diffOldFile", s:nord7_gui, s:nord1_gui, s:nord7_term, s:nord1_term, "", "")
-call s:hi("diffRemoved", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
-call s:hi("DiffAdd", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
-call s:hi("DiffChange", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
-call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
-call s:hi("DiffText", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "", "")
+call s:hi("diffAdded", s:nord14_gui, "", s:nord14_term, "", "", "")
+call s:hi("diffChanged", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("diffNewFile", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("diffOldFile", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("diffRemoved", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("DiffAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
+call s:hi("DiffChange", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("DiffDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("DiffText", s:nord4_gui, "", "NONE", "", "", "")
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
