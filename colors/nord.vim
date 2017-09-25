@@ -281,6 +281,12 @@ call s:hi("htmlLink", s:nord4_gui, "", "", "", "NONE", "NONE")
 hi! link htmlBold Bold
 hi! link htmlEndTag htmlTag
 hi! link htmlItalic Italic
+hi! link htmlH1 markdownH1
+hi! link htmlH2 markdownH1
+hi! link htmlH3 markdownH1
+hi! link htmlH4 markdownH1
+hi! link htmlH5 markdownH1
+hi! link htmlH6 markdownH1
 hi! link htmlSpecialChar SpecialChar
 hi! link htmlTag Keyword
 hi! link htmlTagN htmlTag
@@ -314,7 +320,7 @@ call s:hi("markdownFootnote", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownId", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownIdDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownH1", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("markdownLinkText", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("markdownLinkText", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("markdownUrl", s:nord4_gui, "", "NONE", "", "NONE", "")
 hi! link markdownFootnoteDefinition markdownFootnote
 hi! link markdownH2 markdownH1
@@ -440,3 +446,27 @@ hi! link jsFuncParens Delimiter
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
+
+" Markdown
+" > plasticboy/vim-markdown
+call s:hi("mkdCode", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("mkdFootnote", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("mkdRule", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("mkdLineBreak", s:nord9_gui, "", s:nord9_term, "", "", "")
+hi! link mkdBold Bold
+hi! link mkdItalic Italic
+hi! link mkdString Keyword
+hi! link mkdCodeStart mkdCode
+hi! link mkdCodeEnd mkdCode
+hi! link mkdBlockquote Comment
+hi! link mkdListItem Keyword
+hi! link mkdListItemLine Normal
+hi! link mkdFootnotes mkdFootnote
+hi! link mkdLink markdownLinkText
+hi! link mkdURL markdownUrl
+hi! link mkdInlineURL mkdURL
+hi! link mkdID Identifier "CHECK
+hi! link mkdLinkDef mkdLink
+hi! link mkdLinkDefTarget mkdURL
+hi! link mkdLinkTitle mkdInlineURL
+hi! link mkdDelimiter Keyword
