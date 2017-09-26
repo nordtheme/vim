@@ -114,6 +114,20 @@ It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
 let g:nord_italic_comments = 1
 ```
 
+### Uniform StatusLine Backgrund
+
+Allow StatusLine backgrounds to be uniform.
+
+By default, Nord uses a slightly brighter background for the current split buffer.
+This is designed to draw attention to the currently active buffer without being
+distracting.
+
+However, if the user desires the backgrounds to be a uniform color,
+`g:nord_statusline_uniform` can be set to `1` as follows:
+```vim
+let g:nord_statusline_uniform = 1
+```
+
 ## Plugin Support
 Nord Vim provides support for many third-party language- and the UI plugins.  
 
