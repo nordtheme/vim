@@ -80,6 +80,10 @@ if !exists("g:nord_comment_brightness")
   let g:nord_comment_brightness = 0
 endif
 
+if !exists("g:nord_uniform_diff_background")
+  let g:nord_uniform_diff_background = 0
+endif
+
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
   let l:attr = a:attr
   if g:nord_italic_comments == 0 && l:attr ==? 'italic'
@@ -261,15 +265,17 @@ hi! link dtDelim Delimiter
 hi! link dtLocaleValue Keyword
 hi! link dtTypeValue Keyword
 
-call s:hi("diffAdded", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("diffChanged", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("diffNewFile", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("diffOldFile", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("diffRemoved", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("DiffChange", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("DiffDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffText", s:nord4_gui, "", "NONE", "", "", "")
+if g:nord_uniform_diff_background == 0
+  call s:hi("DiffAdd", s:nord14_gui, s:nord0_gui, s:nord14_term, "NONE", "inverse", "")
+  call s:hi("DiffChange", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "inverse", "")
+  call s:hi("DiffDelete", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "inverse", "")
+  call s:hi("DiffText", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "inverse", "")
+else
+  call s:hi("DiffAdd", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
+  call s:hi("DiffChange", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+  call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
+  call s:hi("DiffText", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+endif
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 

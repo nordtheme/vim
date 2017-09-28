@@ -21,6 +21,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
   - [Configuration](#configuration)
     - [Italic comments](#italic-comments)
     - [Comment contrast](#comment-contrast)
+    - [Uniform diff background](#uniform-diff-background)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -132,8 +133,20 @@ To adhere to the Nord style guide this option uses `nord3` by default.
 
 More information about true color and the support in various terminals can be found in [this gist][gist-true-color].
 
+### Uniform diff background
+By default, Nord Vim provides colorful backgrounds when used in *diff* mode `vimdiff`/`vim -d`.
+
+This can be changed to `nord1` as uniform *diff* background color by setting the `g:nord_uniform_diff_background` variable to `1`.
+
+```vim
+let g:nord_uniform_diff_background = 1
+```
+
+<align="center"><strong>Colorful backgrounds (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/><br><strong>Uniform diff background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/>
+</p>
+
 ## Plugin Support
-Nord Vim provides support for many third-party language- and the UI plugins.  
+Nord Vim provides support for many third-party language- and UI plugins.
 
 ### UI Plugins
 <p align="center"><a href="https://github.com/itchyny/lightline.vim">lightline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
