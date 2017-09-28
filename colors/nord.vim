@@ -118,6 +118,7 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+call s:hi("Error", s:nord0_gui, s:nord11_gui, "", s:nord11_term, "", "")
 call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nord0_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "", "")
@@ -435,6 +436,10 @@ hi! link NERDTreeHelp Comment
 " > ctrlpvim/ctrlp.vim
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
+
+" vim-plug
+" > junegunn/vim-plug
+call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
 
 "+--- Languages ---+
 " JavaScript
