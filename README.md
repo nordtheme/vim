@@ -20,6 +20,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
     - [Activation](#activation)
   - [Configuration](#configuration)
     - [Italic comments](#italic-comments)
+    - [Uniform status lines](#uniform-status-lines)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -114,19 +115,19 @@ It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
 let g:nord_italic_comments = 1
 ```
 
-### Uniform StatusLine Backgrund
+### Uniform status lines
 
-Allow StatusLine backgrounds to be uniform.
+Enables uniform activate- and inactive status lines using `nord3` as background.
 
-By default, Nord uses a slightly brighter background for the current split buffer.
-This is designed to draw attention to the currently active buffer without being
-distracting.
+By default, Nord Vim uses a slightly brighter background for the current split buffer. This is designed to draw attention to the currently active buffer without being distracting.
 
-However, if the user desires the backgrounds to be a uniform color,
-`g:nord_statusline_uniform` can be set to `1` as follows:
+If the user desires the backgrounds to be a uniform color, `g:nord_uniform_status_lines` can be set to `1`:
+
 ```vim
-let g:nord_statusline_uniform = 1
+let g:nord_uniform_status_lines = 1
 ```
+
+<align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines-default.png"/><br><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines.png"/></p>
 
 ## Plugin Support
 Nord Vim provides support for many third-party language- and the UI plugins.  
