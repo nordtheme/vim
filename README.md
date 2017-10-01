@@ -21,6 +21,8 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
   - [Configuration](#configuration)
     - [Italic comments](#italic-comments)
     - [Uniform status lines](#uniform-status-lines)
+    - [Comment contrast](#comment-contrast)
+    - [Uniform diff background](#uniform-diff-background)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -110,7 +112,8 @@ All options should be set **before** the [activation](#activation) command!
 Enable to use italic font for all comments.
 
 To adhere to the Nord style guide this option is disabled by default.
-It can be enabled by setting the `g:nord_italic_comments` variable to `1`.  
+It can be enabled by setting the `g:nord_italic_comments` variable to `1`. 
+
 ```vim
 let g:nord_italic_comments = 1
 ```
@@ -129,8 +132,36 @@ let g:nord_uniform_status_lines = 1
 
 <align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines-default.png"/><br><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines.png"/></p>
 
+### Comment contrast
+**This option should only be enabled if your terminal emulator supports 24bit true color (16 million colors)!**
+
+This option is only visible if `termguicolors` is enabled in your `~/.vimrc` or set via `:set termguicolors`!
+
+The comment brightness can be increased by 1 - 20 percent. It can be enabled by setting the `g:nord_comment_brightness`
+variable to a number between `1` and `20`.
+
+```vim
+let g:nord_comment_brightness = 12
+```
+
+To adhere to the Nord style guide this option uses `nord3` by default.
+
+More information about true color and the support in various terminals can be found in [this gist][gist-true-color].
+
+### Uniform diff background
+By default, Nord Vim provides colorful backgrounds when used in *diff* mode `vimdiff`/`vim -d`.
+
+This can be changed to `nord1` as uniform *diff* background color by setting the `g:nord_uniform_diff_background` variable to `1`.
+
+```vim
+let g:nord_uniform_diff_background = 1
+```
+
+<align="center"><strong>Colorful backgrounds (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/><br><strong>Uniform diff background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/>
+</p>
+
 ## Plugin Support
-Nord Vim provides support for many third-party language- and the UI plugins.  
+Nord Vim provides support for many third-party language- and UI plugins.
 
 ### UI Plugins
 <p align="center"><a href="https://github.com/itchyny/lightline.vim">lightline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
@@ -174,9 +205,9 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 
 <p align="center"><a href="http://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-5E81AC.svg?style=flat-square"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg?style=flat-square"/></a></p>
 
+[gist-true-color]: https://gist.github.com/XVilka/8346728
 [scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-default-profile.png
 [scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-lazy-profile-change.png
-
 [scrot-lang-c]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-c.png
 [scrot-lang-css]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-css.png
 [scrot-lang-html]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-html.png

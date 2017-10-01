@@ -48,12 +48,43 @@ let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
 
-if !exists('g:nord_italic_comments')
+let s:nord3_gui_brightened = [
+  \ s:nord3_gui,
+  \ "#4e586d",
+  \ "#505b70",
+  \ "#525d73",
+  \ "#556076",
+  \ "#576279",
+  \ "#59647c",
+  \ "#5b677f",
+  \ "#5d6982",
+  \ "#5f6c85",
+  \ "#616e88",
+  \ "#63718b",
+  \ "#66738e",
+  \ "#687591",
+  \ "#6a7894",
+  \ "#6d7a96",
+  \ "#6f7d98",
+  \ "#72809a",
+  \ "#75829c",
+  \ "#78859e",
+  \ "#7b88a1",
+\ ]
+
+if !exists("g:nord_italic_comments")
   let g:nord_italic_comments = 0
 endif
 
 if !exists('g:nord_uniform_status_lines')
   let g:nord_uniform_status_lines = 0
+
+if !exists("g:nord_comment_brightness")
+  let g:nord_comment_brightness = 0
+endif
+
+if !exists("g:nord_uniform_diff_background")
+  let g:nord_uniform_diff_background = 0
 endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -94,6 +125,7 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
+call s:hi("Error", s:nord0_gui, s:nord11_gui, "", s:nord11_term, "", "")
 call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("LineNr", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nord0_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "", "")
@@ -159,7 +191,7 @@ call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NO
 "+----------------------+
 call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("Comment", s:nord3_gui, "", s:nord3_term, "", "italic", "")
+call s:hi("Comment", s:nord3_gui_brightened[g:nord_comment_brightness], "", s:nord3_term, "", "italic", "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -183,7 +215,7 @@ call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
-call s:hi("Todo", s:nord13_gui, "", s:nord13_term, "NONE", "", "")
+call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
 call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
 hi! link Macro Define
@@ -242,15 +274,17 @@ hi! link dtDelim Delimiter
 hi! link dtLocaleValue Keyword
 hi! link dtTypeValue Keyword
 
-call s:hi("diffAdded", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("diffChanged", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("diffNewFile", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("diffOldFile", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("diffRemoved", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
-call s:hi("DiffChange", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("DiffDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("DiffText", s:nord4_gui, "", "NONE", "", "", "")
+if g:nord_uniform_diff_background == 0
+  call s:hi("DiffAdd", s:nord14_gui, s:nord0_gui, s:nord14_term, "NONE", "inverse", "")
+  call s:hi("DiffChange", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "inverse", "")
+  call s:hi("DiffDelete", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "inverse", "")
+  call s:hi("DiffText", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "inverse", "")
+else
+  call s:hi("DiffAdd", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
+  call s:hi("DiffChange", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+  call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
+  call s:hi("DiffText", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
+endif
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
@@ -262,6 +296,12 @@ call s:hi("htmlLink", s:nord4_gui, "", "", "", "NONE", "NONE")
 hi! link htmlBold Bold
 hi! link htmlEndTag htmlTag
 hi! link htmlItalic Italic
+hi! link htmlH1 markdownH1
+hi! link htmlH2 markdownH1
+hi! link htmlH3 markdownH1
+hi! link htmlH4 markdownH1
+hi! link htmlH5 markdownH1
+hi! link htmlH6 markdownH1
 hi! link htmlSpecialChar SpecialChar
 hi! link htmlTag Keyword
 hi! link htmlTagN htmlTag
@@ -295,7 +335,7 @@ call s:hi("markdownFootnote", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownId", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownIdDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownH1", s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("markdownLinkText", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("markdownLinkText", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("markdownUrl", s:nord4_gui, "", "NONE", "", "NONE", "")
 hi! link markdownFootnoteDefinition markdownFootnote
 hi! link markdownH2 markdownH1
@@ -411,6 +451,10 @@ hi! link NERDTreeHelp Comment
 hi! link CtrlPMatch Keyword
 hi! link CtrlPBufferHid Normal
 
+" vim-plug
+" > junegunn/vim-plug
+call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
+
 "+--- Languages ---+
 " JavaScript
 " > pangloss/vim-javascript
@@ -421,3 +465,27 @@ hi! link jsFuncParens Delimiter
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
+
+" Markdown
+" > plasticboy/vim-markdown
+call s:hi("mkdCode", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("mkdFootnote", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("mkdRule", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("mkdLineBreak", s:nord9_gui, "", s:nord9_term, "", "", "")
+hi! link mkdBold Bold
+hi! link mkdItalic Italic
+hi! link mkdString Keyword
+hi! link mkdCodeStart mkdCode
+hi! link mkdCodeEnd mkdCode
+hi! link mkdBlockquote Comment
+hi! link mkdListItem Keyword
+hi! link mkdListItemLine Normal
+hi! link mkdFootnotes mkdFootnote
+hi! link mkdLink markdownLinkText
+hi! link mkdURL markdownUrl
+hi! link mkdInlineURL mkdURL
+hi! link mkdID Identifier "CHECK
+hi! link mkdLinkDef mkdLink
+hi! link mkdLinkDefTarget mkdURL
+hi! link mkdLinkTitle mkdInlineURL
+hi! link mkdDelimiter Keyword
