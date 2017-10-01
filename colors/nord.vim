@@ -78,6 +78,7 @@ endif
 
 if !exists('g:nord_uniform_status_lines')
   let g:nord_uniform_status_lines = 0
+endif
 
 if !exists("g:nord_comment_brightness")
   let g:nord_comment_brightness = 0
