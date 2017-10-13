@@ -148,6 +148,26 @@ call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term,
 call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
 call s:hi("healthWarning", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
 
+"+- Neovim Terminal Colors -+
+if has('nvim')
+  let g:terminal_color_0 = s:nord1_gui
+  let g:terminal_color_1 = s:nord11_gui
+  let g:terminal_color_2 = s:nord14_gui
+  let g:terminal_color_3 = s:nord13_gui
+  let g:terminal_color_4 = s:nord9_gui
+  let g:terminal_color_5 = s:nord15_gui
+  let g:terminal_color_6 = s:nord8_gui
+  let g:terminal_color_7 = s:nord5_gui
+  let g:terminal_color_8 = s:nord3_gui
+  let g:terminal_color_9 = s:nord11_gui
+  let g:terminal_color_10 = s:nord14_gui
+  let g:terminal_color_11 = s:nord13_gui
+  let g:terminal_color_12 = s:nord9_gui
+  let g:terminal_color_13 = s:nord15_gui
+  let g:terminal_color_14 = s:nord7_gui
+  let g:terminal_color_15 = s:nord6_gui
+endif
+
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
