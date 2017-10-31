@@ -306,6 +306,10 @@ else
   call s:hi("DiffDelete", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
   call s:hi("DiffText", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_term, "", "")
 endif
+" Legacy groups for official git.vim and diff.vim syntax
+hi! link diffAdded DiffAdd
+hi! link diffChanged DiffChange
+hi! link diffRemoved DiffDelete
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
