@@ -19,10 +19,11 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
       - [Manual](#manual)
     - [Activation](#activation)
   - [Configuration](#configuration)
-    - [Italic comments](#italic-comments)
-    - [Uniform status lines](#uniform-status-lines)
-    - [Comment contrast](#comment-contrast)
-    - [Uniform diff background](#uniform-diff-background)
+    - [Italic Support](#italic)
+    - [Italic Comments](#italic-comments)
+    - [Uniform Status Lines](#uniform-status-lines)
+    - [Comment Contrast](#comment-contrast)
+    - [Uniform diff Background](#uniform-diff-background)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -104,12 +105,28 @@ Plug 'arcticicestudio/nord-vim', { 'on':  'NERDTreeToggle' }
 ```
 
 ## Configuration
+
 All options should be set **before** the [activation](#activation) command!
 
-### Italic comments
+### Italic Support
+
 **This option should only be enabled if your terminal emulator supports italics!**
 
-Enable to use italic font for all comments.
+Enables support for italic text.
+
+Most terminals don't handle italics right so Nord disables italics for terminals by default while in GUI mode this option is enabled by default.
+
+Italics for terminals can be enabled by setting the `g:nord_italic` to `1` to enforce displaying italics.
+
+```vim
+let g:nord_italic = 1
+```
+
+### Italic Comments
+
+**This option only takes effect if the option for [italic text support](#italic-support) has been enabled!**
+
+Enable to italicize all comments.
 
 To adhere to the Nord style guide this option is disabled by default.
 It can be enabled by setting the `g:nord_italic_comments` variable to `1`. 
@@ -118,7 +135,9 @@ It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
 let g:nord_italic_comments = 1
 ```
 
-### Uniform status lines
+![][scrot-config-italic-comments]
+
+### Uniform Status Lines
 
 Enables uniform activate- and inactive status lines using `nord3` as background.
 
@@ -132,7 +151,8 @@ let g:nord_uniform_status_lines = 1
 
 <align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines-default.png"/><br><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines.png"/></p>
 
-### Comment contrast
+### Comment Contrast
+
 **This option should only be enabled if your terminal emulator supports 24bit true color (16 million colors)!**
 
 This option is only visible if `termguicolors` is enabled in your `~/.vimrc` or set via `:set termguicolors`!
@@ -148,7 +168,8 @@ To adhere to the Nord style guide this option uses `nord3` by default.
 
 More information about true color and the support in various terminals can be found in [this gist][gist-true-color].
 
-### Uniform diff background
+### Uniform `diff` Background
+
 By default, Nord Vim provides colorful backgrounds when used in *diff* mode `vimdiff`/`vim -d`.
 
 This can be changed to `nord1` as uniform *diff* background color by setting the `g:nord_uniform_diff_background` variable to `1`.
@@ -206,8 +227,7 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 <p align="center"><a href="https://github.com/arcticicestudio/nord-vim/blob/develop/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-5E81AC.svg?style=flat-square"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg?style=flat-square"/></a></p>
 
 [gist-true-color]: https://gist.github.com/XVilka/8346728
-[scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-default-profile.png
-[scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-lazy-profile-change.png
+[scrot-config-italic-comments]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-italic-comments.png
 [scrot-lang-c]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-c.png
 [scrot-lang-css]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-css.png
 [scrot-lang-html]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-html.png
@@ -218,3 +238,5 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 [scrot-lang-php]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-php.png
 [scrot-lang-python]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-python.png
 [scrot-lang-ruby]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-ruby.png
+[scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-default-profile.png
+[scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-lazy-profile-change.png
