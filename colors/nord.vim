@@ -372,6 +372,7 @@ call s:hi("markdownIdDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("markdownH1", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("markdownLinkText", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("markdownUrl", s:nord4_gui, "", "NONE", "", "NONE", "")
+hi! link markdownBoldDelimiter Keyword
 hi! link markdownFootnoteDefinition markdownFootnote
 hi! link markdownH2 markdownH1
 hi! link markdownH3 markdownH1
@@ -379,6 +380,7 @@ hi! link markdownH4 markdownH1
 hi! link markdownH5 markdownH1
 hi! link markdownH6 markdownH1
 hi! link markdownIdDelimiter Keyword
+hi! link markdownItalicDelimiter Keyword
 hi! link markdownLinkDelimiter Keyword
 hi! link markdownLinkTextDelimiter Keyword
 hi! link markdownListMarker Keyword
