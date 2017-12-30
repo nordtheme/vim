@@ -1,12 +1,11 @@
-" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-" title      Nord Vim lightline                          +
-" project    nord-vim                                    +
-" repository https://github.com/arcticicestudio/nord-vim +
-" author     Arctic Ice Studio                           +
-" email      development@arcticicestudio.com             +
-" copyright  Copyright (C) 2017                          +
-" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let s:nord_vim_version="0.6.0"
+" Copyright (c) 2016-2017 Arctic Ice Studio <development@arcticicestudio.com>
+" Copyright (c) 2016-2017 Sven Greb <code@svengreb.de>
+
+" Project: Nord Vim
+" Repository: https://github.com/arcticicestudio/nord-vim
+" License: MIT
+
+let s:nord_vim_version="0.7.0"
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
 let s:nord0 = ["#2E3440", "NONE"]
@@ -33,7 +32,7 @@ let s:p.normal.warning = [ [ s:nord1, s:nord13 ] ]
 let s:p.normal.error = [ [ s:nord1, s:nord11 ] ]
 
 let s:p.inactive.left =  [ [ s:nord1, s:nord8 ], [ s:nord5, s:nord1 ] ]
-let s:p.inactive.middle = [ [ s:nord5, s:nord0 ] ]
+let s:p.inactive.middle = [ [ s:nord5, s:nord1 ] ]
 let s:p.inactive.right = [ [ s:nord5, s:nord1 ], [ s:nord5, s:nord1 ] ]
 
 let s:p.insert.left = [ [ s:nord1, s:nord6 ], [ s:nord5, s:nord1 ] ]

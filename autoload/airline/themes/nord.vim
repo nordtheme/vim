@@ -1,12 +1,11 @@
-" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-" title      Nord Vim airline                            +
-" project    nord-vim                                    +
-" repository https://github.com/arcticicestudio/nord-vim +
-" author     Arctic Ice Studio                           +
-" email      development@arcticicestudio.com             +
-" copyright  Copyright (C) 2017                          +
-" ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-let s:nord_vim_version="0.6.0"
+" Copyright (c) 2016-2017 Arctic Ice Studio <development@arcticicestudio.com>
+" Copyright (c) 2016-2017 Sven Greb <code@svengreb.de>
+
+" Project: Nord Vim
+" Repository: https://github.com/arcticicestudio/nord-vim
+" License: MIT
+
+let s:nord_vim_version="0.7.0"
 let g:airline#themes#nord#palette = {}
 
 let s:nord0_gui = "#2E3440"
