@@ -326,6 +326,9 @@ call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link goConstants Keyword
 
+call s:hi("helpBar", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("helpHyperTextJump", s:nord8_gui, "", s:nord8_term, "", "underline", "")
+
 call s:hi("htmlArg", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("htmlLink", s:nord4_gui, "", "", "", "NONE", "NONE")
 hi! link htmlBold Bold
