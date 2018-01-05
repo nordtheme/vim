@@ -138,7 +138,7 @@ Set `g:nord_italic` to `1` to enforce displaying italics.
 let g:nord_italic = 1
 ```
 
-<p align="center"><strong>Italic formatting in Markdown</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-config-italic-markdown.png"/></p>
+<p align="center"><strong>Italic formatting in Markdown</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-italic-markdown.png"/></p>
 
 ### Italic Comments
 
@@ -213,9 +213,9 @@ This is a reference table if users like to use the same increased contrast value
 
 More information about true color and the support in various terminals can be found in [this gist][gist-true-color].
 
-<p align="center"><strong>Default and 15% increased</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-config-comment-contrast-java-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-config-comment-contrast-java-15-percent.png"/></p>
+<p align="center"><strong>Default and 15% increased</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-comment-contrast-java-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-comment-contrast-java-15-percent.png"/></p>
 
-<p align="center"><strong>Default and 12% increased</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-config-comment-contrast-js-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-config-comment-contrast-js-12-percent.png"/></p>
+<p align="center"><strong>Default and 12% increased</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-comment-contrast-js-default.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-comment-contrast-js-12-percent.png"/></p>
 
 ### Uniform `diff` Background
 
@@ -236,7 +236,9 @@ Nord Vim provides support for many third-party language- and UI plugins.
 
 ### UI Plugins
 
-<p align="center"><a href="https://github.com/itchyny/lightline.vim">lightline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
+<p align="center"><strong>With custom separators and components using lightline's <a href="https://github.com/itchyny/lightline.vim#advanced-configuration">advanced configurations</a></strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-vsplit.png"/></p>
+
+<p align="center"><strong><a href="https://github.com/itchyny/lightline.vim">lightline</a> with default format and components</strong><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
 
 <p align="center"><a href="https://github.com/vim-airline/vim-airline">airline</a><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-airline.png"/><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-airline-vsplit.png"/></p>
 
@@ -278,7 +280,7 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 
 <p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/banner-footer-mountains.svg" /></p>
 
-<p align="center"> <img src="http://arcticicestudio.com/favicon.ico" width=16 height=16/> Copyright &copy; 2017 Arctic Ice Studio</p>
+<p align="center">Copyright &copy; 2016-present Arctic Ice Studio</p>
 
 <p align="center"><a href="https://github.com/arcticicestudio/nord-vim/blob/develop/LICENSE.md"><img src="https://img.shields.io/badge/License-MIT-5E81AC.svg?style=flat-square"/></a> <a href="https://creativecommons.org/licenses/by-sa/4.0"><img src="https://img.shields.io/badge/License-CC_BY--SA_4.0-5E81AC.svg?style=flat-square"/></a></p>
 
@@ -299,5 +301,5 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 [scrot-lang-php]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-php.png
 [scrot-lang-python]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-python.png
 [scrot-lang-ruby]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-ruby.png
-[scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-default-profile.png
-[scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/src/assets/scrot-readme-lazy-profile-change.png
+[scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-readme-default-profile.png
+[scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-readme-lazy-profile-change.png
