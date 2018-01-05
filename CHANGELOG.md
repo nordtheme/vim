@@ -4,9 +4,47 @@
 
 ---
 
+# 0.8.0
+
+![Release Date: 2018-01-05](https://img.shields.io/badge/Release_Date-2018--01--05-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/11) [![Milestone](https://img.shields.io/badge/Milestone-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/10)
+
+## Features
+
+### Plugin Support
+
+#### UI
+
+❯ Added support for [vim-signify][plugin-mhinz/vim-signify]. (PR #81, @dabio, edcdd0e4)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/34623682-a7b7e960-f252-11e7-9194-c82aff310a75.png"/></p>
+
+## Improvements
+
+### UI
+
+❯ The color of links in `:help` was the same as normal text making it impossible to to distinguish between both. This has been improved by using `nord8` including the help bars when enabled with `:set conceallevel=2`. (#85 in PR #93, @delphinus, e9974fe6)
+
+<p align="center"><strong>Before</strong><br><img src="https://user-images.githubusercontent.com/7836623/34460697-25f5be7e-ee16-11e7-9c57-32bb2ec15314.png"/></p>
+
+<p align="center"><strong>After</strong><br><img src="https://user-images.githubusercontent.com/7836623/34460700-35bddeea-ee16-11e7-976b-e00cfe80c462.png"/></p>
+
+### Documentation
+
+❯ The lightline screenshots in the documentation have been made using the [lightline's advanced configurations][itchyny/lightline-adv-config]. This confused users when the lighline does not equal the one seen on the screenshot due to the default lightline configuration. This has now been clarified including a additional screenshot showing the appearance of the lightline when using the default configuration. (#74 in PR #94, @lokesh-krishna, 3c14c961)
+
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
+
+## Bug Fixes
+
+❯ The background color for matching parens is now assigned to the right color `nord3` instead of `nord0` in GUI mode. (#95 in PR #96, @dylnmc, 8bc1be01)
+
+<p align="center"><strong>Before</strong><br><img src="https://user-images.githubusercontent.com/7836623/34619232-cd9ea512-f241-11e7-8045-e4ac695d56bb.png"/></p>
+
+<p align="center"><strong>After</strong><br><img src="https://user-images.githubusercontent.com/7836623/34619246-dc2bee0a-f241-11e7-9ce6-c3d51ed6ec75.png"/></p>
+
 # 0.7.0
 
-![Release Date: 2017-12-30](https://img.shields.io/badge/Release_Date-2017--12--30-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/10) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/9)
+![Release Date: 2017-12-30](https://img.shields.io/badge/Release_Date-2017--12--30-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/10) [![Milestone](https://img.shields.io/badge/Milestone-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/9)
 
 ## Features
 
@@ -159,7 +197,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 # 0.6.0
 
-![Release Date: 2017-08-03](https://img.shields.io/badge/Release_Date-2017--08--03-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/9) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/8)
+![Release Date: 2017-08-03](https://img.shields.io/badge/Release_Date-2017--08--03-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/9) [![Milestone](https://img.shields.io/badge/Milestone-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/8)
 
 ## Features
 
@@ -205,7 +243,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 # 0.5.0
 
-![Release Date: 2017-04-17](https://img.shields.io/badge/Release_Date-2017--04--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/8) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/7)
+![Release Date: 2017-04-17](https://img.shields.io/badge/Release_Date-2017--04--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/8) [![Milestone](https://img.shields.io/badge/Milestone-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/7)
 
 ## Improvements
 
@@ -226,11 +264,11 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 # 0.4.0
 
-![Release Date: 2017-02-23](https://img.shields.io/badge/Release_Date-2017--02--23-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/7) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/6)
+![Release Date: 2017-02-23](https://img.shields.io/badge/Release_Date-2017--02--23-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/7) [![Milestone](https://img.shields.io/badge/Milestone-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/6)
 
 ## Features
 
-### [Configurations][readme-config]
+### Configurations
 
 ❯ Added a configuration to enable [italic comments](https://github.com/arcticicestudio/nord-vim#italic-comments).  
 To adhere to the Nord style guide this option is disabled by default. It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
@@ -263,7 +301,7 @@ let g:nord_italic_comments = 1
 
 # 0.3.0
 
-![Release Date: 2017-01-24](https://img.shields.io/badge/Release_Date-2017--01--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/6) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/5)
+![Release Date: 2017-01-24](https://img.shields.io/badge/Release_Date-2017--01--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/6) [![Milestone](https://img.shields.io/badge/Milestone-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/5)
 
 ## Improvements
 
@@ -284,7 +322,7 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 
 # 0.2.0
 
-![Release Date: 2017-01-02](https://img.shields.io/badge/Release_Date-2017--01--02-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/5) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/4)
+![Release Date: 2017-01-02](https://img.shields.io/badge/Release_Date-2017--01--02-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/5) [![Milestone](https://img.shields.io/badge/Milestone-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/4)
 
 ## Improvements
 
@@ -299,7 +337,7 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 # 0.1.2
 *2017-01-01*
 
-![Release Date: 2017-01-01](https://img.shields.io/badge/Release_Date-2017--01--01-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/4) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/3)
+![Release Date: 2017-01-01](https://img.shields.io/badge/Release_Date-2017--01--01-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/4) [![Milestone](https://img.shields.io/badge/Milestone-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/3)
 
 ## Bug Fixes
 
@@ -308,7 +346,7 @@ order. (@shuei72, #5, f8ffce24)
 
 # 0.1.1
 
-![Release Date: 2016-12-26](https://img.shields.io/badge/Release_Date-2016--12--26-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/3) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/2)
+![Release Date: 2016-12-26](https://img.shields.io/badge/Release_Date-2016--12--26-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/3) [![Milestone](https://img.shields.io/badge/Milestone-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/2)
 
 ## Bug Fixes
 
@@ -341,6 +379,7 @@ Detailed information about features, supported plugins/languages and install ins
 [gh-55-arcticicestudio/nord]: https://github.com/arcticicestudio/nord/issues/55
 [gist-colors-in-terminals]: https://gist.github.com/XVilka/8346728
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
+[itchyny/lightline-adv-config]: https://github.com/itchyny/lightline.vim#advanced-configuration
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
 [nord-gh]: https://github.com/arcticicestudio/nord
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
@@ -348,6 +387,7 @@ Detailed information about features, supported plugins/languages and install ins
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [plugin-junegunn/vim-plug]: https://github.com/junegunn/vim-plug
+[plugin-mhinz/vim-signify]: https://github.com/mhinz/vim-signify
 [plugin-plasticboy/vim-markdown]: https://github.com/plasticboy/vim-markdown
 [plugin-tpope/vim-fugitive]: https://github.com/tpope/vim-fugitive
 [readme-config]: https://github.com/arcticicestudio/nord-vim#configuration

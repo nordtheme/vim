@@ -1,5 +1,5 @@
-" Copyright (c) 2016-2017 Arctic Ice Studio <development@arcticicestudio.com>
-" Copyright (c) 2016-2017 Sven Greb <code@svengreb.de>
+" Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+" Copyright (c) 2016-present Sven Greb <code@svengreb.de>
 
 " Project: Nord Vim
 " Repository: https://github.com/arcticicestudio/nord-vim
@@ -13,7 +13,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.7.0"
+let s:nord_vim_version="0.8.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
