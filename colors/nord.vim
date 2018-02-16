@@ -103,6 +103,10 @@ if !exists("g:nord_uniform_diff_background")
   let g:nord_uniform_diff_background = 0
 endif
 
+if !exists("g:nord_cursor_line_number_background")
+  let g:nord_cursor_line_number_background = 0
+endif
+
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
   if a:guifg != ""
     exec "hi " . a:group . " guifg=" . a:guifg
@@ -180,7 +184,11 @@ endif
 
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
-call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
+if g:nord_cursor_line_number_background == 0
+  call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
+else
+  call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "", "")
+endif
 call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "bold", "")
 call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")

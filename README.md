@@ -230,6 +230,14 @@ let g:nord_uniform_diff_background = 1
 <p align="center"><strong>Colorful backgrounds (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/><br><strong>Uniform diff background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff.png"/>
 </p>
 
+### Highlighting the current line number
+
+Enables background for line number of the current line the same with text background of the current line.
+
+```vim
+let g:nord_cursor_line_number_coloring = 1
+```
+
 ## Plugin Support
 
 Nord Vim provides support for many third-party language- and UI plugins.
