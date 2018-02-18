@@ -160,6 +160,7 @@ call s:hi("healthWarning", s:nord13_gui, s:nord1_gui, s:nord13_term, s:nord1_ter
 
 "+- Neovim Terminal Colors -+
 if has('nvim')
+  call s:hi("TermCursorNC", "", s:nord1_gui, "", s:nord1_term, "", "")
   let g:terminal_color_0 = s:nord1_gui
   let g:terminal_color_1 = s:nord11_gui
   let g:terminal_color_2 = s:nord14_gui
