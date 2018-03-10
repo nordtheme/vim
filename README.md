@@ -20,6 +20,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
     - [Activation](#activation)
   - [Configuration](#configuration)
     - [Italic Support](#italic-support)
+    - [Underline Support](#underline-support)
     - [Italic Comments](#italic-comments)
     - [Uniform Status Lines](#uniform-status-lines)
     - [Comment Contrast](#comment-contrast)
@@ -140,6 +141,22 @@ let g:nord_italic = 1
 ```
 
 <p align="center"><strong>Italic formatting in Markdown</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-italic-markdown.png"/></p>
+
+### Underline Support
+
+**This option should only be enabled if your terminal emulator supports underlines!**
+
+Can be enabled to support underlined text.
+
+Most terminals are not capable to handle underlines right so Nord disables these for terminals by default while it should work out-of-the-box™ in GUI mode.
+
+Set `g:nord_underline` to `1` to enforce displaying underlines.
+
+```vim
+let g:nord_underline = 1
+```
+
+<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-underline.png"/></p>
 
 ### Italic Comments
 
