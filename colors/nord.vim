@@ -101,7 +101,7 @@ endif
 
 if !exists("g:nord_line_number_brightness")
   let g:nord_line_number_brightness = 0
-end
+endif
 
 if !exists("g:nord_uniform_diff_background")
   let g:nord_uniform_diff_background = 0
