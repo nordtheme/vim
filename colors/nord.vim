@@ -99,6 +99,10 @@ if !exists("g:nord_comment_brightness")
   let g:nord_comment_brightness = 0
 endif
 
+if !exists("g:nord_line_number_brightness")
+  let g:nord_line_number_brightness = 0
+end
+
 if !exists("g:nord_uniform_diff_background")
   let g:nord_uniform_diff_background = 0
 endif
@@ -185,6 +189,10 @@ call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
 call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "bold", "")
 call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
+if g:nord_line_number_brightness == 1
+  call s:hi("LineNr", s:nord4_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
+  call s:hi("CursorLineNr", s:nord4_gui, s:nord0_gui, "NONE", "", "", "")
+endif
 
 "+--- Navigation ---+
 call s:hi("Directory", s:nord8_gui, "", s:nord8_term, "NONE", "", "")
