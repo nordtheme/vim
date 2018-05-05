@@ -550,3 +550,7 @@ hi! link mkdLinkDef mkdLink
 hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
+
+" YAML
+" > stephpy/vim-yaml
+call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
