@@ -515,6 +515,10 @@ hi! link CtrlPBufferHid Normal
 " > junegunn/vim-plug
 call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
 
+" vim-signature
+" > kshenoy/vim-signature
+call s:hi("SignatureMarkText", s:nord8_gui, "", s:nord8_term, "", "", "")
+
 "+--- Languages ---+
 " JavaScript
 " > pangloss/vim-javascript
