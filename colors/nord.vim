@@ -185,7 +185,7 @@ endif
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 if g:nord_cursor_line_number_background == 0
-  call s:hi("CursorLineNr", s:nord3_gui, s:nord0_gui, "NONE", "", "", "")
+  call s:hi("CursorLineNr", s:nord4_gui, s:nord0_gui, "NONE", "", "", "")
 else
   call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "", "")
 endif

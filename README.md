@@ -24,6 +24,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
     - [Uniform Status Lines](#uniform-status-lines)
     - [Comment Contrast](#comment-contrast)
     - [Uniform diff Background](#uniform-diff-background)
+    - [Line number background](#line-number-background)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -230,13 +231,16 @@ let g:nord_uniform_diff_background = 1
 <p align="center"><strong>Colorful backgrounds (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff-default.png"/><br><strong>Uniform diff background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-diff.png"/>
 </p>
 
-### Highlighting the current line number
+### Line number background
 
-Enables background for line number of the current line the same with text background of the current line.
+Enables background for the line number of the current line.
 
 ```vim
-let g:nord_cursor_line_number_coloring = 1
+let g:nord_cursor_line_number_background = 1
 ```
+
+<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background-default.png"/><br><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background.png"/>
+</p>
 
 ## Plugin Support
 
