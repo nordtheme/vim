@@ -563,6 +563,25 @@ hi! link mkdLinkDefTarget mkdURL
 hi! link mkdLinkTitle mkdInlineURL
 hi! link mkdDelimiter Keyword
 
+" Vimwiki
+" > vimwiki/vimwiki
+if !exists("g:vimwiki_hl_headers") || g:vimwiki_hl_headers == 0
+  for s:i in range(1,6)
+    call s:hi("VimwikiHeader".s:i, s:nord8_gui, "", s:nord8_term, "", "bold", "")
+  endfor
+else
+  let s:vimwiki_hcolor_guifg = [s:nord7_gui, s:nord8_gui, s:nord9_gui, s:nord10_gui, s:nord14_gui, s:nord15_gui]
+  let s:vimwiki_hcolor_ctermfg = [s:nord7_term, s:nord8_term, s:nord9_term, s:nord10_term, s:nord14_term, s:nord15_term]
+  for s:i in range(1,6)
+    call s:hi("VimwikiHeader".s:i, s:vimwiki_hcolor_guifg[s:i-1] , "", s:vimwiki_hcolor_ctermfg[s:i-1], "", "bold", "")
+  endfor
+endif
+
+call s:hi("VimwikiLink", s:nord8_gui, "", s:nord8_term, "", "underline", "")
+hi! link VimwikiHeaderChar markdownHeadingDelimiter
+hi! link VimwikiHR Keyword
+hi! link VimwikiList markdownListMarker
+
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
