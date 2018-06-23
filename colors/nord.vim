@@ -84,6 +84,11 @@ if g:nord_italic == 0
   let s:italic = ""
 endif
 
+let s:underline = "underline,"
+if ! get(g:, 'nord_underline_comments', 1)
+    let s:underline = "NONE,"
+endif
+
 let s:italicize_comments = ""
 if exists("g:nord_italic_comments")
   if g:nord_italic_comments == 1
@@ -121,7 +126,7 @@ function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
     exec "hi " . a:group . " ctermbg=" . a:ctermbg
   endif
   if a:attr != ""
-    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
+    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . substitute(a:attr, "undercurl", s:underline, "")
   endif
   if a:guisp != ""
     exec "hi " . a:group . " guisp=" . a:guisp
@@ -134,7 +139,7 @@ endfunction
 "+--- Attributes ---+
 call s:hi("Bold", "", "", "", "", "bold", "")
 call s:hi("Italic", "", "", "", "", s:italic, "")
-call s:hi("Underline", "", "", "", "", "underline", "")
+call s:hi("Underline", "", "", "", "", s:underline, "")
 
 "+--- Editor ---+
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
@@ -151,10 +156,10 @@ call s:hi("PmenuSbar", s:nord4_gui, s:nord2_gui, "NONE", s:nord1_term, "", "")
 call s:hi("PMenuSel", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
 call s:hi("PmenuThumb", s:nord8_gui, s:nord3_gui, "NONE", s:nord3_term, "", "")
 call s:hi("SpecialKey", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("SpellBad", "", s:nord0_gui, "", "NONE", "undercurl", s:nord11_gui)
-call s:hi("SpellCap", "", s:nord0_gui, "", "NONE", "undercurl", s:nord13_gui)
-call s:hi("SpellLocal", "", s:nord0_gui, "", "NONE", "undercurl", s:nord5_gui)
-call s:hi("SpellRare", "", s:nord0_gui, "", "NONE", "undercurl", s:nord6_gui)
+call s:hi("SpellBad", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "undercurl", s:nord11_gui)
+call s:hi("SpellCap", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "undercurl", s:nord13_gui)
+call s:hi("SpellLocal", s:nord5_gui, s:nord0_gui, s:nord5_term, "NONE", "undercurl", s:nord5_gui)
+call s:hi("SpellRare", s:nord6_gui, s:nord0_gui, s:nord6_term, "NONE", "undercurl", s:nord6_gui)
 call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
 call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 "+- Neovim Support -+
@@ -218,7 +223,7 @@ call s:hi("WarningMsg", s:nord0_gui, s:nord13_gui, s:nord1_term, s:nord13_term, 
 call s:hi("WildMenu", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord1_term, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "underline", "")
+call s:hi("IncSearch", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, s:underline, "")
 call s:hi("Search", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "NONE", "")
 
 "+--- Tabs ---+
@@ -295,7 +300,7 @@ hi! link csXmlTag SpecialComment
 
 call s:hi("cssAttributeSelector", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("cssDefinition", s:nord7_gui, "", s:nord7_term, "", "NONE", "")
-call s:hi("cssIdentifier", s:nord7_gui, "", s:nord7_term, "", "underline", "")
+call s:hi("cssIdentifier", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
 call s:hi("cssStringQ", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link cssAttr Keyword
 hi! link cssBraces Delimiter
@@ -340,7 +345,7 @@ call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link goConstants Keyword
 
 call s:hi("helpBar", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("helpHyperTextJump", s:nord8_gui, "", s:nord8_term, "", "underline", "")
+call s:hi("helpHyperTextJump", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
 
 call s:hi("htmlArg", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("htmlLink", s:nord4_gui, "", "", "", "NONE", "NONE")
@@ -430,7 +435,7 @@ hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", "underline", "")
+call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
 hi! link sassAmpersand Keyword
 hi! link sassClassChar Delimiter
 hi! link sassControl Keyword
@@ -506,7 +511,7 @@ call s:hi("gitcommitSelectedFile", s:nord14_gui, "", s:nord14_term, "", "", "")
 
 " davidhalter/jedi-vim
 call s:hi("jediFunction", s:nord4_gui, s:nord3_gui, "", s:nord3_term, "", "")
-call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "bold,underline", "")
+call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, s:underline."bold", "")
 
 " NERDTree
 " > scrooloose/nerdtree
