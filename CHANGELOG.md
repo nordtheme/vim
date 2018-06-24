@@ -4,6 +4,84 @@
 
 ---
 
+# 0.9.0
+
+![Release Date: 2018-06-24](https://img.shields.io/badge/Release_Date-2018--06--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/13) [![Milestone](https://img.shields.io/badge/Milestone-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/11)
+
+## Features
+
+### Syntax
+
+#### Plugin Support
+
+❯ Added support for the [YAML][] plugin [stephpy/vim-yaml][plugin-stephpy/vim-yaml] which improves the highlighting for keys to match the JSON syntax style. (PR #120, @mdzhang, b1478b07)
+
+<p align="center"><p><strong>Before</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816223-b5b7df7c-777f-11e8-85ba-ac945b68e751.png" /></p>
+
+<p align="center"><p><strong>After</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816222-b5a091c8-777f-11e8-9db9-38b96e8a3eb1.png" /></p>
+
+❯ Added basic syntax highlighting support for [vimwiki][plugin-vimwiki/vimwiki]. (PR #98 in PR #114, @smesko85, 9e7addbc)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/41807872-85a56eee-76d5-11e8-9dd3-8319f7dae829.png" /></p>
+
+### UI
+
+❯ Added a new [configuration to allow users to enable background for the line number of the current line][readme-config-line-number-background]. It can be enabled by setting the `g:nord_cursor_line_number_background` variable to `1`. (PR #100, @andrepolischuk, 035e36de)
+
+```vim
+let g:nord_cursor_line_number_background = 1
+```
+
+<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background-default.png" /></p>
+
+<p align="center"><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background.png" /></p>
+
+❯ Added a new [configuration to allow users to globally toggle underlines][readme-config-underline-support] for cases where the terminal emulator might not be capable to handle underlines in terminal mode. It can be enabled by setting the `g:nord_underline` variable to `1`. (#106 in PR #127 (supersedes #109), @dylnmc @markand , 01cfd1be)
+
+<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-underline.png"/></p>
+
+❯ Added support for the status line of the `:terminal` window mode for Vim or Neovim. (PR #108 (supersedes #103), @dylnmc, 922504fb)
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/41812738-86c84262-7728-11e8-8bf4-476eb99e892e.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/41812737-86b2def4-7728-11e8-9d8a-9976038dda92.png" /></p>
+
+#### Plugin Support
+
+❯ Added highlighting support for the navigation marks in the sign column of the [kshenoy/vim-signature][plugin-kshenoy/vim-signature] plugin. (PR #122, @kooparse, 1df39453)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/41816354-1133d24a-7783-11e8-8242-0e7d4c3b555c.png" /></p>
+
+## Improvements
+
+### Syntax
+
+❯ Added highlighting for the JavaScript keyword `this`. (PR #119, @kristijanhusak, 4fe2d43e)
+
+<p align="center"><p><strong>Before</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816139-3c6f145c-777d-11e8-8f5b-58f122dc5050.png" /></p>
+
+<p align="center"><p><strong>After</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816138-3c578198-777d-11e8-83f0-62f7aad0ce13.png" /></p>
+
+### UI
+
+❯ The cursor is now correctly shown and visible when leaving a terminal window from within Vim or Neovim by adding the `TermCursorNC` group. (PR #101, @meck, 2fac9fa0)
+
+❯ The „inline marker“ in unified _diffs_ is now colorized differently than the background of the changed line to make the changes better and faster recognizable. This applies for both the [uniform _diff_ background mode][readme-config-uniform-diff-background] and normal _diff_ mode. (PR #121, @ironhouzi, 65c559ee)
+
+<p align="center"><p><strong>Before/After comparison of default <em>diff</em> mode</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816510-4d548a90-7787-11e8-9fbd-9ae572763c22.png" /><br><img src="https://user-images.githubusercontent.com/7836623/39664393-e75f52b8-5082-11e8-8bb0-ba19c11dd391.png" /></p>
+
+<p align="center"><p><strong>Before/After comparison of uniform <em>diff</em> mode</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816511-4d6aeb82-7787-11e8-90b4-f7c67ad9d952.png" /><br><img src="https://user-images.githubusercontent.com/7836623/39699476-acb7e1ca-51f9-11e8-9eca-8efc44b184f7.png" /></p>
+
+## Bug Fixes
+
+### UI
+
+❯ The current line number's color is now highlighted correctly in terminal mode. Previously it was only highlighted when running in GUI mode or when `termguicolors` has been set. (#116 in 50ec737b (PR #100), @huyvohcmc @dylnmc)
+
+<p align="center"><p><strong>Before</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816653-d62d808a-778a-11e8-8bce-d1f76a1e6fae.png" /></p>
+
+<p align="center"><p><strong>After</strong></p><img src="https://user-images.githubusercontent.com/7836623/41816652-d61787bc-778a-11e8-9371-c0bfd852f491.png" /></p>
+
 # 0.8.0
 
 ![Release Date: 2018-01-05](https://img.shields.io/badge/Release_Date-2018--01--05-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/11) [![Milestone](https://img.shields.io/badge/Milestone-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/10)
@@ -387,12 +465,18 @@ Detailed information about features, supported plugins/languages and install ins
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [plugin-junegunn/vim-plug]: https://github.com/junegunn/vim-plug
+[plugin-kshenoy/vim-signature]: https://github.com/kshenoy/vim-signature
 [plugin-mhinz/vim-signify]: https://github.com/mhinz/vim-signify
 [plugin-plasticboy/vim-markdown]: https://github.com/plasticboy/vim-markdown
+[plugin-stephpy/vim-yaml]: https://github.com/stephpy/vim-yaml
 [plugin-tpope/vim-fugitive]: https://github.com/tpope/vim-fugitive
+[plugin-vimwiki/vimwiki]: https://github.com/vimwiki/vimwiki
 [readme-config]: https://github.com/arcticicestudio/nord-vim#configuration
 [readme-config-comment-brightness]: https://github.com/arcticicestudio/nord-vim#comment-contrast
 [readme-config-italic]: https://github.com/arcticicestudio/nord-vim#italic-support
+[readme-config-line-number-background]: https://github.com/arcticicestudio/nord-vim#line-number-background
+[readme-config-underline-support]: https://github.com/arcticicestudio/nord-vim#underline-support
 [readme-config-uniform-diff-background]: https://github.com/arcticicestudio/nord-vim#uniform-diff-background
 [readme-config-uniform-statusline-background]: https://github.com/arcticicestudio/nord-vim#uniform-status-lines
 [vim-doc-diffAdd]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-DiffAdd
+[yaml]: http://yaml.org
