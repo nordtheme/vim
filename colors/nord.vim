@@ -488,6 +488,8 @@ hi! link yamlDocumentStart Keyword
 " > w0rp/ale
 call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("ALEWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
+call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
