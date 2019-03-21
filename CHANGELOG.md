@@ -4,6 +4,35 @@
 
 ---
 
+# 0.10.0
+
+![Release Date: 2019-03-21](https://img.shields.io/badge/Release_Date-2019--03--21-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/15) [![Milestone](https://img.shields.io/badge/Milestone-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/12)
+
+## Features
+
+**Vim 8 terminal highlighting** — #125 ⇄ #126 (⊶ 83f8c260) by [@cg433n][gh-user-cg433n]
+↠ Added support for the Vim's built-in terminal (`:terminal`) that comes with version 8.0.0 and higher.
+
+## Improvements
+
+**Comment Color Brightness** — #145 ⇄ #146 (⊶ 9e0249ca)
+↠ Implemented the increase of the comment color (`nord3`) brightness by 10% from a lightness level of ~35% to ~45%.
+
+➜ **Please see [arcticicestudio/nord#94][gh-nord#94] for all details about this design change decision**!
+
+⚠ **NOTE**: This change also **deprecates the [comment contrast][readme-config-comment-brightness] configuration** that will be removed in Nord Vim version 1.0.0!
+The default comment color has been adjusted so the configuration is not required anymore for users to increase the brightness on their own.
+To notify users about this change a deprecation warning will be shown when the `g:nord_comment_brightness` configuration variable has been set and initialized through the user's configuration.
+
+## Improvements
+
+**Improved compatibility of airline with tmuxline.vim plugin** — #117 ⇄ #128 (⊶ 3150628f)
+↠ The [Nord airline.vim][gh-src-airline] UI plugin theme now includes better support for the [tmuxline.vim][gh-tmuxline.vim] plugin. Previously text shown in the main segment of the _tmuxline_, generated via the `:Tmuxline airline` command, caused a `bad colour: NONE` error or has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.
+
+This has been fixed by using `nord5` as foreground color. …[#11][gh-11] was used as implementation reference since it fixed the same incompatibility for the [lightline.vim][gh-lightline.vim] plugin.
+
+![](https://user-images.githubusercontent.com/7836623/41835439-e3f2388c-7857-11e8-91e0-a0440b7ecf35.png)
+
 # 0.9.0
 
 ![Release Date: 2018-06-24](https://img.shields.io/badge/Release_Date-2018--06--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/13) [![Milestone](https://img.shields.io/badge/Milestone-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/11)
@@ -454,7 +483,13 @@ Detailed information about features, supported plugins/languages and install ins
 
 ![Release Date: 2016-12-25](https://img.shields.io/badge/Release_Date-2016--12--25-88C0D0.svg?style=flat-square)
 
+[gh-11]: https://github.com/arcticicestudio/nord-vim/issues/11
 [gh-55-arcticicestudio/nord]: https://github.com/arcticicestudio/nord/issues/55
+[gh-lightline.vim]: https://github.com/itchyny/lightline.vim
+[gh-nord#94]: https://github.com/arcticicestudio/nord/issues/94
+[gh-src-airline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/airline/themes/nord.vim
+[gh-tmuxline.vim]: https://github.com/edkolev/tmuxline.vim
+[gh-user-cg433n]: https://github.com/cg433n
 [gist-colors-in-terminals]: https://gist.github.com/XVilka/8346728
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [itchyny/lightline-adv-config]: https://github.com/itchyny/lightline.vim#advanced-configuration
