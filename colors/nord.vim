@@ -288,6 +288,27 @@ hi! link PreCondit PreProc
 "+-----------+
 "+ Languages +
 "+-----------+
+call s:hi("asciidocAttributeEntry", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocAttributeList", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocAttributeRef", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocHLabel", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("asciidocListingBlock", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("asciidocMacroAttributes", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("asciidocOneLineTitle", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("asciidocPassthroughBlock", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("asciidocQuotedMonospaced", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("asciidocTriplePlusPassthrough", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link asciidocAdmonition Keyword
+hi! link asciidocAttributeRef markdownH1
+hi! link asciidocBackslash Keyword
+hi! link asciidocMacro Keyword
+hi! link asciidocQuotedBold Bold
+hi! link asciidocQuotedEmphasized Italic
+hi! link asciidocQuotedMonospaced2 asciidocQuotedMonospaced
+hi! link asciidocQuotedUnconstrainedBold asciidocQuotedBold
+hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
+hi! link asciidocURL markdownLinkText
+
 call s:hi("awkCharClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", "bold", "")
 hi! link awkArrayElement Identifier
