@@ -451,6 +451,18 @@ hi! link rubyLocalVariableOrMethod Function
 hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
+call s:hi("rustAttribute", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("rustEnum", s:nord7_gui, "", s:nord7_term, "", "bold", "")
+call s:hi("rustMacro", s:nord8_gui, "", s:nord8_term, "", "bold", "")
+call s:hi("rustModPath", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("rustPanic", s:nord9_gui, "", s:nord9_term, "", "bold", "")
+call s:hi("rustTrait", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+hi! link rustCommentLineDoc Comment
+hi! link rustDerive rustAttribute
+hi! link rustEnumVariant rustEnum
+hi! link rustEscape SpecialChar
+hi! link rustQuestionMark Keyword
+
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
 hi! link sassAmpersand Keyword
