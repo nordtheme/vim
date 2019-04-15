@@ -26,6 +26,7 @@ Nord Vim is a 16 colorspace theme build to run in GUI- and terminal mode with su
     - [Comment Contrast](#comment-contrast)
     - [Uniform diff Background](#uniform-diff-background)
     - [Line number background](#line-number-background)
+    - [Bold Vertical Split Line](#bold-vertical-split-line)
   - [Plugin Support](#plugin-support)
     - [UI Plugins](#ui-plugins)
     - [Language Plugins](#language-plugins)
@@ -259,6 +260,20 @@ let g:nord_cursor_line_number_background = 1
 <p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background-default.png"/><br><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background.png"/>
 </p>
 
+### Bold Vertical Split Line
+
+Enables a bolder vertical split line by using `nord1` as background.
+
+```viml
+let g:nord_bold_vertical_split_line = 1
+```
+
+To change the separator character used to display the vertical line please see the documentation about Vim's [`fillchars`][vdoc-fillchars] variable: `:help fillchars`
+
+<p align="center"><strong>With base editor background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-bold-vertical-split-line-default.png"/></p>
+
+<p align="center"><strong>With enabled bold <code>nord1</code> background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-bold-vertical-split-line.png"/></p>
+
 ## Plugin Support
 
 Nord Vim provides support for many third-party language- and UI plugins.
@@ -332,3 +347,4 @@ Please report issues/bugs, feature requests and suggestions for improvements to 
 [scrot-lang-ruby]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-ruby.png
 [scrot-readme-default-profile]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-readme-default-profile.png
 [scrot-readme-lazy-profile-change]: https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-readme-lazy-profile-change.png
+[vdoc-fillchars]: http://vimdoc.sourceforge.net/htmldoc/options.html#'fillchars'
