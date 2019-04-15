@@ -559,6 +559,12 @@ call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
 call s:hi("SignatureMarkText", s:nord8_gui, "", s:nord8_term, "", "", "")
 
 "+--- Languages ---+
+" Haskell
+" > neovimhaskell/haskell-vim
+call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link haskellPragma haskellPreProc
+
 " JavaScript
 " > pangloss/vim-javascript
 call s:hi("jsGlobalNodeObjects", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
