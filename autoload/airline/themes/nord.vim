@@ -66,3 +66,9 @@ let s:IAMain = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
 let s:IARight = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
 let s:IAMiddle = [s:nord5_gui, s:nord1_gui, s:nord5_term, s:nord1_term]
 let g:airline#themes#nord#palette.inactive = airline#themes#generate_color_map(s:IAMain, s:IARight, s:IAMiddle)
+
+let g:airline#themes#nord#palette.normal.airline_term = s:NMiddle
+let g:airline#themes#nord#palette.insert.airline_term = s:IMiddle
+let g:airline#themes#nord#palette.replace.airline_term = s:RMiddle
+let g:airline#themes#nord#palette.visual.airline_term = s:VMiddle
+let g:airline#themes#nord#palette.inactive.airline_term = s:IAMiddle
