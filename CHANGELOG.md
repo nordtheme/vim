@@ -4,6 +4,122 @@
 
 ---
 
+# 0.11.0
+
+![Release Date: 2019-04-18](https://img.shields.io/badge/Release_Date-2019--04--18-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/16) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/13)
+
+## Features
+
+### Syntax
+
+**Basic support for Asciidoc syntax highlighting** — #131 ⇄ #152 (⊶ 6e6025b9) by [@tidux][gh-user-tidux]
+↠ Added basic syntax highlighting support for [Asciidoc][] that comes bundled with Vim 8.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/56083880-1165ce00-5e2b-11e9-9389-f21435942464.png" /></p>
+
+**Basic syntax highlighting support for Rust** — #138 ⇄ #154 (⊶ b0ffc6b5) by [@TerminalWitchcraft][gh-user-terminalwitchcraft]
+↠ Added basic syntax highlighting support for [Rust][].
+
+[Traits][rustdoc-traits] and [enums][rustdoc-enums] are colorized with `nord7` and with bold font to make them visually stand out more.
+Also [attributes][rustdoc-attributes] and [derives][rustdoc-derives] are colored with `nord10`.
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56096828-3a4e9780-5eed-11e9-9d74-02b498a78ab1.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56096827-3a4e9780-5eed-11e9-8275-c97b2569f959.png" /></p>
+
+[Macros][rustdoc-macros] are colorized with `nord8` and bold font to make them visually different from "normal" functions.
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56096834-463a5980-5eed-11e9-8d98-bbc814506779.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56096839-4df9fe00-5eed-11e9-8d8c-9a488105b0e9.png" /></p>
+
+[Escape][rustdoc-escapes] sequences are colored with `nord13`.
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56096843-58b49300-5eed-11e9-9bb2-5541b3d68689.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56096842-58b49300-5eed-11e9-9ab6-52b709119c81.png" /></p>
+
+Import statements and paths are correctly colored with keyword and type colors.
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56096847-623dfb00-5eed-11e9-91c3-cfe7621a2e5b.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56096846-623dfb00-5eed-11e9-9cce-30f14bdc7e57.png" /></p>
+
+#### Plugin Support
+
+**Haskell Syntax Plugin Support** — #104 ⇄ #150 (⊶ b0ffc6b5) by [@vabatta][gh-user-vabatta]
+↠ Added support for Haskell syntax through the [neovimhaskell/haskell-vim][] plugin.
+This includes better coloring for types/classes using `nord7` instead of highlighting them like keywords (`nord9`) and pre-processor and pragma elements are now colorized correctly with `nord10`.
+
+#### Pragma
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56079623-6ee02780-5df7-11e9-8cfc-f3f62b1a79d4.png"/></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56079622-6e479100-5df7-11e9-9b80-650875c7fd55.png"/></p>
+
+#### Pre-Processor
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56079625-6ee02780-5df7-11e9-9429-0ef098f31fb2.png"/></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56079624-6ee02780-5df7-11e9-8b85-33e624121d1e.png"/></p>
+
+#### Types/Classes
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56079627-6ee02780-5df7-11e9-94c7-68952bfc1600.png"/></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56079626-6ee02780-5df7-11e9-904f-6fd27129c0f7.png"/></p>
+
+### UI
+
+**Theme config for bolder vertical split line** — #132 ⇄ #153 (⊶ 9059d7d8) by [@huyvohcmc][gh-user-huyvohcmc]
+↠ Previously the [`VertSplit`][vdoc-vsplit] (`:help VertSplit`) key used `nord1` as background color by default making the line appear to be very lumpy. This has now been changed to use `nord0` as background instead to visually merge with the background so only the separator characters are a visual indicator for the split line which makes it look more lightweight and declutters the overall appearance.
+
+<p align="center"><strong>With base editor background (default)</strong><img src="https://user-images.githubusercontent.com/7836623/56088648-8e259600-5e85-11e9-8a6f-2c03d26eff4b.png" /></p>
+
+<p align="center"><strong>With enabled bold <code>nord1</code> background</strong><img src="https://user-images.githubusercontent.com/7836623/56088647-8e259600-5e85-11e9-8be5-d86232ca8278.png" /></p>
+
+To allow user who liked the previous implementation to keep the style a new `nord_bold_vertical_split_line` theme config was also added that can be assigned to `1` to achieve the legacy design.
+
+```viml
+let g:nord_bold_vertical_split_line = 1
+```
+
+The README includes information and hints how to change the separator character by customizing Vim's [`fillchars`][vdoc-fchar] (`:help fillchars`) variable.
+
+#### Plugin Support
+
+**`:terminal` status line in airline** — #134 (⊶ be815f09) by [@meck][gh-user-meck]
+↠ Added support for Vim's new `:terminal` mode in [airline][gh-src-airline].
+
+<p align="center"><strong>Before: No <code>:terminal</code> support (before)</strong><img src="https://user-images.githubusercontent.com/7836623/56088997-ce881280-5e8b-11e9-9758-7c13c559b05c.png" /></p>
+
+<p align="center"><strong>After: Support for airline's new <code>_term</code> theme keys</strong><img src="https://user-images.githubusercontent.com/7836623/56088996-ce881280-5e8b-11e9-839b-bc282f1fea0b.png" /></p>
+
+## Improvements
+
+### Syntax
+
+**Better generator expressions in CMake** — #137 ⇄ #151 (⊶ d2774cbb) by [@markand][gh-user-markand]
+↠ [CMake generator expressions][cmake-doc-genexpr] are now highlighted using `nord10` as foreground instead of `nord13` as background and `nord0` as foreground.
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56079970-99cc7a80-5dfb-11e9-9528-83bbe92c51d3.png"/></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56079969-99cc7a80-5dfb-11e9-8afa-68c7878521c4.png"/></p>
+
+### UI
+
+#### Plugin Support
+
+**airline warnings and errors** — #130 (⊶ e85dbe75) by [@axelitus][gh-user-axelitus]
+↠ Added support for error and warning elements of [airline][gh-src-airline].
+
+<p align="center"><strong>Before</strong><img src="https://user-images.githubusercontent.com/7836623/56093512-f7c79380-5ec9-11e9-8107-a2d59b306ee0.png" /></p>
+
+<p align="center"><strong>After</strong><img src="https://user-images.githubusercontent.com/7836623/56093511-f7c79380-5ec9-11e9-8be8-731fa0e52fc2.png" /></p>
+
+**ALE error and warning support** — #135 (⊶ 9d82b7a1) by [@meck][gh-user-meck]
+↠ Added support highlighting and underlines for [ALE][plugin-ale] errors and warnings to also align the style with gutter signs.
+
 # 0.10.0
 
 ![Release Date: 2019-03-21](https://img.shields.io/badge/Release_Date-2019--03--21-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/15) [![Milestone](https://img.shields.io/badge/Milestone-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/12)
@@ -483,6 +599,21 @@ Detailed information about features, supported plugins/languages and install ins
 
 ![Release Date: 2016-12-25](https://img.shields.io/badge/Release_Date-2016--12--25-88C0D0.svg?style=flat-square)
 
+<!--
++------------------+
++ Symbol Reference +
++------------------+
+↠ (U+21A0): Start of a log section description
+— (U+2014): Separator between a log section title and the metadata
+⇄ (U+21C4): Separator between a issue ID and pull request ID in a log metadata
+⊶ (U+22B6): Icon prefix for the short commit SHA checksum in a log metadata
+-->
+
+<!-- lint disable final-definition -->
+
+<!-- Base Links -->
+
+[asciidoc]: https://asciidoctor.org
 [gh-11]: https://github.com/arcticicestudio/nord-vim/issues/11
 [gh-55-arcticicestudio/nord]: https://github.com/arcticicestudio/nord/issues/55
 [gh-lightline.vim]: https://github.com/itchyny/lightline.vim
@@ -491,11 +622,11 @@ Detailed information about features, supported plugins/languages and install ins
 [gh-tmuxline.vim]: https://github.com/edkolev/tmuxline.vim
 [gh-user-cg433n]: https://github.com/cg433n
 [gist-colors-in-terminals]: https://gist.github.com/XVilka/8346728
-[itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [itchyny/lightline-adv-config]: https://github.com/itchyny/lightline.vim#advanced-configuration
+[itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
-[nord-gh]: https://github.com/arcticicestudio/nord
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
+[nord-gh]: https://github.com/arcticicestudio/nord
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
@@ -506,12 +637,33 @@ Detailed information about features, supported plugins/languages and install ins
 [plugin-stephpy/vim-yaml]: https://github.com/stephpy/vim-yaml
 [plugin-tpope/vim-fugitive]: https://github.com/tpope/vim-fugitive
 [plugin-vimwiki/vimwiki]: https://github.com/vimwiki/vimwiki
-[readme-config]: https://github.com/arcticicestudio/nord-vim#configuration
 [readme-config-comment-brightness]: https://github.com/arcticicestudio/nord-vim#comment-contrast
 [readme-config-italic]: https://github.com/arcticicestudio/nord-vim#italic-support
 [readme-config-line-number-background]: https://github.com/arcticicestudio/nord-vim#line-number-background
 [readme-config-underline-support]: https://github.com/arcticicestudio/nord-vim#underline-support
 [readme-config-uniform-diff-background]: https://github.com/arcticicestudio/nord-vim#uniform-diff-background
 [readme-config-uniform-statusline-background]: https://github.com/arcticicestudio/nord-vim#uniform-status-lines
-[vim-doc-diffAdd]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-DiffAdd
+[readme-config]: https://github.com/arcticicestudio/nord-vim#configuration
+[rust]: https://www.rust-lang.org
+[vdoc-fchar]: http://vimdoc.sourceforge.net/htmldoc/options.html#'fillchars'
+[vdoc-vsplit]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-VertSplit
+[vim-doc-diffadd]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-DiffAdd
 [yaml]: http://yaml.org
+
+<!--v 0.11.0 -->
+
+[cmake-doc-genexpr]: https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html
+[gh-user-axelitus]: https://github.com/axelitus
+[gh-user-huyvohcmc]: https://github.com/huyvohcmc
+[gh-user-markand]: https://github.com/markand
+[gh-user-meck]: https://github.com/meck
+[gh-user-terminalwitchcraft]: https://github.com/terminalwitchcraft
+[gh-user-tidux]: https://github.com/tidux
+[gh-user-vabatta]: https://github.com/vabatta
+[neovimhaskell/haskell-vim]: https://github.com/neovimhaskell/haskell-vim
+[rustdoc-attributes]: https://doc.rust-lang.org/reference/attributes.html
+[rustdoc-derives]: https://doc.rust-lang.org/edition-guide/rust-2018/macros/custom-derive.html
+[rustdoc-enums]: https://doc.rust-lang.org/1.1.0/book/enums.html
+[rustdoc-escapes]: https://doc.rust-lang.org/reference/tokens.html#ascii-escapes
+[rustdoc-macros]: https://doc.rust-lang.org/1.8.0/book/macros.html
+[rustdoc-traits]: https://doc.rust-lang.org/book/ch10-02-traits.html
