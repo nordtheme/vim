@@ -13,7 +13,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.10.0"
+let s:nord_vim_version="0.11.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -120,6 +120,10 @@ endif
 
 if !exists("g:nord_cursor_line_number_background")
   let g:nord_cursor_line_number_background = 0
+endif
+
+if !exists("g:nord_bold_vertical_split_line")
+  let g:nord_bold_vertical_split_line = 0
 endif
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
@@ -248,7 +252,12 @@ call s:hi("TabLineSel", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "N
 
 "+--- Window ---+
 call s:hi("Title", s:nord4_gui, "", "NONE", "", "NONE", "")
-call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NONE", "")
+
+if g:nord_bold_vertical_split_line == 0
+  call s:hi("VertSplit", s:nord2_gui, s:nord0_gui, s:nord3_term, "NONE", "NONE", "")
+else
+  call s:hi("VertSplit", s:nord2_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "NONE", "")
+endif
 
 "+----------------------+
 "+ Language Base Groups +
@@ -288,6 +297,27 @@ hi! link PreCondit PreProc
 "+-----------+
 "+ Languages +
 "+-----------+
+call s:hi("asciidocAttributeEntry", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocAttributeList", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocAttributeRef", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("asciidocHLabel", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("asciidocListingBlock", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("asciidocMacroAttributes", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("asciidocOneLineTitle", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("asciidocPassthroughBlock", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("asciidocQuotedMonospaced", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("asciidocTriplePlusPassthrough", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link asciidocAdmonition Keyword
+hi! link asciidocAttributeRef markdownH1
+hi! link asciidocBackslash Keyword
+hi! link asciidocMacro Keyword
+hi! link asciidocQuotedBold Bold
+hi! link asciidocQuotedEmphasized Italic
+hi! link asciidocQuotedMonospaced2 asciidocQuotedMonospaced
+hi! link asciidocQuotedUnconstrainedBold asciidocQuotedBold
+hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
+hi! link asciidocURL markdownLinkText
+
 call s:hi("awkCharClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", "bold", "")
 hi! link awkArrayElement Identifier
@@ -308,6 +338,8 @@ hi! link awkVariables Identifier
 call s:hi("cIncluded", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link cOperator Operator
 hi! link cPreCondit PreCondit
+
+call s:hi("cmakeGeneratorExpression", s:nord10_gui, "", s:nord10_term, "", "", "")
 
 hi! link csPreCondit PreCondit
 hi! link csType Type
@@ -449,6 +481,18 @@ hi! link rubyLocalVariableOrMethod Function
 hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
+call s:hi("rustAttribute", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("rustEnum", s:nord7_gui, "", s:nord7_term, "", "bold", "")
+call s:hi("rustMacro", s:nord8_gui, "", s:nord8_term, "", "bold", "")
+call s:hi("rustModPath", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("rustPanic", s:nord9_gui, "", s:nord9_term, "", "bold", "")
+call s:hi("rustTrait", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+hi! link rustCommentLineDoc Comment
+hi! link rustDerive rustAttribute
+hi! link rustEnumVariant rustEnum
+hi! link rustEscape SpecialChar
+hi! link rustQuestionMark Keyword
+
 call s:hi("sassClass", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("sassId", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
 hi! link sassAmpersand Keyword
@@ -503,6 +547,8 @@ hi! link yamlDocumentStart Keyword
 " > w0rp/ale
 call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("ALEWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
+call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
@@ -548,6 +594,12 @@ call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
 call s:hi("SignatureMarkText", s:nord8_gui, "", s:nord8_term, "", "", "")
 
 "+--- Languages ---+
+" Haskell
+" > neovimhaskell/haskell-vim
+call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link haskellPragma haskellPreProc
+
 " JavaScript
 " > pangloss/vim-javascript
 call s:hi("jsGlobalNodeObjects", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
