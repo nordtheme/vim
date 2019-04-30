@@ -51,7 +51,7 @@ let g:airline#themes#nord#palette.normal = airline#themes#generate_color_map(s:N
 let g:airline#themes#nord#palette.normal.airline_warning = s:NWarn
 let g:airline#themes#nord#palette.normal.airline_error = s:NError
 
-let s:IMain = [s:nord1_gui, s:nord14_gui, s:nord1_term, s:nord6_term]
+let s:IMain = [s:nord1_gui, s:nord6_gui, s:nord1_term, s:nord6_term]
 let s:IRight = [s:nord1_gui, s:nord9_gui, s:nord1_term, s:nord9_term]
 let s:IMiddle = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
 let s:IWarn = [s:nord1_gui, s:nord13_gui, s:nord3_term, s:nord13_term]
