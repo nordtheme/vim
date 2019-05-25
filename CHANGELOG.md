@@ -6,6 +6,49 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.12.0
+
+![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/14)
+
+## Features
+
+**Nord Docs Transition** — #158, #144 ⇄ #160 (⊶ 7be26147)
+↠ Transferred all documentations, assets and from „Nord Vim“ to [Nord Docs][nord]
+Please see the [corresponding issue in the Nord Docs repository][nord-docs#143] to get an overview of what has changed for Nord Vim and what has been done to migrate to Nord Docs.
+
+###### Landing Page
+
+<p align="center"><a href="https://www.nordtheme.com/ports/vim" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123747-d1092500-7c0c-11e9-8ea1-d8a97b592acb.png" alt="Preview: Nord Vim Port Project Landing Page"/></a></p>
+
+###### Landing Page Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123746-d1092500-7c0c-11e9-990d-6e65d20cd935.png" alt="Preview: Nord Vim Docs Project Landing Page"/></a></p>
+
+###### Installation & Activation Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/installation" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123745-d1092500-7c0c-11e9-82d8-e1d60fc0d725.png" alt="Preview: Nord Vim Docs Installation & Activation Docs Page"/></a></p>
+
+###### Configuration Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/configuration" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123743-d0708e80-7c0c-11e9-9149-a3f023104b1c.png" alt="Preview: Nord Vim Docs Configuration Docs Page"/></a></p>
+
+###### Customization Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/customization" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123744-d0708e80-7c0c-11e9-84c7-50275e2696e1.png" alt="Preview: Nord Vim Docs Configuration Docs Page"/></a></p>
+
+**Theme configuration for bold font style rendering** — #143 ⇄ #161 (⊶ 18a4e350) requested by [@tobydeh][gh-user-tobydeh]
+↠ Added a new [`nord_bold` theme configuration to allow to explicitly toggle bold font rendering styles][nord-docs-config-font-bold].
+It is enabled by default when running for both in GUI and terminal mode since most terminals and shells are capable to handle bold fonts.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/58366170-a9e17a80-7ece-11e9-9b2d-e57d6fa574f6.png" /></p>
+
+## Improvements
+
+**Active match for increment search** — #139 ⇄ #140 (⊶ de24841a) by [@aborzunov][gh-user-aborzunov]
+↠ The currently active match during increment searches (`IncSearch`) is now highlighted differently (`nord10` as background and `nord6` as foreground) than inactive matches for a better visual distinction.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/56081041-05691480-5e09-11e9-97e6-9220bdf5d030.png" /></p>
+
 # 0.11.0
 
 ![Release Date: 2019-04-18](https://img.shields.io/badge/Release_Date-2019--04--18-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/16) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/13)
@@ -630,8 +673,11 @@ Detailed information about features, supported plugins/languages and install ins
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
+[nord-docs-config-font-bold]: https://www.nordtheme.com/ports/vim/configuration#bold-styles
 [nord-gh]: https://github.com/arcticicestudio/nord
+[nord-home]: https://www.nordtheme.com/ports/vim
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
+[nord]: https://www.nordtheme.com
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [plugin-junegunn/vim-plug]: https://github.com/junegunn/vim-plug
@@ -671,3 +717,8 @@ Detailed information about features, supported plugins/languages and install ins
 [rustdoc-escapes]: https://doc.rust-lang.org/reference/tokens.html#ascii-escapes
 [rustdoc-macros]: https://doc.rust-lang.org/1.8.0/book/macros.html
 [rustdoc-traits]: https://doc.rust-lang.org/book/ch10-02-traits.html
+
+<!--v 0.12.0 -->
+
+[gh-user-aborzunov]: https://github.com/aborzunov
+[gh-user-tobydeh]: https://github.com/tobydeh
