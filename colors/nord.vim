@@ -13,7 +13,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.11.0"
+let s:nord_vim_version="0.12.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -72,11 +72,20 @@ let s:nord3_gui_brightened = [
   \ "#7b88a1",
 \ ]
 
+if !exists("g:nord_bold")
+  let g:nord_bold = 1
+endif
+
+let s:bold = "bold,"
+if g:nord_bold == 0
+  let s:bold = ""
+endif
+
 if !exists("g:nord_italic")
   if has("gui_running") || $TERM_ITALICS == "true"
-    let g:nord_italic=1
+    let g:nord_italic = 1
   else
-    let g:nord_italic=0
+    let g:nord_italic = 0
   endif
 endif
 
@@ -151,7 +160,7 @@ endfunction
 "+ UI Components +
 "+---------------+
 "+--- Attributes ---+
-call s:hi("Bold", "", "", "", "", "bold", "")
+call s:hi("Bold", "", "", "", "", s:bold, "")
 call s:hi("Italic", "", "", "", "", s:italic, "")
 call s:hi("Underline", "", "", "", "", s:underline, "")
 
@@ -214,7 +223,7 @@ if g:nord_cursor_line_number_background == 0
 else
   call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "", "")
 endif
-call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, "bold", "")
+call s:hi("Folded", s:nord3_gui, s:nord1_gui, s:nord3_term, s:nord1_term, s:bold, "")
 call s:hi("FoldColumn", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
 call s:hi("SignColumn", s:nord1_gui, s:nord0_gui, s:nord1_term, "NONE", "", "")
 
@@ -242,7 +251,7 @@ call s:hi("WarningMsg", s:nord0_gui, s:nord13_gui, s:nord1_term, s:nord13_term, 
 call s:hi("WildMenu", s:nord8_gui, s:nord1_gui, s:nord8_term, s:nord1_term, "", "")
 
 "+--- Search ---+
-call s:hi("IncSearch", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, s:underline, "")
+call s:hi("IncSearch", s:nord6_gui, s:nord10_gui, s:nord6_term, s:nord10_term, s:underline, "")
 call s:hi("Search", s:nord1_gui, s:nord8_gui, s:nord1_term, s:nord8_term, "NONE", "")
 
 "+--- Tabs ---+
@@ -319,7 +328,7 @@ hi! link asciidocQuotedUnconstrainedEmphasized asciidocQuotedEmphasized
 hi! link asciidocURL markdownLinkText
 
 call s:hi("awkCharClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", "bold", "")
+call s:hi("awkPatterns", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
 hi! link awkArrayElement Identifier
 hi! link awkBoolLogic Keyword
 hi! link awkBrktRegExp SpecialChar
@@ -472,7 +481,7 @@ hi! link pythonBuiltin Type
 hi! link pythonEscape SpecialChar
 
 call s:hi("rubyConstant", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", "bold", "")
+call s:hi("rubySymbol", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
 hi! link rubyAttribute Identifier
 hi! link rubyBlockParameterList Operator
 hi! link rubyInterpolationDelimiter Keyword
@@ -482,10 +491,10 @@ hi! link rubyPseudoVariable Keyword
 hi! link rubyRegexp SpecialChar
 
 call s:hi("rustAttribute", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("rustEnum", s:nord7_gui, "", s:nord7_term, "", "bold", "")
-call s:hi("rustMacro", s:nord8_gui, "", s:nord8_term, "", "bold", "")
+call s:hi("rustEnum", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+call s:hi("rustMacro", s:nord8_gui, "", s:nord8_term, "", s:bold, "")
 call s:hi("rustModPath", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("rustPanic", s:nord9_gui, "", s:nord9_term, "", "bold", "")
+call s:hi("rustPanic", s:nord9_gui, "", s:nord9_term, "", s:bold, "")
 call s:hi("rustTrait", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
 hi! link rustCommentLineDoc Comment
 hi! link rustDerive rustAttribute
@@ -525,7 +534,7 @@ hi! link vimFunction Function
 hi! link vimUserFunc Function
 
 call s:hi("xmlAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("xmlCdataStart", s:nord3_gui_bright, "", s:nord3_term, "", "bold", "")
+call s:hi("xmlCdataStart", s:nord3_gui_bright, "", s:nord3_term, "", s:bold, "")
 call s:hi("xmlNamespace", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link xmlAttribPunct Delimiter
 hi! link xmlCdata Comment
@@ -572,7 +581,7 @@ call s:hi("gitcommitSelectedFile", s:nord14_gui, "", s:nord14_term, "", "", "")
 
 " davidhalter/jedi-vim
 call s:hi("jediFunction", s:nord4_gui, s:nord3_gui, "", s:nord3_term, "", "")
-call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, s:underline."bold", "")
+call s:hi("jediFat", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, s:underline.s:bold, "")
 
 " NERDTree
 " > scrooloose/nerdtree
@@ -639,13 +648,13 @@ hi! link mkdDelimiter Keyword
 " > vimwiki/vimwiki
 if !exists("g:vimwiki_hl_headers") || g:vimwiki_hl_headers == 0
   for s:i in range(1,6)
-    call s:hi("VimwikiHeader".s:i, s:nord8_gui, "", s:nord8_term, "", "bold", "")
+    call s:hi("VimwikiHeader".s:i, s:nord8_gui, "", s:nord8_term, "", s:bold, "")
   endfor
 else
   let s:vimwiki_hcolor_guifg = [s:nord7_gui, s:nord8_gui, s:nord9_gui, s:nord10_gui, s:nord14_gui, s:nord15_gui]
   let s:vimwiki_hcolor_ctermfg = [s:nord7_term, s:nord8_term, s:nord9_term, s:nord10_term, s:nord14_term, s:nord15_term]
   for s:i in range(1,6)
-    call s:hi("VimwikiHeader".s:i, s:vimwiki_hcolor_guifg[s:i-1] , "", s:vimwiki_hcolor_ctermfg[s:i-1], "", "bold", "")
+    call s:hi("VimwikiHeader".s:i, s:vimwiki_hcolor_guifg[s:i-1] , "", s:vimwiki_hcolor_ctermfg[s:i-1], "", s:bold, "")
   endfor
 endif
 

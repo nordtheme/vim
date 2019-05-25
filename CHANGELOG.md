@@ -1,8 +1,53 @@
-<p align="center"><img src="https://cdn.rawgit.com/arcticicestudio/nord-vim/develop/assets/nord-vim-banner.svg"/></p>
+<p align="center"><a href="https://www.nordtheme.com/ports/vim" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/vim/repository-hero.svg?sanitize=true"/></a></p>
 
-<p align="center"><img src="https://assets-cdn.github.com/favicon.ico" width=24 height=24/> <a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square"/></a> <a href="https://github.com/arcticicestudio/nord/releases/tag/v0.2.0"><img src="https://img.shields.io/badge/Nord-v0.2.0-88C0D0.svg?style=flat-square"/></a></p>
+<p align="center"><a href="https://github.com/arcticicestudio/nord-vim/releases/latest"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/vim"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a></p>
 
----
+<p align="center">Changelog for <a href="https://www.nordtheme.com/ports/vim">Nord Vim</a> — An arctic, north-bluish clean and elegant <a href="https://www.vim.org">Vim</a> color theme.</p>
+
+<!--lint disable no-duplicate-headings-->
+
+# 0.12.0
+
+![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/14)
+
+## Features
+
+**Nord Docs Transition** — #158, #144 ⇄ #160 (⊶ 7be26147)
+↠ Transferred all documentations, assets and from „Nord Vim“ to [Nord Docs][nord]
+Please see the [corresponding issue in the Nord Docs repository][nord-docs#143] to get an overview of what has changed for Nord Vim and what has been done to migrate to Nord Docs.
+
+###### Landing Page
+
+<p align="center"><a href="https://www.nordtheme.com/ports/vim" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123747-d1092500-7c0c-11e9-8ea1-d8a97b592acb.png" alt="Preview: Nord Vim Port Project Landing Page"/></a></p>
+
+###### Landing Page Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123746-d1092500-7c0c-11e9-990d-6e65d20cd935.png" alt="Preview: Nord Vim Docs Project Landing Page"/></a></p>
+
+###### Installation & Activation Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/installation" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123745-d1092500-7c0c-11e9-82d8-e1d60fc0d725.png" alt="Preview: Nord Vim Docs Installation & Activation Docs Page"/></a></p>
+
+###### Configuration Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/configuration" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123743-d0708e80-7c0c-11e9-9149-a3f023104b1c.png" alt="Preview: Nord Vim Docs Configuration Docs Page"/></a></p>
+
+###### Customization Docs
+
+<p align="center"><a href="https://www.nordtheme.com/docs/ports/vim/customization" target="_blank"><img src="https://user-images.githubusercontent.com/7836623/58123744-d0708e80-7c0c-11e9-84c7-50275e2696e1.png" alt="Preview: Nord Vim Docs Configuration Docs Page"/></a></p>
+
+**Theme configuration for bold font style rendering** — #143 ⇄ #161 (⊶ 18a4e350) requested by [@tobydeh][gh-user-tobydeh]
+↠ Added a new [`nord_bold` theme configuration to allow to explicitly toggle bold font rendering styles][nord-docs-config-font-bold].
+It is enabled by default when running for both in GUI and terminal mode since most terminals and shells are capable to handle bold fonts.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/58366170-a9e17a80-7ece-11e9-9b2d-e57d6fa574f6.png" /></p>
+
+## Improvements
+
+**Active match for increment search** — #139 ⇄ #140 (⊶ de24841a) by [@aborzunov][gh-user-aborzunov]
+↠ The currently active match during increment searches (`IncSearch`) is now highlighted differently (`nord10` as background and `nord6` as foreground) than inactive matches for a better visual distinction.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/56081041-05691480-5e09-11e9-97e6-9220bdf5d030.png" /></p>
 
 # 0.11.0
 
@@ -284,31 +329,31 @@ To adhere to the Nord design guidelines this option uses `nord3` by default.
 This is a reference table if users like to use the same increased contrast values as provided by the [Nord Atom Syntax accessibility custom comment contrast theme setting][nord-atom-syntax-pr-47] which are calculated using the LESSCSS [`lighten`][lesscss-doc-fn-lighten] function.
 
 | Increased by | Calculated value |
-| --- | --- |
-| 1% | `#4e586d` |
-| 2% | `#505b70` |
-| 3% | `#525d73` |
-| 4% | `#556076` |
-| 5% | `#576279` |
-| 6% | `#59647c` |
-| 7% | `#5b677f` |
-| 8% | `#5d6982` |
-| 9% | `#5f6c85` |
-| 10% | `#616e88` |
-| 11% | `#63718b` |
-| 12% | `#66738e` |
-| 13% | `#687591` |
-| 14% | `#6a7894` |
-| 15% | `#6d7a96` |
-| 16% | `#6f7d98` |
-| 17% | `#72809a` |
-| 18% | `#75829c` |
-| 19% | `#78859e` |
-| 20% | `#7b88a1` |
+| ------------ | ---------------- |
+| 1%           | `#4e586d`        |
+| 2%           | `#505b70`        |
+| 3%           | `#525d73`        |
+| 4%           | `#556076`        |
+| 5%           | `#576279`        |
+| 6%           | `#59647c`        |
+| 7%           | `#5b677f`        |
+| 8%           | `#5d6982`        |
+| 9%           | `#5f6c85`        |
+| 10%          | `#616e88`        |
+| 11%          | `#63718b`        |
+| 12%          | `#66738e`        |
+| 13%          | `#687591`        |
+| 14%          | `#6a7894`        |
+| 15%          | `#6d7a96`        |
+| 16%          | `#6f7d98`        |
+| 17%          | `#72809a`        |
+| 18%          | `#75829c`        |
+| 19%          | `#78859e`        |
+| 20%          | `#7b88a1`        |
 
 More information about true color and the support in various terminals can be found in [this gist][gist-colors-in-terminals].
 
-❯ Added a new [configuration for a uniform *diff* background color][readme-config-uniform-diff-background]. (#60 in PR #61 #62 #65, @dylnmc @aidanharris @berkin, 958322d0)
+❯ Added a new [configuration for a uniform _diff_ background color][readme-config-uniform-diff-background]. (#60 in PR #61 #62 #65, @dylnmc @aidanharris @berkin, 958322d0)
 
 ![](https://user-images.githubusercontent.com/7836623/30969227-0dbcb982-a462-11e7-86a8-a69e91ff7bc0.png)
 
@@ -360,21 +405,21 @@ Filenames are now highlighted when using the `:Gstatus` command.
 
 ### Syntax
 
-❯ Added highlight support for legacy *diff* groups `diffAdded` and `diffRemoved` of the `git.vim` and `diff.vim` syntx definitions. (#66 in PR #67, @brandoniffert, 99e59e67)
+❯ Added highlight support for legacy _diff_ groups `diffAdded` and `diffRemoved` of the `git.vim` and `diff.vim` syntx definitions. (#66 in PR #67, @brandoniffert, 99e59e67)
 
-These groups are not in the [official vim documentation][vim-doc-diffAdd] but are still used by the syntax for example when run with `git commit --verbose`.
+These groups are not in the [official vim documentation][vim-doc-diffadd] but are still used by the syntax for example when run with `git commit --verbose`.
 
 <p align="center"><strong>Before</strong><br><img src="https://user-images.githubusercontent.com/7836623/32219558-d906cf5c-be2e-11e7-98e7-d22583bac4f0.png"/></p>
 
 <p align="center"><strong>After</strong><br><img src="https://user-images.githubusercontent.com/7836623/32219588-f00e0c4c-be2e-11e7-91e7-87bb28c48721.png"/></p>
 
-❯ Added highlighting support for Markdown *italic* and **bold** delimiter. (#90 in PR #92, 97c8aa24)
+❯ Added highlighting support for Markdown _italic_ and **bold** delimiter. (#90 in PR #92, 97c8aa24)
 
 <p align="center"><strong>Before</strong><br><img src="https://user-images.githubusercontent.com/7836623/34452697-fd3d6502-ed45-11e7-9ba1-8e19e032c009.png"/></p>
 
 <p align="center"><strong>After</strong><br><img src="https://user-images.githubusercontent.com/7836623/34452755-ee8046a0-ed46-11e7-8f3d-b9567995a9b4.png"/></p>
 
-❯ Added missing Markdown *italic* and **bold** groups. (#84 in PR #91, @lokesh-krishna @dylnmc, 63b46125)
+❯ Added missing Markdown _italic_ and **bold** groups. (#84 in PR #91, @lokesh-krishna @dylnmc, 63b46125)
 
 ❯ Improved the highlighting for matching parens. (#75 and #71 in PR #78, @vincentzhezhang @cryptomaniac512 @dylnmc, 8eb7b2a6)
 
@@ -392,7 +437,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 ## Bug Fixes
 
-❯ *TODO* keywords are now highlighted correctly for Neovim and gVim (#52 in PR #53, @dylnmc, 063620f0)
+❯ _TODO_ keywords are now highlighted correctly for Neovim and gVim (#52 in PR #53, @dylnmc, 063620f0)
 
 <p align="center"><strong>Before</strong><br><img src="https://user-images.githubusercontent.com/7836623/30737840-4c8014e0-9f88-11e7-9a26-7dea066e3316.png"/></p>
 
@@ -430,13 +475,13 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 ❯ Added basic support for [CtrlP][plugin-ctrlp]. (PR #33, @syedelec)
 
-* Matched characters are using the keyword color instead of the normal text color to make matched characters visible
-* Already opened buffers now take the normal text color instead of the comment color
+- Matched characters are using the keyword color instead of the normal text color to make matched characters visible
+- Already opened buffers now take the normal text color instead of the comment color
 
 ❯ Added basic support [ALE][plugin-ale]. (PR #44, @meck)
 
-* Warning signs are colorized using a `nord13` foreground
-* Error signs are colorized using a `nord11` foreground instead of a red background with a white foreground
+- Warning signs are colorized using a `nord13` foreground
+- Error signs are colorized using a `nord11` foreground instead of a red background with a white foreground
 
 ## Improvements
 
@@ -473,9 +518,10 @@ To optimally improve the highlighting `nord3` will now be used as background col
 ### Language Support
 
 ❯ Implemented optimized styles for Ruby (@hahuang65, #29, 085c1337)
-  - Symbols (`rubySymbol`) now have a bold font style
-  - Block parameter list symbols (`rubyBlockParameterList`) are now colorized as keywords
-  - Local (variable) methods (`rubyLocalVariableOrMethod`) are now colorized as methods
+
+- Symbols (`rubySymbol`) now have a bold font style
+- Block parameter list symbols (`rubyBlockParameterList`) are now colorized as keywords
+- Local (variable) methods (`rubyLocalVariableOrMethod`) are now colorized as methods
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/7836623/25083146/af02dd0a-2355-11e7-8adc-f53b0803a484.png"/></p>
 
@@ -530,7 +576,7 @@ let g:nord_italic_comments = 1
 
 ### Plugin Support
 
-❯ The [Nord lightline.vim][nord-lightline] UI plugin theme now includes better support for the [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) plugin. Before this implementation text shown in the main segment of the tmuxline, generated via the `:Tmuxline lightline` command, has been colorized using `nord0` which  resulted in unreadable text due to a `nord3` background.  
+❯ The [Nord lightline.vim][nord-lightline] UI plugin theme now includes better support for the [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) plugin. Before this implementation text shown in the main segment of the tmuxline, generated via the `:Tmuxline lightline` command, has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.  
 This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11, 4ea37f7e)
 
 <p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/9512557/21741900/4f792f5e-d537-11e6-9e69-09ff11b60c4e.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954034/15b87d1e-da47-11e6-9e70-a74aea14c378.png"/><br><strong>With unicode separators</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954058/7a7c5266-da47-11e6-8f1f-0203d5270c51.png"/><br><strong>Without specified configurations (tmuxline.vim autodetect)</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954072/931669e2-da47-11e6-8db3-cbdf9d6681f1.png"/></p>
@@ -558,7 +604,8 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 <p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21588201/c8aa75ba-d0e4-11e6-9426-96bfab1c545f.gif"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21588207/d67f29b0-d0e4-11e6-8eba-117f38a9c073.gif"/></p>
 
 # 0.1.2
-*2017-01-01*
+
+_2017-01-01_
 
 ![Release Date: 2017-01-01](https://img.shields.io/badge/Release_Date-2017--01--01-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/4) [![Milestone](https://img.shields.io/badge/Milestone-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/3)
 
@@ -626,8 +673,11 @@ Detailed information about features, supported plugins/languages and install ins
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
+[nord-docs-config-font-bold]: https://www.nordtheme.com/ports/vim/configuration#bold-styles
 [nord-gh]: https://github.com/arcticicestudio/nord
+[nord-home]: https://www.nordtheme.com/ports/vim
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
+[nord]: https://www.nordtheme.com
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [plugin-junegunn/vim-plug]: https://github.com/junegunn/vim-plug
@@ -667,3 +717,8 @@ Detailed information about features, supported plugins/languages and install ins
 [rustdoc-escapes]: https://doc.rust-lang.org/reference/tokens.html#ascii-escapes
 [rustdoc-macros]: https://doc.rust-lang.org/1.8.0/book/macros.html
 [rustdoc-traits]: https://doc.rust-lang.org/book/ch10-02-traits.html
+
+<!--v 0.12.0 -->
+
+[gh-user-aborzunov]: https://github.com/aborzunov
+[gh-user-tobydeh]: https://github.com/tobydeh
