@@ -580,6 +580,13 @@ call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
+" Coc
+" > neoclide/coc
+call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+
 " GitGutter
 " > airblade/vim-gitgutter
 call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
