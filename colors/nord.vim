@@ -508,8 +508,6 @@ call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 " > neoclide/coc
 call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
