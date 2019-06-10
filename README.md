@@ -10,7 +10,7 @@
 
 <p align="center"><a href="https://www.nordtheme.com/ports/vim" target="_blank"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/vim/overview-go.png"/></a></p>
 
-Build for Vim's terminal- and GUI mode with _true colors_ with support for many third-party syntax and UI plugins including bundled themes for[lightline.vim][gh-itchyny/lightline.vim] and [vim-airline][gh-vim-airline/vim-airline].
+Build for Vim's terminal- and GUI mode with _true colors_ with support for many third-party syntax and UI plugins including bundled themes for [lightline.vim][gh-itchyny/lightline.vim] and [vim-airline][gh-vim-airline/vim-airline].
 
 ## Getting Started
 
