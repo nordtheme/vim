@@ -80,7 +80,11 @@ let g:airline#themes#nord#palette.visual.airline_error = s:VError
 
 let s:IAMain = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
 let s:IARight = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
-let s:IAMiddle = [s:nord5_gui, s:nord1_gui, s:nord5_term, s:nord1_term]
+if g:nord_uniform_status_lines == 0
+  let s:IAMiddle = [s:nord5_gui, s:nord1_gui, s:nord5_term, s:nord1_term]
+else
+  let s:IAMiddle = [s:nord5_gui, s:nord3_gui, s:nord5_term, s:nord3_term]
+endif
 let s:IAWarn = [s:nord1_gui, s:nord13_gui, s:nord3_term, s:nord13_term]
 let s:IAError = [s:nord0_gui, s:nord11_gui, s:nord1_term, s:nord11_term]
 let g:airline#themes#nord#palette.inactive = airline#themes#generate_color_map(s:IAMain, s:IARight, s:IAMiddle)
