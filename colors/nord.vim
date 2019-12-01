@@ -395,6 +395,10 @@ hi! link diffAdded DiffAdd
 hi! link diffChanged DiffChange
 hi! link diffRemoved DiffDelete
 
+call s:hi("elixirModuleDeclaration", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("elixirAlias", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("elixirAtom", s:nord6_gui, "", s:nord6_term, "", s:bold, "")
+
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
 call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
