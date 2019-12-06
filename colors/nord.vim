@@ -684,3 +684,13 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+" Mail
+call <sid>hi("mailQuoted1",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailQuoted2",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailQuoted3",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailQuoted4",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailQuoted5",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailQuoted6",  s:nord3_gui, "", s:nord3_term, "", "", "")
+call <sid>hi("mailURL",      s:nord8_gui, "", s:nord8_term, "", "", "")
+call <sid>hi("mailEmail",    s:nord8_gui, "", s:nord8_term, "", "", "")
