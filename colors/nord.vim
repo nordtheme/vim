@@ -605,7 +605,7 @@ hi! link CtrlPBufferHid Normal
 " > liuchengxu/vim-clap
 call s:hi("ClapInput", s:nord4_gui, s:nord2_gui, s:nord3_term, s:nord1_term, "", "")
 call s:hi("ClapDisplay", s:nord5_gui, s:nord1_gui, s:nord5_term, s:nord1_term, "", "")
-call s:hi("ClapPreview", "", s:nord1_gui, "", s:nord1_term, "", "")
+call s:hi("ClapPreview", s:nord4_gui, s:nord2_gui, s:nord3_term, s:nord1_term, "", "")
 call s:hi("ClapSelected", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
 call s:hi("ClapCurrentSelection", s:nord7_gui, "", s:nord8_term, "", s:bold, "")
 call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
