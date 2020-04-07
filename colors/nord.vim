@@ -183,8 +183,8 @@ call s:hi("SpellBad", s:nord11_gui, s:nord0_gui, s:nord11_term, "NONE", "undercu
 call s:hi("SpellCap", s:nord13_gui, s:nord0_gui, s:nord13_term, "NONE", "undercurl", s:nord13_gui)
 call s:hi("SpellLocal", s:nord5_gui, s:nord0_gui, s:nord5_term, "NONE", "undercurl", s:nord5_gui)
 call s:hi("SpellRare", s:nord6_gui, s:nord0_gui, s:nord6_term, "NONE", "undercurl", s:nord6_gui)
-call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
-call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
+call s:hi("Visual", "", s:nord2_gui, "", s:nord3_term, "", "")
+call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord3_term, "", "")
 "+- Neovim Support -+
 call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
 call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
