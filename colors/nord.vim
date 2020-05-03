@@ -603,46 +603,31 @@ hi! link CtrlPBufferHid Normal
 
 " vim-clap
 " > liuchengxu/vim-clap
-call s:hi("ClapInput", s:nord4_gui, s:nord2_gui, s:nord3_term, s:nord1_term, "", "")
-call s:hi("ClapDisplay", s:nord5_gui, s:nord1_gui, s:nord5_term, s:nord1_term, "", "")
-call s:hi("ClapPreview", s:nord4_gui, s:nord2_gui, s:nord3_term, s:nord1_term, "", "")
-call s:hi("ClapSelected", s:nord7_gui, "", s:nord7_term, "", s:underline, "")
-call s:hi("ClapCurrentSelection", s:nord7_gui, "", s:nord8_term, "", s:bold, "")
+hi! link ClapInput Pmenu
+call s:hi("ClapDisplay", s:nord4_gui, s:nord1_gui, "", s:nord1_term, "", "")
+hi! link ClapPreview Pmenu
+hi! link ClapCurrentSelection PmenuSel
+call s:hi("ClapSelected", "", "", "", "", s:underline, "")
 call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
-let clap_matches = [
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
+call s:hi("ClapMatches", s:nord8_gui, "", s:nord8_term, "", "", "")
+
+let s:clap_matches = [
+        \ [s:nord8_gui,  s:nord8_term] ,
+        \ [s:nord9_gui,  s:nord9_term] ,
+        \ [s:nord10_gui, s:nord10_term] ,
         \ ]
-let idx = 1
-for g in clap_matches
-  call s:hi("ClapMatches" . idx, g[0], "", g[1], "", "", "")
-  let idx += 1
+
+for s:i in range(1,12)
+  let clap_match_color = s:clap_matches[s:i % len(s:clap_matches) - 1]
+  call s:hi("ClapMatches" . s:i, clap_match_color[0], "", clap_match_color[1], "", "", "")
+  call s:hi("ClapFuzzyMatches" . s:i, clap_match_color[0], "", clap_match_color[1], "", "", "")
 endfor
-let clap_fuzzy_matches = [
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ [s:nord11_gui, s:nord11_term] ,
-        \ [s:nord13_gui, s:nord13_term] ,
-        \ [s:nord14_gui, s:nord14_term] ,
-        \ ]
-let idx = 1
-for g in clap_fuzzy_matches
-  call s:hi("ClapFuzzyMatches" . idx, g[0], "", g[1], "", "", "")
-  let idx += 1
-endfor
+
+call s:hi("ClapFile", s:nord4_gui, "", "", "", "NONE", "")
+call s:hi("ClapDir", s:nord4_gui, "", "", "", s:italic, "")
+hi! link ClapProviderId Type
+hi! link ClapProviderColon Type
+hi! link ClapProviderAbout ClapDisplay
 
 " vim-plug
 " > junegunn/vim-plug
