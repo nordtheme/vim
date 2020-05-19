@@ -646,6 +646,37 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" TypeScript
+" > HerringtonDarkholme/yats.vim
+call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "NONE", "")
+hi! link typescriptOperator Operator
+hi! link typescriptBinaryOp Operator
+hi! link typescriptAssign Operator
+hi! link typescriptMember Identifier
+hi! link typescriptDOMStorageMethod Identifier
+hi! link typescriptArrowFuncArg Identifier
+hi! link typescriptGlobal Function
+hi! link typescriptBOMWindowProp Function
+hi! link typescriptClassName Function
+hi! link typescriptArrowFuncDef Function
+hi! link typescriptAliasDeclaration Function
+hi! link typescriptPredefinedType Function
+hi! link typescriptTypeReference Function
+hi! link typescriptTypeAnnotation Function
+hi! link typescriptDocNamedParamType SpecialComment
+hi! link typescriptDocNotation Keyword
+hi! link typescriptDocTags Keyword
+hi! link typescriptImport Keyword
+hi! link typescriptExport Keyword
+hi! link typescriptTry Keyword
+hi! link typescriptVariable Keyword
+hi! link typescriptBraces Normal
+hi! link typescriptObjectLabel Normal
+hi! link typescriptCall Normal
+" TypeScript JSX
+call s:hi("jsxBraces", s:nord9_gui, "", s:nord9_term, "", "", "")
+hi! link jsxTagName jsxComponentName
+
 " Markdown
 " > plasticboy/vim-markdown
 call s:hi("mkdCode", s:nord7_gui, "", s:nord7_term, "", "", "")
