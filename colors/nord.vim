@@ -13,7 +13,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.13.0"
+let s:nord_vim_version="0.14.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -168,9 +168,9 @@ call s:hi("Underline", "", "", "", "", s:underline, "")
 call s:hi("ColorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 call s:hi("Cursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
 call s:hi("CursorLine", "", s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
-call s:hi("Error", s:nord0_gui, s:nord11_gui, "", s:nord11_term, "", "")
+call s:hi("Error", s:nord4_gui, s:nord11_gui, "", s:nord11_term, "", "")
 call s:hi("iCursor", s:nord0_gui, s:nord4_gui, "", "NONE", "", "")
-call s:hi("LineNr", s:nord3_gui, s:nord0_gui, s:nord3_term, "NONE", "", "")
+call s:hi("LineNr", s:nord3_gui, "NONE", s:nord3_term, "NONE", "", "")
 call s:hi("MatchParen", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "", "")
 call s:hi("NonText", s:nord2_gui, "", s:nord3_term, "", "", "")
 call s:hi("Normal", s:nord4_gui, s:nord0_gui, "NONE", "NONE", "", "")
@@ -219,7 +219,7 @@ endif
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 if g:nord_cursor_line_number_background == 0
-  call s:hi("CursorLineNr", s:nord4_gui, s:nord0_gui, "NONE", "", "NONE", "")
+  call s:hi("CursorLineNr", s:nord4_gui, "", "NONE", "", "NONE", "")
 else
   call s:hi("CursorLineNr", s:nord4_gui, s:nord1_gui, "NONE", s:nord1_term, "NONE", "")
 endif
@@ -234,7 +234,7 @@ call s:hi("Directory", s:nord8_gui, "", s:nord8_term, "NONE", "", "")
 call s:hi("EndOfBuffer", s:nord1_gui, "", s:nord1_term, "NONE", "", "")
 call s:hi("ErrorMsg", s:nord4_gui, s:nord11_gui, "NONE", s:nord11_term, "", "")
 call s:hi("ModeMsg", s:nord4_gui, "", "", "", "", "")
-call s:hi("MoreMsg", s:nord4_gui, "", "", "", "", "")
+call s:hi("MoreMsg", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("Question", s:nord4_gui, "", "NONE", "", "", "")
 if g:nord_uniform_status_lines == 0
   call s:hi("StatusLine", s:nord8_gui, s:nord3_gui, s:nord8_term, s:nord3_term, "NONE", "")
@@ -565,6 +565,20 @@ call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
+
+" Coc
+" > neoclide/coc
+call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+
+" Nvim LSP
+" > neovim/nvim-lsp
+call s:hi("LSPDiagnosticsWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
