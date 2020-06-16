@@ -6,6 +6,45 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.14.0
+
+![Release Date: 2020-06-16](https://img.shields.io/badge/Release_Date-2020--06--16-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/20) [![Milestone](https://img.shields.io/badge/Milestone-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/16)
+
+## Features
+
+### UI
+
+**Basic support for nvim-lsp (Language Server Protocol)** — #198 (⊶ 0ccf70b6) by [@alexanderjeurissen][gh-user-alexanderjeurissen]
+↠ Added basic support for [nvim-lsp][neovim/nvim-lsp], a collection of common configurations for the NVim language server protocol client.
+
+## Improvements
+
+### UI
+
+**Consistent error highlighting between GUI and terminal mode** — #202 (⊶ 974a9190) by [@xulongwu4][gh-user-xulongwu4]
+↠ The highlighting of errors in GUI and _true color_ terminal mode now also uses `nord4` as foreground color of instead of `nord0`.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657802-25b4c780-af15-11ea-9c28-a7f2262d4c97.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657801-251c3100-af15-11ea-9c8a-84f63bafb866.png" /></p>
+
+**Improved highlighting for “More“ separator** — #202 (⊶ 974a9190) by [@xulongwu4][gh-user-xulongwu4]
+↠ The highlighting of the _More_ separator is now highlighted with the `nord8` accent color.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657821-2cdbd580-af15-11ea-9491-2fe5d6f7948f.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657816-2c433f00-af15-11ea-9f22-f0d1296ae6e8.png" /></p>
+
+**Transparent line number and cursor line background by default** — #204 (⊶ 6323f662) by [@xulongwu4][gh-user-xulongwu4]
+↠ Before the background color of the `LineNr` and `CursorLineNr` highlighting groups were set to `nord0` which was fine in most cases, but conflicted with plugins like [Yggdroot/LeaderF][] that renders line numbers in a popup windows with a different background color.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84664806-58fc5400-af1f-11ea-9fc9-c05264cca064.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84664799-57cb2700-af1f-11ea-9099-75eba70fad36.png" /></p>
+
 # 0.13.0
 
 ![Release Date: 2019-12-17](https://img.shields.io/badge/Release_Date-2019--12--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/19) [![Milestone](https://img.shields.io/badge/Milestone-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/15)
@@ -236,8 +275,6 @@ The README includes information and hints how to change the separator character 
 ⚠ **NOTE**: This change also **deprecates the [comment contrast][readme-config-comment-brightness] configuration** that will be removed in Nord Vim version 1.0.0!
 The default comment color has been adjusted so the configuration is not required anymore for users to increase the brightness on their own.
 To notify users about this change a deprecation warning will be shown when the `g:nord_comment_brightness` configuration variable has been set and initialized through the user's configuration.
-
-## Improvements
 
 **Improved compatibility of airline with tmuxline.vim plugin** — #117 ⇄ #128 (⊶ 3150628f)
 ↠ The [Nord airline.vim][gh-src-airline] UI plugin theme now includes better support for the [tmuxline.vim][gh-tmuxline.vim] plugin. Previously text shown in the main segment of the _tmuxline_, generated via the `:Tmuxline airline` command, caused a `bad colour: NONE` error or has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.
@@ -775,6 +812,7 @@ Detailed information about features, supported plugins/languages and install ins
 
 [gh-user-aborzunov]: https://github.com/aborzunov
 [gh-user-tobydeh]: https://github.com/tobydeh
+[nord-docs#143]: https://github.com/arcticicestudio/nord-docs/issues/143
 
 <!--v 0.13.0 -->
 
@@ -791,3 +829,10 @@ Detailed information about features, supported plugins/languages and install ins
 [vim/vim-diff#d9b0d83b...017ba07f]: https://github.com/vim/vim/compare/d9b0d83b13d2691e4544709abd87eac004715175...017ba07fa2cdc578245618717229444fd50c470d#diff-80fffb3e9c20e93e5b2328a9a20e19c
 [vim/vim-rel-v8.1.2029]: https://github.com/vim/vim/releases/tag/v8.1.2029
 [vim/vim#4933]: https://github.com/vim/vim/pull/4933
+
+<!--v 0.14.0 -->
+
+[gh-user-alexanderjeurissen]: https://github.com/alexanderjeurissen
+[gh-user-xulongwu4]: https://github.com/xulongwu4
+[neovim/nvim-lsp]: https://github.com/neovim/nvim-lsp
+[yggdroot/leaderf]: https://github.com/Yggdroot/LeaderF
