@@ -648,9 +648,10 @@ hi! link jsRegexpString SpecialChar
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
+call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
+call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
 call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
 call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
 " TypeScript JSX
  call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
@@ -662,7 +663,6 @@ hi! link typescriptDOMStorageMethod Identifier
 hi! link typescriptArrowFuncArg Identifier
 hi! link typescriptGlobal typescriptClassName
 hi! link typescriptBOMWindowProp Function
-call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link typescriptArrowFuncDef Function
 hi! link typescriptAliasDeclaration Function
 hi! link typescriptPredefinedType Type
