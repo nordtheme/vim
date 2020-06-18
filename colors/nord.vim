@@ -652,6 +652,8 @@ call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
 call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
 call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
 call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
+" TypeScript JSX
+ call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link typescriptOperator Operator
 hi! link typescriptBinaryOp Operator
 hi! link typescriptAssign Operator
@@ -681,10 +683,9 @@ hi! link typescriptFuncTypeArrow Structure
 hi! link typescriptMemberOptionality Structure
 hi! link typescriptNodeGlobal typescriptGlobal
 hi! link typescriptTypeBrackets Structure
+hi! link tsxEqual Operator
 hi! link tsxIntrinsicTagName htmlTag
 hi! link tsxTagName tsxIntrinsicTagName
-" TypeScript JSX
-call s:hi("jsxBraces", s:nord9_gui, "", s:nord9_term, "", "", "")
 
 " Markdown
 " > plasticboy/vim-markdown
