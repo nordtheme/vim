@@ -685,7 +685,6 @@ hi! link tsxIntrinsicTagName htmlTag
 hi! link tsxTagName tsxIntrinsicTagName
 " TypeScript JSX
 call s:hi("jsxBraces", s:nord9_gui, "", s:nord9_term, "", "", "")
-hi! link jsxTagName jsxComponentName
 
 " Markdown
 " > plasticboy/vim-markdown
