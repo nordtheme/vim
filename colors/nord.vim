@@ -676,6 +676,13 @@ hi! link typescriptVariable Keyword
 hi! link typescriptBraces Normal
 hi! link typescriptObjectLabel Normal
 hi! link typescriptCall Normal
+hi! link typescriptClassHeritage typescriptClassName
+hi! link typescriptFuncTypeArrow Structure
+hi! link typescriptMemberOptionality Structure
+hi! link typescriptNodeGlobal typescriptGlobal
+hi! link typescriptTypeBrackets Structure
+hi! link tsxIntrinsicTagName htmlTag
+hi! link tsxTagName tsxIntrinsicTagName
 " TypeScript JSX
 call s:hi("jsxBraces", s:nord9_gui, "", s:nord9_term, "", "", "")
 hi! link jsxTagName jsxComponentName
