@@ -646,6 +646,47 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" TypeScript
+" > HerringtonDarkholme/yats.vim
+call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
+call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
+call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
+" TypeScript JSX
+ call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link typescriptOperator Operator
+hi! link typescriptBinaryOp Operator
+hi! link typescriptAssign Operator
+hi! link typescriptMember Identifier
+hi! link typescriptDOMStorageMethod Identifier
+hi! link typescriptArrowFuncArg Identifier
+hi! link typescriptGlobal typescriptClassName
+hi! link typescriptBOMWindowProp Function
+hi! link typescriptArrowFuncDef Function
+hi! link typescriptAliasDeclaration Function
+hi! link typescriptPredefinedType Type
+hi! link typescriptTypeReference typescriptClassName
+hi! link typescriptTypeAnnotation Structure
+hi! link typescriptDocNamedParamType SpecialComment
+hi! link typescriptDocNotation Keyword
+hi! link typescriptDocTags Keyword
+hi! link typescriptImport Keyword
+hi! link typescriptExport Keyword
+hi! link typescriptTry Keyword
+hi! link typescriptVariable Keyword
+hi! link typescriptBraces Normal
+hi! link typescriptObjectLabel Normal
+hi! link typescriptCall Normal
+hi! link typescriptClassHeritage typescriptClassName
+hi! link typescriptFuncTypeArrow Structure
+hi! link typescriptMemberOptionality Structure
+hi! link typescriptNodeGlobal typescriptGlobal
+hi! link typescriptTypeBrackets Structure
+hi! link tsxEqual Operator
+hi! link tsxIntrinsicTagName htmlTag
+hi! link tsxTagName tsxIntrinsicTagName
+
 " Markdown
 " > plasticboy/vim-markdown
 call s:hi("mkdCode", s:nord7_gui, "", s:nord7_term, "", "", "")
