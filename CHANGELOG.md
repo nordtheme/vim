@@ -6,9 +6,100 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.14.0
+
+![Release Date: 2020-06-16](https://img.shields.io/badge/Release_Date-2020--06--16-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/20) [![Milestone](https://img.shields.io/badge/Milestone-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/16)
+
+## Features
+
+### UI
+
+**Basic support for nvim-lsp (Language Server Protocol)** — #198 (⊶ 0ccf70b6) by [@alexanderjeurissen][gh-user-alexanderjeurissen]
+↠ Added basic support for [nvim-lsp][neovim/nvim-lsp], a collection of common configurations for the NVim language server protocol client.
+
+## Improvements
+
+### UI
+
+**Consistent error highlighting between GUI and terminal mode** — #202 (⊶ 974a9190) by [@xulongwu4][gh-user-xulongwu4]
+↠ The highlighting of errors in GUI and _true color_ terminal mode now also uses `nord4` as foreground color of instead of `nord0`.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657802-25b4c780-af15-11ea-9c28-a7f2262d4c97.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657801-251c3100-af15-11ea-9c8a-84f63bafb866.png" /></p>
+
+**Improved highlighting for “More“ separator** — #202 (⊶ 974a9190) by [@xulongwu4][gh-user-xulongwu4]
+↠ The highlighting of the _More_ separator is now highlighted with the `nord8` accent color.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657821-2cdbd580-af15-11ea-9491-2fe5d6f7948f.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84657816-2c433f00-af15-11ea-9f22-f0d1296ae6e8.png" /></p>
+
+**Transparent line number and cursor line background by default** — #204 (⊶ 6323f662) by [@xulongwu4][gh-user-xulongwu4]
+↠ Before the background color of the `LineNr` and `CursorLineNr` highlighting groups were set to `nord0` which was fine in most cases, but conflicted with plugins like [Yggdroot/LeaderF][] that renders line numbers in a popup windows with a different background color.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84664806-58fc5400-af1f-11ea-9fc9-c05264cca064.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84664799-57cb2700-af1f-11ea-9099-75eba70fad36.png" /></p>
+
+# 0.13.0
+
+![Release Date: 2019-12-17](https://img.shields.io/badge/Release_Date-2019--12--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/19) [![Milestone](https://img.shields.io/badge/Milestone-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/15)
+
+## Features
+
+### UI
+
+**Support uniform status line background configuration for _vim-airline_ and _lightline.vim_ themes** — #168 ⇄ #169 (⊶ 73b3d340) by [@jmurinello][gh-user-jmurinello]
+↠ Added support for the [uniform status line][nord-config-port-vim#uni_st_line] theme configuration, [introduced in version 0.7.0][gh-rel-v0.7.0] through [arcticicestudio/nord-vim#58][], for the bundled _vim-airline_ and _lightline.vim_ themes.
+
+<p align="center"><code>lightline.vim</code></p>
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/16728775/61186256-340fb900-a69e-11e9-8887-b153b869de5c.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/16728775/61186259-38d46d00-a69e-11e9-9d2f-bf72f6b2af14.png" /></p>
+
+<p align="center"><code>vim-airline</code></p>
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/16728775/61186260-3f62e480-a69e-11e9-9fcd-48b53307d97a.png" /></p>
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/16728775/61186263-438f0200-a69e-11e9-8028-eee21ff3ceb0.png" /></p>
+
+**Basic support for coc.vim (Conquer of Completion)** — #164 (⊶ a7797269) by [@hennessey][gh-user-hennessey]
+↠ Added basic support for [coc.nvim][neoclide/coc.nvim], a _Intellisense_ engine for Vim 8 & NeoVim with full language server protocol support.
+
+**Basic support for _vim-startify_** — #159 ⇄ #176 (⊶ 38ab4a9c)
+↠ Added basic support for [vim-startify][mhinz/vim-startify] with custom highlight groups.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/66123513-86e47700-e5e2-11e9-9fa8-e41dc07efc82.png" /></p>
+
+## Improvements
+
+### UI
+
+**No underlined style for gutter line numbers** — #174 ⇄ #185 (⊶ 0d352c4b) by [@nixtrace][gh-user-nixtrace] and [@alexandremjacques][gh-user-alexandremjacques]
+↠ [Vim version 8.1.2029][vim/vim-rel-v8.1.2029] added the [`underline` attribute for the `CursorLineNr` group to `cterm`][vim/vim-diff#d9b0d83b...017ba07f] based on [vim/vim#4933][].
+This change resulted in gutter line numbers being underlined which has now been reverted back to Nord's style by explicitly setting the attribute for the group to `NONE`.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/70994055-a19c9700-20cd-11ea-94bb-fdc6f5ae32fc.png" /></p>
+
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/70994054-a1040080-20cd-11ea-9ef9-890120ab1651.png" /></p>
+
+## Bug Fixes
+
+### Documentation
+
+**Fix missing whitespace** — #165 (⊶ 81d80e4a) by [@vasilescur][gh-user-vasilescur]
+↠ Fixed a missing whitespace in the README project description.
+
 # 0.12.0
 
-![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/14)
+![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/14)
 
 ## Features
 
@@ -184,8 +275,6 @@ The README includes information and hints how to change the separator character 
 ⚠ **NOTE**: This change also **deprecates the [comment contrast][readme-config-comment-brightness] configuration** that will be removed in Nord Vim version 1.0.0!
 The default comment color has been adjusted so the configuration is not required anymore for users to increase the brightness on their own.
 To notify users about this change a deprecation warning will be shown when the `g:nord_comment_brightness` configuration variable has been set and initialized through the user's configuration.
-
-## Improvements
 
 **Improved compatibility of airline with tmuxline.vim plugin** — #117 ⇄ #128 (⊶ 3150628f)
 ↠ The [Nord airline.vim][gh-src-airline] UI plugin theme now includes better support for the [tmuxline.vim][gh-tmuxline.vim] plugin. Previously text shown in the main segment of the _tmuxline_, generated via the `:Tmuxline airline` command, caused a `bad colour: NONE` error or has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.
@@ -673,6 +762,7 @@ Detailed information about features, supported plugins/languages and install ins
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
+[nord-config-port-vim#uni_st_line]: https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines
 [nord-docs-config-font-bold]: https://www.nordtheme.com/ports/vim/configuration#bold-styles
 [nord-gh]: https://github.com/arcticicestudio/nord
 [nord-home]: https://www.nordtheme.com/ports/vim
@@ -722,3 +812,27 @@ Detailed information about features, supported plugins/languages and install ins
 
 [gh-user-aborzunov]: https://github.com/aborzunov
 [gh-user-tobydeh]: https://github.com/tobydeh
+[nord-docs#143]: https://github.com/arcticicestudio/nord-docs/issues/143
+
+<!--v 0.13.0 -->
+
+[arcticicestudio/nord-vim#58]: https://github.com/arcticicestudio/nord-vim/pull/58
+[gh-rel-v0.7.0]: https://github.com/arcticicestudio/nord-vim/releases/tag/v0.7.0
+[gh-user-alexandremjacques]: https://github.com/alexandremjacques
+[gh-user-hennessey]: https://github.com/hennessey
+[gh-user-jmurinello]: https://github.com/jmurinello
+[gh-user-nixtrace]: https://github.com/nixtrace
+[gh-user-vasilescur]: https://github.com/vasilescur
+[mhinz/vim-startify]: https://github.com/mhinz/vim-startify
+[neoclide/coc.nvim]: https://github.com/neoclide/coc.nvim
+[nord-config-port-vim#uni_st_line]: https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines
+[vim/vim-diff#d9b0d83b...017ba07f]: https://github.com/vim/vim/compare/d9b0d83b13d2691e4544709abd87eac004715175...017ba07fa2cdc578245618717229444fd50c470d#diff-80fffb3e9c20e93e5b2328a9a20e19c
+[vim/vim-rel-v8.1.2029]: https://github.com/vim/vim/releases/tag/v8.1.2029
+[vim/vim#4933]: https://github.com/vim/vim/pull/4933
+
+<!--v 0.14.0 -->
+
+[gh-user-alexanderjeurissen]: https://github.com/alexanderjeurissen
+[gh-user-xulongwu4]: https://github.com/xulongwu4
+[neovim/nvim-lsp]: https://github.com/neovim/nvim-lsp
+[yggdroot/leaderf]: https://github.com/Yggdroot/LeaderF
