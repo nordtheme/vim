@@ -617,6 +617,9 @@ hi! link ClapCurrentSelection PmenuSel
 call s:hi("ClapSelected", "", "", "", "", s:underline, "")
 call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("ClapMatches", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("ClapSelected", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+call s:hi("ClapSelectedSign", s:nord9_gui, "", s:nord9_term, "", "", "")
 
 let s:clap_matches = [
         \ [s:nord8_gui,  s:nord8_term] ,
