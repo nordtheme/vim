@@ -572,9 +572,6 @@ call s:hi("LSPDiagnosticsWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
-hi! link LSPReferenceText CursorColumn
-hi! link LSPReferenceRead LSPReferenceText
-hi! link LSPReferenceWrite LSPReferenceText
 
 " GitGutter
 " > airblade/vim-gitgutter
