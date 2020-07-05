@@ -610,12 +610,9 @@ hi! link CtrlPBufferHid Normal
 
 " vim-clap
 " > liuchengxu/vim-clap
-hi! link ClapInput Pmenu
+call s:hi("ClapDir", s:nord4_gui, "", "", "", "", "")
 call s:hi("ClapDisplay", s:nord4_gui, s:nord1_gui, "", s:nord1_term, "", "")
-hi! link ClapPreview Pmenu
-hi! link ClapCurrentSelection PmenuSel
-call s:hi("ClapSelected", "", "", "", "", s:underline, "")
-call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("ClapFile", s:nord4_gui, "", "", "NONE", "", "")
 call s:hi("ClapMatches", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("ClapNoMatchesFound", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("ClapSelected", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
@@ -626,18 +623,20 @@ let s:clap_matches = [
         \ [s:nord9_gui,  s:nord9_term] ,
         \ [s:nord10_gui, s:nord10_term] ,
         \ ]
-
-for s:i in range(1,12)
-  let clap_match_color = s:clap_matches[s:i % len(s:clap_matches) - 1]
-  call s:hi("ClapMatches" . s:i, clap_match_color[0], "", clap_match_color[1], "", "", "")
-  call s:hi("ClapFuzzyMatches" . s:i, clap_match_color[0], "", clap_match_color[1], "", "", "")
+for s:nord_clap_match_i in range(1,12)
+  let clap_match_color = s:clap_matches[s:nord_clap_match_i % len(s:clap_matches) - 1]
+  call s:hi("ClapMatches" . s:nord_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
+  call s:hi("ClapFuzzyMatches" . s:nord_clap_match_i, clap_match_color[0], "", clap_match_color[1], "", "", "")
 endfor
+unlet s:nord_clap_match_i
 
-call s:hi("ClapFile", s:nord4_gui, "", "", "", "NONE", "")
-call s:hi("ClapDir", s:nord4_gui, "", "", "", s:italic, "")
-hi! link ClapProviderId Type
-hi! link ClapProviderColon Type
+hi! link ClapCurrentSelection PmenuSel
+hi! link ClapCurrentSelectionSign ClapSelectedSign
+hi! link ClapInput Pmenu
+hi! link ClapPreview Pmenu
 hi! link ClapProviderAbout ClapDisplay
+hi! link ClapProviderColon Type
+hi! link ClapProviderId Type
 
 " vim-plug
 " > junegunn/vim-plug
