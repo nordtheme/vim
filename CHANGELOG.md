@@ -6,6 +6,43 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.15.0
+
+![Release Date: 2020-07-06](https://img.shields.io/badge/Release_Date-2020--07--06-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/21) [![Milestone](https://img.shields.io/badge/Milestone-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/17)
+
+## Features
+
+### Syntax
+
+**Extended support for TypeScript and TSX** — #208 (⊶ 1bd44ade) by [@iamdidev][gh-user-iamdidev]
+↠ Added extended support for [TypeScript][] and [TSX][ts-docs-jsx] through the [yats.vim][herringtonharkholme/yats.vim] plugin.
+This provides, among many other good changes, better highlighting for syntax elements like [decorators][ts-docs-decorators], more granular separation of different language elements within a single code line as well as highlighting for…
+
+<p align="center"><strong>…interfaces with bold font style, typing characters and types.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84699121-43a01d80-af51-11ea-8ca2-7560791e04f5.png" width="20%" /></p>
+
+<p align="center"><strong>…global methods like <code>setTimeout</code> with italic font style.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84700311-3d12a580-af53-11ea-8102-39c86eb54df9.png" width="40%" /></p>
+
+<p align="center"><strong>…regular expressions with <code>nord13</code> instead of the normal color for quoted strings.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84700066-dd1bff00-af52-11ea-8876-22eeec81e8a0.png" width="40%" /></p>
+
+<p align="center"><strong>…global elements like <code>Error</code>, <code>JSON</code> and <code>console</code>.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84698135-94167b80-af4f-11ea-86e6-29df3bf34c61.png" width="40%" /></p>
+
+<p align="center"><strong>…brackets of types as structural elements.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84701261-f2922880-af54-11ea-9779-ba1314480921.png" width="40%" /></p>
+
+<p align="center"><strong>…TSX/JSX and HTML with a consistent appearance.</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/84701503-66cccc00-af55-11ea-80b7-9793fc894284.png" width="40%" /></p>
+
+### UI
+
+**Support for vim-clap** — #178 (⊶ 7a52f66c) by [@meck][gh-user-meck] and [@ikalnytskyi][gh-user-ikalnytskyi]
+↠ Added basic support for [vim-clap][liuchengxu/vim-clap], a modern and performant generic finder and dispatcher for Vim and NeoVim.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/86534351-0daee300-bed8-11ea-9685-031d16b5a07b.png" width="666px" /></p>
+
 # 0.14.0
 
 ![Release Date: 2020-06-16](https://img.shields.io/badge/Release_Date-2020--06--16-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/20) [![Milestone](https://img.shields.io/badge/Milestone-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/16)
@@ -836,3 +873,13 @@ Detailed information about features, supported plugins/languages and install ins
 [gh-user-xulongwu4]: https://github.com/xulongwu4
 [neovim/nvim-lsp]: https://github.com/neovim/nvim-lsp
 [yggdroot/leaderf]: https://github.com/Yggdroot/LeaderF
+
+<!--v 0.15.0 -->
+
+[gh-user-iamdidev]: https://github.com/iamdidev
+[gh-user-ikalnytskyi]: https://github.com/ikalnytskyi
+[herringtonharkholme/yats.vim]: https://github.com/HerringtonDarkholme/yats.vim
+[liuchengxu/vim-clap]: https://github.com/liuchengxu/vim-clap
+[ts-docs-decorators]: https://www.typescriptlang.org/docs/handbook/decorators.html
+[ts-docs-jsx]: https://www.typescriptlang.org/docs/handbook/jsx.html
+[typescript]: https://www.typescriptlang.org
