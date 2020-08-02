@@ -677,6 +677,19 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" Pandoc
+" > vim-pandoc/vim-pandoc-syntax
+call s:hi("pandocAtxHeader", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+call s:hi("pandocPipeTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("pandocPipeTableHeader", s:nord3_gui, "", s:nord3_term, "", "", "")
+call s:hi("pandocTableHeaderWord", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("pandocCiteAnchor", s:nord12_gui, "", s:nord12_term, "", "", "")
+call s:hi("pandocCiteKey", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("pandocReferenceDefinition", s:nord6_gui, "", s:nord6_term, "", "", "")
+call s:hi("pandocFootnoteDef", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("pandocDefinitionBlockTerm", s:nord12_gui, "", s:nord12_term, "", s:bold, "")
+call s:hi("pandocDefinitionBlock", s:nord9_gui, "", s:nord9_term, "", s:italic, "")
+
 " TypeScript
 " > HerringtonDarkholme/yats.vim
 call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
