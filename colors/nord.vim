@@ -772,3 +772,17 @@ hi! link VimwikiList markdownListMarker
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
+
+" Go
+" > fatih/vim-go
+call s:hi("goDeclaration",  s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("goBuiltins",     s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("goFunctionCall", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("goVarDefs",      s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("goVarAssign",    s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("goVar",          s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("goConst",        s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("goType",         s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("goTypeName",     s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("goDeclType",     s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("goTypeDecl",     s:nord15_gui, "", s:nord15_term, "", "", "")
