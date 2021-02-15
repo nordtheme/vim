@@ -578,6 +578,11 @@ call s:hi("LspDiagnosticsDefaultError" , s:nord11_gui, "", s:nord11_term, "", ""
 call s:hi("LspDiagnosticsDefaultInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("LspDiagnosticsDefaultHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
+call s:hi("LspDiagnosticsUnderlineWarning", "", "", "", "", "", s:nord13_gui)
+call s:hi("LspDiagnosticsUnderlineError" , "", "", "", "", "", s:nord11_gui)
+call s:hi("LspDiagnosticsUnderlineInformation" , "", "", "", "", s:nord8_gui)
+call s:hi("LspDiagnosticsUnderlineHint" , "", "", "", "", "", s:nord10_gui)
+
 " GitGutter
 " > airblade/vim-gitgutter
 call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
