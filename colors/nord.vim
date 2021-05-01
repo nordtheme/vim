@@ -77,6 +77,7 @@ function! NordPalette() abort
   for color in range(16)
     execute 'let ret["nord'.color.'"] = s:nord'.color.'_gui'
   endfor
+  let ret["nord3_bright"] = s:nord3_gui_bright
   return ret
 endfunction
 
