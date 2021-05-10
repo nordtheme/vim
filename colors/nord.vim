@@ -803,54 +803,54 @@ function! NordPalette() abort
 endfunction
 
 " Treesitter
-if has('nvim') && exists("g:nord_enable_treesitter")
-    call s:hi("TSError", s:nord11_gui, 131, "", "", "underline", "underline")
-    call s:hi("TSPunctDelimiter", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSPunctBracket", s:nord6_gui,255, "", "", "", "")
-    call s:hi("TSPunctSpecial", s:nord6_gui,255, "", "", "", "")
-    call s:hi("TSConstant", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSConstBuiltin", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSConstMacro", s:nord7_gui, 109, "", "", "", "")
-    call s:hi("TSStringRegex", s:nord14_gui, 144, "", "", "", "")
-    call s:hi("TSString", s:nord14_gui, 144, "", "", "", "")
-    call s:hi("TSStringEscape", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSCharacter", s:nord14_gui, 144, "", "", "", "")
-    call s:hi("TSNumber", s:nord15_gui, 139, "", "", "", "")
-    call s:hi("TSBoolean", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSFloat", s:nord15_gui, 139, "", "", "", "")
-    call s:hi("TSAnnotation", s:nord12_gui, 173, "", "", "", "")
-    call s:hi("TSAttribute", s:nord7_gui, 109, "", "", "", "")
-    call s:hi("TSNamespace", s:nord7_gui, 201, "", "", "", "")
-    call s:hi("TSFuncBuiltin", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSFunction", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSFuncMacro", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSParameter", s:nord15_gui, 255, "", "", "", "")
-    call s:hi("TSParameterReference", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSMethod", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSField", s:nord5_gui, 255, "", "", "", "")
-    call s:hi("TSProperty", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSConstructor", s:nord7_gui, 109, "", "", "", "")
-    call s:hi("TSConditional", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSRepeat", s:nord15_gui, 139, "", "", "", "")
-    call s:hi("TSLabel", s:nord8_gui, 110, "", "", "", "")
-    call s:hi("TSKeyword", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSKeywordFunction", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSKeywordOperator", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSOperator", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSException", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSType", s:nord7_gui, 109, "", "", "", "")
-    call s:hi("TSTypeBuiltin", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSStructure", s:nord7_gui, 201, "", "", "", "")
-    call s:hi("TSInclude", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSVariable", s:nord5_gui, 255, "", "", "", "")
-    call s:hi("TSVariableBuiltin", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSText", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSStrong", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSEmphasis", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSUnderline", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSTitle", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSLiteral", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSURI", s:nord4_gui, 226, "", "", "", "")
-    call s:hi("TSTag", s:nord9_gui, 109, "", "", "", "")
-    call s:hi("TSTagDelimiter", s:nord3_gui, 241, "", "", "", "")
+if has("nvim") && exists("g:nord_enable_treesitter")
+    !hi link TSError Error
+    !hi link TSPunctDelimiter  Delimiter
+    !hi link TSPunctBracket  Delimiter
+    !hi link TSPunctSpecial Delimiter
+    !hi link TSConstant Constant
+    !hi link TSConstBuiltin Constant
+    !hi link TSConstMacro Constant
+    !hi link TSStringRegex SpecialChar
+    !hi link TSString String
+    !hi link TSStringEscape String
+    !hi link TSCharacter Character
+    !hi link TSNumber Number
+    !hi link TSBoolean Boolean
+    !hi link TSFloat Float
+    !hi link TSAnnotation Structure
+    !hi link TSAttribute Attributes
+    !hi link TSNamespace Structure
+    !hi link TSFuncBuiltin Function
+    !hi link TSFunction Function
+    !hi link TSFuncMacro Function
+    !hi link TSParameter Operator
+    !hi link TSParameterReferenc Operator
+    !hi link TSMethod Function
+    !hi link TSField Attributes
+    !hi link TSProperty Attributes
+    !hi link TSConstructor Function
+    !hi link TSConditional Conditional
+    !hi link TSRepeat Repeat
+    !hi link TSLabel Label
+    !hi link TSKeyword Keyword
+    !hi link TSKeywordFunction Function
+    !hi link TSKeywordOperator Operator
+    !hi link TSOperator Operator
+    !hi link TSException Exception
+    !hi link TSType Type
+    !hi link TSTypeBuiltin Type
+    !hi link TSStructure Structure
+    !hi link TSInclude Include
+    !hi link TSVariable Variable
+    !hi link TSVariableBuiltin Variable
+    !hi link TSText String
+    !hi link TSStrong Bold
+    !hi link TSEmphasis Italic
+    !hi link TSUnderline Underline
+    !hi link TSTitle Comment
+    !hi link TSLiteral String
+    !hi link TSURI Underline
+    !hi link TSTag Tag
+    !hi link TSTagDelimiter Tag
 endif
