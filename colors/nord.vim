@@ -572,10 +572,15 @@ call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
 " Nvim LSP
+"LspDiagnosticsSignError added
+"LspDiagnosticsVirtualTextError added
 " > neovim/nvim-lsp
 call s:hi("LSPDiagnosticsWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("LSPDiagnosticsSignError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("LspDiagnosticsVirtualTextError" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("LspDiagnosticsVirtualTextWarning" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
 " GitGutter
@@ -786,3 +791,4 @@ function! NordPalette() abort
   let ret["nord3_bright"] = s:nord3_gui_bright
   return ret
 endfunction
+
