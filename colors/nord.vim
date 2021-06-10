@@ -687,6 +687,14 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" Julia
+" > JuliaEditorSupport/julia-vim
+hi! link JuliaSymbol Function
+hi! link JuliaStringVarsPla SpecialChar
+hi! link JuliaStringVarsPar SpecialChar
+call s:hi("juliaConstBool", s:nord12_gui, "", s:nord12_term, "", s:italic, "")
+call s:hi("juliaBlKeyword", s:nord15_gui, "", s:nord15_term, "", s:italic, "")
+
 " TypeScript
 " > HerringtonDarkholme/yats.vim
 call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
