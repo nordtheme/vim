@@ -20,49 +20,49 @@ return {
   normal = {
     a = {bg = colors.nord8, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   },
   insert = {
     a = {bg = colors.nord6, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   },
   visual = {
     a = {bg = colors.nord7, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   },
   replace = {
     a = {bg = colors.nord13, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   },
   command = {
     a = {bg = colors.nord8, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   },
   inactive = {
     a = {bg = colors.nord8, fg = colors.nord1, gui = 'bold'},
     b = {bg = colors.nord1, fg = colors.nord5},
-    c = {bg = colors.nord3, fg = colors.nord5}
+    c = {bg = colors.nord3, fg = colors.nord5},
     x = {bg = colors.nord3, fg = colors.nord5},
     y = {bg = colors.nord1, fg = colors.nord5},
-    z = {bg = colors.nord3, fg = colors.nord5}
+    z = {bg = colors.nord1, fg = colors.nord5}
   }
 }
