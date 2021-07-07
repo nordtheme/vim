@@ -799,54 +799,18 @@ function! NordPalette() abort
 endfunction
 
 " Treesitter
-if has("nvim") && exists("g:nord_enable_treesitter")
-    !hi link TSError Error
-    !hi link TSPunctDelimiter  Delimiter
-    !hi link TSPunctBracket  Delimiter
-    !hi link TSPunctSpecial Delimiter
-    !hi link TSConstant Constant
-    !hi link TSConstBuiltin Constant
-    !hi link TSConstMacro Constant
-    !hi link TSStringRegex SpecialChar
-    !hi link TSString String
-    !hi link TSStringEscape String
-    !hi link TSCharacter Character
-    !hi link TSNumber Number
-    !hi link TSBoolean Boolean
-    !hi link TSFloat Float
-    !hi link TSAnnotation Structure
-    !hi link TSAttribute Attributes
-    !hi link TSNamespace Structure
-    !hi link TSFuncBuiltin Function
-    !hi link TSFunction Function
-    !hi link TSFuncMacro Function
-    !hi link TSParameter Operator
-    !hi link TSParameterReferenc Operator
-    !hi link TSMethod Function
-    !hi link TSField Attributes
-    !hi link TSProperty Attributes
-    !hi link TSConstructor Function
-    !hi link TSConditional Conditional
-    !hi link TSRepeat Repeat
-    !hi link TSLabel Label
-    !hi link TSKeyword Keyword
-    !hi link TSKeywordFunction Function
-    !hi link TSKeywordOperator Operator
-    !hi link TSOperator Operator
-    !hi link TSException Exception
-    !hi link TSType Type
-    !hi link TSTypeBuiltin Type
-    !hi link TSStructure Structure
-    !hi link TSInclude Include
-    !hi link TSVariable Variable
-    !hi link TSVariableBuiltin Variable
-    !hi link TSText String
-    !hi link TSStrong Bold
-    !hi link TSEmphasis Italic
-    !hi link TSUnderline Underline
-    !hi link TSTitle Comment
-    !hi link TSLiteral String
-    !hi link TSURI Underline
-    !hi link TSTag Tag
-    !hi link TSTagDelimiter Tag
+if has("nvim")
+    hi! link TSConstBuiltin Constant
+    hi! link TSStringRegex SpecialChar
+    hi! link TSAnnotation Annotation
+    hi! link TSFuncBuiltin Function
+    hi! link TSFuncMacro Function
+    hi! link TSConstructor Function
+    hi! link TSStructure Structure
+    hi! link TSVariable Variable
+    hi! link TSVariableBuiltin Keyword
+    hi! link TSStrong Bold
+    hi! link TSEmphasis Italic
+    hi! link TSUnderline Underline
+    hi! link TSTagDelimiter TSTag
 endif
