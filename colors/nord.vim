@@ -679,16 +679,28 @@ hi! link jsRegexpString SpecialChar
 
 " Pandoc
 " > vim-pandoc/vim-pandoc-syntax
-call s:hi("pandocAtxHeader", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("pandocPipeTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("pandocPipeTableHeader", s:nord3_gui, "", s:nord3_term, "", "", "")
-call s:hi("pandocTableHeaderWord", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("pandocCiteAnchor", s:nord12_gui, "", s:nord12_term, "", "", "")
-call s:hi("pandocCiteKey", s:nord15_gui, "", s:nord15_term, "", "", "")
-call s:hi("pandocReferenceDefinition", s:nord6_gui, "", s:nord6_term, "", "", "")
-call s:hi("pandocFootnoteDef", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("pandocDefinitionBlockTerm", s:nord12_gui, "", s:nord12_term, "", s:bold, "")
-call s:hi("pandocDefinitionBlock", s:nord9_gui, "", s:nord9_term, "", s:italic, "")
+call s:hi("pandocDefinitionBlockTerm", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+call s:hi("pandocTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
+hi! link pandocAtxHeader markdownH1
+hi! link pandocBlockQuote markdownBlockquote
+hi! link pandocCiteAnchor Operator
+hi! link pandocCiteKey pandocReferenceLabel
+hi! link pandocDefinitionBlockMark Operator
+hi! link pandocEmphasis markdownItalic
+hi! link pandocFootnoteID pandocReferenceLabel
+hi! link pandocFootnoteIDHead markdownLinkDelimiter
+hi! link pandocFootnoteIDTail pandocFootnoteIDHead
+hi! link pandocGridTableDelims pandocTableDelims
+hi! link pandocGridTableHeader pandocTableDelims
+hi! link pandocOperator Operator
+hi! link pandocPipeTableDelims pandocTableDelims
+hi! link pandocReferenceDefinition pandocReferenceLabel
+hi! link pandocReferenceLabel markdownLinkText
+hi! link pandocReferenceURL markdownUrl
+hi! link pandocSimpleTableHeader pandocAtxHeader
+hi! link pandocStrong markdownBold
+hi! link pandocTableHeaderWord pandocAtxHeader
+hi! link pandocUListItemBullet Operator
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
