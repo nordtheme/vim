@@ -6,6 +6,26 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.17.0
+
+![Release Date: 2021-07-10](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-07-10&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/23) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/19)
+
+⇅ [Show all commits][gh-compare-tag-v0.16.0_v0.17.0]
+
+## Features
+
+### Syntax
+
+<details>
+<summary><strong>Support for <a href="https://github.com/nvim-treesitter/nvim-treesitter" target="_blank" rel="noreferrer"><code>nvim-treesitter/nvim-treesitter</code></a></strong> — #235 ⇄ #253 (⊶ b3e712a9) by <a href="https://github.com/s-u-d-o-e-r" target="_blank" rel="noreferrer">@s-u-d-o-e-r</a> and <a href="https://github.com/mrswats" target="_blank" rel="noreferrer">@mrswats</a></summary>
+
+↠ Neovim [version 0.5][neovim/neovim-v0.5.0] is a long-time awaited update that introduces features like support for [tree-sitter][tree-sitter/tree-sitter] via [nvim-treesitter][nvim-treesitter/nvim-treesitter] and [LSP][neovim-docs-lsp] via [nvim-lspconfig][neovim/nvim-lspconfig].
+Even though Neovim divides more and more from Vim through specific features like first-class Lua support with custom APIs, the highlighting for tree-sitter is achieved through “normal“ syntax highlighting groups. Most of the groups are already [linked by the `nvim-treesitter` plugin by default][nvim-treesitter/nvim-treesitter-blob-90f15d9] so only a few groups have been adjusted for now to fit the Nord style.
+
+⚠️ Note that this is the first iteration and **it is very likely that there will be inconsistencies compared to the current highlighting when using “normal“ Vim plugins per language**. Please **report any problem** you find so that the support for tree-sitter can be improved continuously!
+
+</details>
+
 # 0.16.0
 
 ![Release Date: 2021-06-09](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-06-09&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/22) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/18)
@@ -1044,3 +1064,13 @@ otherwise Markdown elements are not parsed and rendered!
 [vim-docs#php_syntax]: https://vimhelp.org/syntax.txt.html#ft%2dphp%2dsyntax
 [vim-pandoc/vim-pandoc-syntax]: https://github.com/vim-pandoc/vim-pandoc-syntax
 [wikip-greek_alphabet]: https://en.wikipedia.org/wiki/Greek_alphabet
+
+<!-- 0.17.0 -->
+
+[gh-compare-tag-v0.16.0_v0.17.0]: https://github.com/arcticicestudio/nord-vim/compare/v0.16.0...v0.17.0
+[neovim-docs-lsp]: https://neovim.io/doc/user/lsp.html
+[neovim/neovim-v0.5.0]: https://github.com/neovim/neovim/releases/tag/v0.5.0
+[neovim/nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
+[nvim-treesitter/nvim-treesitter-blob-90f15d9]: https://github.com/nvim-treesitter/nvim-treesitter/blob/90f15d9/plugin/nvim-treesitter.vim
+[nvim-treesitter/nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[tree-sitter/tree-sitter]: https://github.com/tree-sitter/tree-sitter
