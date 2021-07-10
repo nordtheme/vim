@@ -690,6 +690,25 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" tree-sitter
+" > nvim-treesitter/nvim-treesitter
+if has("nvim")
+  hi! link TSAnnotation Annotation
+  hi! link TSConstBuiltin Constant
+  hi! link TSConstructor Function
+  hi! link TSEmphasis Italic
+  hi! link TSError Error
+  hi! link TSFuncBuiltin Function
+  hi! link TSFuncMacro Function
+  hi! link TSStringRegex SpecialChar
+  hi! link TSStrong Bold
+  hi! link TSStructure Structure
+  hi! link TSTagDelimiter TSTag
+  hi! link TSUnderline Underline
+  hi! link TSVariable Variable
+  hi! link TSVariableBuiltin Keyword
+endif
+
 " TypeScript
 " > HerringtonDarkholme/yats.vim
 call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
@@ -800,20 +819,3 @@ function! NordPalette() abort
   let ret["nord3_bright"] = s:nord3_gui_bright
   return ret
 endfunction
-
-" Treesitter
-if has("nvim")
-    hi! link TSConstBuiltin Constant
-    hi! link TSStringRegex SpecialChar
-    hi! link TSAnnotation Annotation
-    hi! link TSFuncBuiltin Function
-    hi! link TSFuncMacro Function
-    hi! link TSConstructor Function
-    hi! link TSStructure Structure
-    hi! link TSVariable Variable
-    hi! link TSVariableBuiltin Keyword
-    hi! link TSStrong Bold
-    hi! link TSEmphasis Italic
-    hi! link TSUnderline Underline
-    hi! link TSTagDelimiter TSTag
-endif
