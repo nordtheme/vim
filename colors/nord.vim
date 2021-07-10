@@ -277,6 +277,7 @@ call s:hi("Comment", s:nord3_gui_bright, "", s:nord3_term, "", s:italicize_comme
 call s:hi("Conceal", "", "NONE", "", "NONE", "", "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
+call s:hi("Decorator", s:nord12_gui, "", s:nord12_term, "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
 call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -301,8 +302,10 @@ call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
 call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
 call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
+hi! link Annotation Decorator
 hi! link Macro Define
 hi! link PreCondit PreProc
+hi! link Variable Identifier
 
 "+-----------+
 "+ Languages +
