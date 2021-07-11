@@ -690,6 +690,31 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" Pandoc
+" > vim-pandoc/vim-pandoc-syntax
+call s:hi("pandocDefinitionBlockTerm", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+call s:hi("pandocTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
+hi! link pandocAtxHeader markdownH1
+hi! link pandocBlockQuote markdownBlockquote
+hi! link pandocCiteAnchor Operator
+hi! link pandocCiteKey pandocReferenceLabel
+hi! link pandocDefinitionBlockMark Operator
+hi! link pandocEmphasis markdownItalic
+hi! link pandocFootnoteID pandocReferenceLabel
+hi! link pandocFootnoteIDHead markdownLinkDelimiter
+hi! link pandocFootnoteIDTail pandocFootnoteIDHead
+hi! link pandocGridTableDelims pandocTableDelims
+hi! link pandocGridTableHeader pandocTableDelims
+hi! link pandocOperator Operator
+hi! link pandocPipeTableDelims pandocTableDelims
+hi! link pandocReferenceDefinition pandocReferenceLabel
+hi! link pandocReferenceLabel markdownLinkText
+hi! link pandocReferenceURL markdownUrl
+hi! link pandocSimpleTableHeader pandocAtxHeader
+hi! link pandocStrong markdownBold
+hi! link pandocTableHeaderWord pandocAtxHeader
+hi! link pandocUListItemBullet Operator
+
 " tree-sitter
 " > nvim-treesitter/nvim-treesitter
 if has("nvim")
