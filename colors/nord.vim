@@ -722,7 +722,6 @@ if has("nvim")
   hi! link TSConstBuiltin Constant
   hi! link TSConstructor Function
   hi! link TSEmphasis Italic
-  hi! link TSError Error
   hi! link TSFuncBuiltin Function
   hi! link TSFuncMacro Function
   hi! link TSStringRegex SpecialChar
