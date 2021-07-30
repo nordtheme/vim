@@ -12,6 +12,10 @@ if version > 580
   endif
 endif
 
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 let g:colors_name = "nord"
 let s:nord_vim_version="0.17.0"
 set background=dark
