@@ -13,7 +13,7 @@ if version > 580
 endif
 
 let g:colors_name = "nord"
-let s:nord_vim_version="0.17.0"
+let s:nord_vim_version="0.18.0"
 set background=dark
 
 let s:nord0_gui = "#2E3440"
@@ -574,6 +574,7 @@ call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
 " Neovim LSP
 " > neovim/nvim-lspconfig
+call s:hi("LspCodeLens", s:nord3_gui_bright, "", s:nord3_term, "", "", "")
 call s:hi("LspDiagnosticsDefaultWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("LspDiagnosticsDefaultError" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("LspDiagnosticsDefaultInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
@@ -690,6 +691,31 @@ hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
 hi! link jsRegexpString SpecialChar
 
+" Pandoc
+" > vim-pandoc/vim-pandoc-syntax
+call s:hi("pandocDefinitionBlockTerm", s:nord7_gui, "", s:nord7_term, "", s:italic, "")
+call s:hi("pandocTableDelims", s:nord3_gui, "", s:nord3_term, "", "", "")
+hi! link pandocAtxHeader markdownH1
+hi! link pandocBlockQuote markdownBlockquote
+hi! link pandocCiteAnchor Operator
+hi! link pandocCiteKey pandocReferenceLabel
+hi! link pandocDefinitionBlockMark Operator
+hi! link pandocEmphasis markdownItalic
+hi! link pandocFootnoteID pandocReferenceLabel
+hi! link pandocFootnoteIDHead markdownLinkDelimiter
+hi! link pandocFootnoteIDTail pandocFootnoteIDHead
+hi! link pandocGridTableDelims pandocTableDelims
+hi! link pandocGridTableHeader pandocTableDelims
+hi! link pandocOperator Operator
+hi! link pandocPipeTableDelims pandocTableDelims
+hi! link pandocReferenceDefinition pandocReferenceLabel
+hi! link pandocReferenceLabel markdownLinkText
+hi! link pandocReferenceURL markdownUrl
+hi! link pandocSimpleTableHeader pandocAtxHeader
+hi! link pandocStrong markdownBold
+hi! link pandocTableHeaderWord pandocAtxHeader
+hi! link pandocUListItemBullet Operator
+
 " tree-sitter
 " > nvim-treesitter/nvim-treesitter
 if has("nvim")
@@ -697,7 +723,6 @@ if has("nvim")
   hi! link TSConstBuiltin Constant
   hi! link TSConstructor Function
   hi! link TSEmphasis Italic
-  hi! link TSError Error
   hi! link TSFuncBuiltin Function
   hi! link TSFuncMacro Function
   hi! link TSStringRegex SpecialChar
