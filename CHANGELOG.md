@@ -6,6 +6,56 @@
 
 <!--lint disable no-duplicate-headings-->
 
+# 0.18.0
+
+![Release Date: 2021-09-12](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-09-12&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/24) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/20)
+
+⇅ [Show all commits][gh-compare-tag-v0.17.0_v0.18.0]
+
+## Features
+
+### Syntax
+
+<details>
+<summary><strong>Support for <a href="https://github.com/vim-pandoc/vim-pandoc-syntax" target="_blank" rel="noreferrer"><code>vim-pandoc/vim-pandoc-syntax</code></a></strong> — #220 (⊶ 8d8b9bf8) by <a href="https://github.com/tpoisot" target="_blank" rel="noreferrer">@tpoisot</a> and <a href="https://github.com/BirgerNi" target="_blank" rel="noreferrer">@BirgerNi</a></summary>
+
+↠ To improve syntax highlighting for [Pandoc][], support for the [vim-pandoc/vim-pandoc-syntax][] plugin has been implemented.
+Most groups are linked to existing Markdown groups to ensure a consistent style across languages and different plugins.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/7836623/120067101-1f622180-c07a-11eb-81a0-73414e54df55.png" width="75%" /></p>
+
+</details>
+
+### UI
+
+<details>
+<summary><strong>Support for <a href="https://neovim.io/doc/user/lsp.html#lsp-highlight-codelens" target="_blank" rel="noreferrer">LSP code lenses</a></strong> — #266 (⊶ 02ddfadb) by <a href="https://github.com/jan-xyz" target="_blank" rel="noreferrer">@jan-xyz</a></summary>
+
+↠ Before [LSP code lenses][nvim-docs-lsp#codelens] were highlighted with the default color which has been changed to make it less visually intrusive, like other UI related elements, e.g. messages of linters.
+
+<p align="center"><strong>Before</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/5249233/125171712-d1caef80-e1b5-11eb-8a40-95d7e2a79bbd.png" width="75%" /></p>
+
+<p align="center"><strong>After</strong></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/5249233/125171722-da232a80-e1b5-11eb-9073-5fb3795d1136.png" width="75%" /></p>
+
+</details>
+
+## Improvements
+
+### Syntax
+
+<details>
+<summary><strong>Prevent aggressive error highlighting</strong> — #269 ⇄ #270 (⊶ e3e8a75c) by <a href="https://github.com/jan-xyz" target="_blank" rel="noreferrer">@jan-xyz</a></summary>
+
+↠ The `TSError` group is used to [highlight syntax/parser errors][nvim-treesitter/nvim-treesitter-blob-fb5d6e04#l493-l495] which caused an aggressive styling where the background color of many syntax elements was rendered with `nord11` during typing. This is a known problem and was fixed by many other themes by removing the group again. One of the [core maintainers of `nvim-treesitter` provided a solution by remapping groups][nvim-treesitter/nvim-treesitter#78#comment-647140700] and also mentioned that the group is [styled by the `nvim-treesitter` plugin but the active theme][nvim-treesitter/nvim-treesitter#1016#comment-797049591].
+
+Syntax errors can still be highlighted through linters and parsers like [Neovim's LSP][neovim/nvim-lspconfig] can still be used instead to highlight errors with the correct style, e.g. only change the foreground color of a single word.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/22193688/126706481-bee2564c-8aa7-4d44-b666-794065809899.png" width="75%" /></p>
+
+</details>
+
 # 0.17.0
 
 ![Release Date: 2021-07-10](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-07-10&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/23) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/19)
@@ -48,7 +98,7 @@ Even though Neovim divides more and more from Vim through specific features like
 <details>
 <summary><strong>Support for the <a href="https://github.com/StanAngeloff/php.vim" target="_blank" rel="noreferrer">php.vim</a> plugin</strong> — #218, #262 ⇄ #263 (⊶ b3c46c87, 07452c71) by <a href="https://github.com/pirey" target="_blank" rel="noreferrer">@pirey</a></summary>
 
-↠ In [arcticicestudio/nord-vim#218][1] new highlighting groups for the bundled PHP syntax were added to improve the highlighting of classes, function and methods and the overall syntax token detection, but they are actually defined by the [php.vim][stanangeloff/php.vim] plugin. Therefore the added highlighting calls have been moved to a plugin section.
+↠ In [arcticicestudio/nord-vim#218][] new highlighting groups for the bundled PHP syntax were added to improve the highlighting of classes, function and methods and the overall syntax token detection, but they are actually defined by the [php.vim][stanangeloff/php.vim] plugin. Therefore the added highlighting calls have been moved to a plugin section.
 Additionally, the `phpClassExtends` and `phpClassImplements` groups have been added to improve the highlighting for classes that implement or extended interfaces/classes. The `phpUseClass` has also been added to improve the highlighting for imports.
 
 To improve the highlighting with the bundled PHP syntax, the [following options][vim-docs#php_syntax] can be set:
@@ -813,7 +863,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 ### Configurations
 
-❯ Added a configuration to enable [italic comments](https://github.com/arcticicestudio/nord-vim#italic-comments).  
+❯ Added a configuration to enable [italic comments](https://github.com/arcticicestudio/nord-vim#italic-comments).
 To adhere to the Nord style guide this option is disabled by default. It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
 
 ```vim
@@ -839,7 +889,7 @@ let g:nord_italic_comments = 1
 
 ### Documentation
 
-❯ Added the new terminal emulator port project [Nord Hyper](https://github.com/arcticicestudio/nord-hyper)  
+❯ Added the new terminal emulator port project [Nord Hyper](https://github.com/arcticicestudio/nord-hyper)
 [![Nord Hyper](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)
 
 # 0.3.0
@@ -850,7 +900,7 @@ let g:nord_italic_comments = 1
 
 ### Plugin Support
 
-❯ The [Nord lightline.vim][nord-lightline] UI plugin theme now includes better support for the [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) plugin. Before this implementation text shown in the main segment of the tmuxline, generated via the `:Tmuxline lightline` command, has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.  
+❯ The [Nord lightline.vim][nord-lightline] UI plugin theme now includes better support for the [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) plugin. Before this implementation text shown in the main segment of the tmuxline, generated via the `:Tmuxline lightline` command, has been colorized using `nord0` which resulted in unreadable text due to a `nord3` background.
 This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11, 4ea37f7e)
 
 <p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/9512557/21741900/4f792f5e-d537-11e6-9e69-09ff11b60c4e.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954034/15b87d1e-da47-11e6-9e70-a74aea14c378.png"/><br><strong>With unicode separators</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954058/7a7c5266-da47-11e6-8f1f-0203d5270c51.png"/><br><strong>Without specified configurations (tmuxline.vim autodetect)</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21954072/931669e2-da47-11e6-8db3-cbdf9d6681f1.png"/></p>
@@ -954,14 +1004,17 @@ otherwise Markdown elements are not parsed and rendered!
 [itchyny/lightline-adv-config]: https://github.com/itchyny/lightline.vim#advanced-configuration
 [itchyny/lightline.vim-gh-257]: https://github.com/itchyny/lightline.vim/pull/257
 [lesscss-doc-fn-lighten]: http://lesscss.org/functions/#color-operations-lighten
+[liuchengxu/vim-clap]: https://github.com/liuchengxu/vim-clap
 [neoclide/coc.nvim]: https://github.com/neoclide/coc.nvim
+[neovim-docs-lsp]: https://neovim.io/doc/user/lsp.html
+[neovim/nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
 [nord-atom-syntax-pr-47]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
 [nord-config-port-vim#uni_st_line]: https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines
 [nord-docs-config-font-bold]: https://www.nordtheme.com/ports/vim/configuration#bold-styles
 [nord-gh]: https://github.com/arcticicestudio/nord
-[nord-home]: https://www.nordtheme.com/ports/vim
 [nord-lightline]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
 [nord]: https://www.nordtheme.com
+[pandoc]: https://pandoc.org
 [plugin-ale]: https://github.com/w0rp/ale
 [plugin-ctrlp]: https://github.com/ctrlpvim/ctrlp.vim
 [plugin-junegunn/vim-plug]: https://github.com/junegunn/vim-plug
@@ -977,11 +1030,11 @@ otherwise Markdown elements are not parsed and rendered!
 [readme-config-underline-support]: https://github.com/arcticicestudio/nord-vim#underline-support
 [readme-config-uniform-diff-background]: https://github.com/arcticicestudio/nord-vim#uniform-diff-background
 [readme-config-uniform-statusline-background]: https://github.com/arcticicestudio/nord-vim#uniform-status-lines
-[readme-config]: https://github.com/arcticicestudio/nord-vim#configuration
 [rust]: https://www.rust-lang.org
 [vdoc-fchar]: http://vimdoc.sourceforge.net/htmldoc/options.html#'fillchars'
 [vdoc-vsplit]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-VertSplit
 [vim-doc-diffadd]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-DiffAdd
+[vim-pandoc/vim-pandoc-syntax]: https://github.com/vim-pandoc/vim-pandoc-syntax
 [yaml]: http://yaml.org
 
 <!-- v0.11.0 -->
@@ -1018,7 +1071,6 @@ otherwise Markdown elements are not parsed and rendered!
 [gh-user-nixtrace]: https://github.com/nixtrace
 [gh-user-vasilescur]: https://github.com/vasilescur
 [mhinz/vim-startify]: https://github.com/mhinz/vim-startify
-[nord-config-port-vim#uni_st_line]: https://www.nordtheme.com/docs/ports/vim/configuration#uniform-status-lines
 [vim/vim-diff#d9b0d83b...017ba07f]: https://github.com/vim/vim/compare/d9b0d83b13d2691e4544709abd87eac004715175...017ba07fa2cdc578245618717229444fd50c470d#diff-80fffb3e9c20e93e5b2328a9a20e19c
 [vim/vim-rel-v8.1.2029]: https://github.com/vim/vim/releases/tag/v8.1.2029
 [vim/vim#4933]: https://github.com/vim/vim/pull/4933
@@ -1035,7 +1087,6 @@ otherwise Markdown elements are not parsed and rendered!
 [gh-user-iamdidev]: https://github.com/iamdidev
 [gh-user-ikalnytskyi]: https://github.com/ikalnytskyi
 [herringtonharkholme/yats.vim]: https://github.com/HerringtonDarkholme/yats.vim
-[liuchengxu/vim-clap]: https://github.com/liuchengxu/vim-clap
 [ts-docs-decorators]: https://www.typescriptlang.org/docs/handbook/decorators.html
 [ts-docs-jsx]: https://www.typescriptlang.org/docs/handbook/jsx.html
 [typescript]: https://www.typescriptlang.org
@@ -1051,26 +1102,27 @@ otherwise Markdown elements are not parsed and rendered!
 [gh-user-crispgm]: https://github.com/crispgm
 [gh-user-ojroques]: https://github.com/ojroques
 [latex]: https://www.latex-project.org
-[liuchengxu/vim-clap]: https://github.com/liuchengxu/vim-clap
 [nathanaelkane/vim-indent-guides]: https://github.com/nathanaelkane/vim-indent-guides
 [nathanaelkane/vim-indent-guides#custom_color]: https://github.com/nathanaelkane/vim-indent-guides#setting-custom-indent-colors
-[neoclide/coc.nvim]: https://github.com/neoclide/coc.nvim
-[neovim-docs-lsp]: https://neovim.io/doc/user/lsp.html
 [neovim/neovim-ms#19]: https://github.com/neovim/neovim/milestone/19
 [neovim/neovim#12655]: https://github.com/neovim/neovim#12655
 [overleaf-latex-learn-math_expr]: https://www.overleaf.com/learn/latex/mathematical_expressions
-[pandoc]: https://pandoc.org
 [stanangeloff/php.vim]: https://github.com/StanAngeloff/php.vim
 [vim-docs#php_syntax]: https://vimhelp.org/syntax.txt.html#ft%2dphp%2dsyntax
-[vim-pandoc/vim-pandoc-syntax]: https://github.com/vim-pandoc/vim-pandoc-syntax
 [wikip-greek_alphabet]: https://en.wikipedia.org/wiki/Greek_alphabet
 
 <!-- 0.17.0 -->
 
 [gh-compare-tag-v0.16.0_v0.17.0]: https://github.com/arcticicestudio/nord-vim/compare/v0.16.0...v0.17.0
-[neovim-docs-lsp]: https://neovim.io/doc/user/lsp.html
 [neovim/neovim-v0.5.0]: https://github.com/neovim/neovim/releases/tag/v0.5.0
-[neovim/nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
 [nvim-treesitter/nvim-treesitter-blob-90f15d9]: https://github.com/nvim-treesitter/nvim-treesitter/blob/90f15d9/plugin/nvim-treesitter.vim
 [nvim-treesitter/nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [tree-sitter/tree-sitter]: https://github.com/tree-sitter/tree-sitter
+
+<!-- 0.18.0 -->
+
+[gh-compare-tag-v0.17.0_v0.18.0]: https://github.com/arcticicestudio/nord-vim/compare/v0.17.0...v0.18.0
+[nvim-docs-lsp#codelens]: https://neovim.io/doc/user/lsp.html#lsp-highlight-codelens
+[nvim-treesitter/nvim-treesitter-blob-fb5d6e04#l493-l495]: https://github.com/nvim-treesitter/nvim-treesitter/blob/fb5d6e04/doc/nvim-treesitter.txt#L493-L495
+[nvim-treesitter/nvim-treesitter#1016#comment-797049591]: https://github.com/nvim-treesitter/nvim-treesitter/issues/1016#issuecomment-797049591
+[nvim-treesitter/nvim-treesitter#78#comment-647140700]: https://github.com/nvim-treesitter/nvim-treesitter/issues/78#issuecomment-647140700
