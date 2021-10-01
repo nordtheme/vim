@@ -831,6 +831,10 @@ hi! link VimwikiList markdownListMarker
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
 
+" Barbar
+" > romgrk/barbar.nvim
+call s:hi("BufferCurrentMod", s:nord10_gui, "", "", s:nord10_term , "", "")
+
 "+------------+
 "+ Public API +
 "+------------+
