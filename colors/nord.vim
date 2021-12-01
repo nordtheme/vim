@@ -575,14 +575,14 @@ call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 " Neovim LSP
 " > neovim/nvim-lspconfig
 call s:hi("LspCodeLens", s:nord3_gui_bright, "", s:nord3_term, "", "", "")
-call s:hi("LspDiagnosticsDefaultWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
-call s:hi("LspDiagnosticsDefaultError" , s:nord11_gui, "", s:nord11_term, "", "", "")
-call s:hi("LspDiagnosticsDefaultInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
-call s:hi("LspDiagnosticsDefaultHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("LspDiagnosticsUnderlineWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
-call s:hi("LspDiagnosticsUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
-call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
-call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+call s:hi("DiagnosticWarn", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("DiagnosticError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("DiagnosticInfo" , s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("DiagnosticHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("DiagnosticUnderlineWarn" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
+call s:hi("DiagnosticUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
+call s:hi("DiagnosticUnderlineInfo" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
+call s:hi("DiagnosticUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
