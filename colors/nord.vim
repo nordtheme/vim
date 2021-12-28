@@ -216,6 +216,18 @@ if has('nvim')
   let g:terminal_color_15 = s:nord6_gui
 endif
 
+"+- Neovim Diagnostics API -+
+if has('nvim-0.6')
+  call s:hi("DiagnosticWarn", s:nord13_gui, "", s:nord13_term, "", "", "")
+  call s:hi("DiagnosticError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+  call s:hi("DiagnosticInfo" , s:nord8_gui, "", s:nord8_term, "", "", "")
+  call s:hi("DiagnosticHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
+  call s:hi("DiagnosticUnderlineWarn" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
+  call s:hi("DiagnosticUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
+  call s:hi("DiagnosticUnderlineInfo" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
+  call s:hi("DiagnosticUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+endif
+
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 if g:nord_cursor_line_number_background == 0
