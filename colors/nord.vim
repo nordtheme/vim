@@ -594,6 +594,9 @@ if has("nvim-0.5")
   call s:hi("LspDiagnosticsUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
   call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
   call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+  call s:hi("LspReferenceText", "", s:nord3_gui, "", s:nord3_term, "", "")
+  call s:hi("LspReferenceRead", "", s:nord3_gui, "", s:nord3_term, "", "")
+  call s:hi("LspReferenceWrite", "", s:nord3_gui, "", s:nord3_term, "", "")
 endif
 
 " GitGutter
