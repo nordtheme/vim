@@ -226,6 +226,11 @@ call s:hi("DiagnosticUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "und
 call s:hi("DiagnosticUnderlineInfo" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
 call s:hi("DiagnosticUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
 
+"+- Neovim DocumentHighlight -+
+call s:hi("LspReferenceText", "", s:nord3_gui, "", s:nord3_term, "", "")
+call s:hi("LspReferenceRead", "", s:nord3_gui, "", s:nord3_term, "", "")
+call s:hi("LspReferenceWrite", "", s:nord3_gui, "", s:nord3_term, "", "")
+
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 if g:nord_cursor_line_number_background == 0
