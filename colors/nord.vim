@@ -231,6 +231,9 @@ call s:hi("LspReferenceText", "", s:nord3_gui, "", s:nord3_term, "", "")
 call s:hi("LspReferenceRead", "", s:nord3_gui, "", s:nord3_term, "", "")
 call s:hi("LspReferenceWrite", "", s:nord3_gui, "", s:nord3_term, "", "")
 
+"+- Neovim LspSignatureHelp -+
+call s:hi("LspSignatureActiveParameter", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
+
 "+--- Gutter ---+
 call s:hi("CursorColumn", "", s:nord1_gui, "NONE", s:nord1_term, "", "")
 if g:nord_cursor_line_number_background == 0
