@@ -318,8 +318,8 @@ call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
 call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
-call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
-call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("Type", s:nord7_gui, "", s:nord7_term, "", "NONE", "")
+call s:hi("Typedef", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link Annotation Decorator
 hi! link Macro Define
 hi! link PreCondit PreProc
@@ -746,10 +746,13 @@ if has("nvim")
   hi! link TSEmphasis Italic
   hi! link TSFuncBuiltin Function
   hi! link TSFuncMacro Function
+  hi! link TSStringEscape SpecialChar
   hi! link TSStringRegex SpecialChar
   hi! link TSStrong Bold
   hi! link TSStructure Structure
   hi! link TSTagDelimiter TSTag
+  hi! link TSType Type
+  hi! link TSTypeBuiltin Type
   hi! link TSUnderline Underline
   hi! link TSVariable Variable
   hi! link TSVariableBuiltin Keyword
