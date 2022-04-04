@@ -593,7 +593,7 @@ call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
 " vim-go
-" > faith/vim-go
+" > fatih/vim-go
 call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
 hi! link goConstants Keyword
 hi! link goFunctionCall Function
