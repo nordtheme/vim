@@ -298,9 +298,12 @@ call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
 call s:hi("Decorator", s:nord12_gui, "", s:nord12_term, "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
+call s:hi("Semicolon", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("QuotationsMarks", s:nord6_gui, "", s:nord6_term, "", "", "")
 call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Float", s:nord15_gui, "", s:nord15_term, "", "", "")
 call s:hi("Function", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("FormatSpecifier", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("Identifier", s:nord4_gui, "", "NONE", "", "NONE", "")
 call s:hi("Include", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Keyword", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -420,8 +423,6 @@ hi! link diffRemoved DiffDelete
 
 call s:hi("gitconfigVariable", s:nord7_gui, "", s:nord7_term, "", "", "")
 
-call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
-hi! link goConstants Keyword
 
 call s:hi("helpBar", s:nord3_gui, "", s:nord3_term, "", "", "")
 call s:hi("helpHyperTextJump", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
@@ -591,6 +592,30 @@ call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 
+" vim-go
+" > fatih/vim-go
+call s:hi("goBuiltins", s:nord7_gui, "", s:nord7_term, "", "", "")
+hi! link goConstants Keyword
+hi! link goFunctionCall Function
+hi! link goFormatSpecifier FormatSpecifier
+hi! link goEscapeOctal FormatSpecifier
+hi! link goEscapeC FormatSpecifier
+hi! link goEscapeX FormatSpecifier
+hi! link goEscapeU FormatSpecifier
+hi! link goEscapeBigU FormatSpecifier
+hi! link goEscapeError FormatSpecifier
+" TODO: these are not exposed by vim-go so you need to add
+" these groups to vim-go
+" hi! link goSemicolon Semicolon
+" hi! link goQuotationsMarks QuotationsMarks
+
+" Nvim LSP
+" > neovim/nvim-lsp
+call s:hi("LSPDiagnosticsWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("LSPDiagnosticsError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("LSPDiagnosticsInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("LSPDiagnosticsHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
+
 " Neovim LSP
 " > neovim/nvim-lspconfig
 call s:hi("LspCodeLens", s:nord3_gui_bright, "", s:nord3_term, "", "", "")
@@ -604,6 +629,7 @@ if has("nvim-0.5")
   call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
   call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
 endif
+
 
 " GitGutter
 " > airblade/vim-gitgutter
