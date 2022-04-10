@@ -191,8 +191,8 @@ if has('terminal')
   let g:terminal_ansi_colors = [s:nord1_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord8_gui, s:nord5_gui, s:nord3_gui, s:nord11_gui, s:nord14_gui, s:nord13_gui, s:nord9_gui, s:nord15_gui, s:nord7_gui, s:nord6_gui]
 endif
 
-"+- Neovim Terminal Colors -+
 if has('nvim')
+  "+- Neovim Terminal Colors -+
   let g:terminal_color_0 = s:nord1_gui
   let g:terminal_color_1 = s:nord11_gui
   let g:terminal_color_2 = s:nord14_gui
@@ -209,9 +209,7 @@ if has('nvim')
   let g:terminal_color_13 = s:nord15_gui
   let g:terminal_color_14 = s:nord7_gui
   let g:terminal_color_15 = s:nord6_gui
-endif
 
-if has('nvim')
   "+- Neovim Support -+
   call s:hi("healthError", s:nord11_gui, s:nord1_gui, s:nord11_term, s:nord1_term, "", "")
   call s:hi("healthSuccess", s:nord14_gui, s:nord1_gui, s:nord14_term, s:nord1_term, "", "")
@@ -598,19 +596,21 @@ if exists('g:did_coc_loaded')
   call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
 endif
 
-" Neovim LSP
-" > neovim/nvim-lspconfig
-if exists('g:lspconfig')
-  call s:hi("LspCodeLens", s:nord3_gui_bright, "", s:nord3_term, "", "", "")
-  if has("nvim-0.5")
-    call s:hi("LspDiagnosticsDefaultWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
-    call s:hi("LspDiagnosticsDefaultError" , s:nord11_gui, "", s:nord11_term, "", "", "")
-    call s:hi("LspDiagnosticsDefaultInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
-    call s:hi("LspDiagnosticsDefaultHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
-    call s:hi("LspDiagnosticsUnderlineWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
-    call s:hi("LspDiagnosticsUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
-    call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
-    call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+if has('nvim')
+  " Neovim LSP
+  " > neovim/nvim-lspconfig
+  if exists('g:lspconfig')
+    call s:hi("LspCodeLens", s:nord3_gui_bright, "", s:nord3_term, "", "", "")
+    if has("nvim-0.5")
+      call s:hi("LspDiagnosticsDefaultWarning", s:nord13_gui, "", s:nord13_term, "", "", "")
+      call s:hi("LspDiagnosticsDefaultError" , s:nord11_gui, "", s:nord11_term, "", "", "")
+      call s:hi("LspDiagnosticsDefaultInformation" , s:nord8_gui, "", s:nord8_term, "", "", "")
+      call s:hi("LspDiagnosticsDefaultHint" , s:nord10_gui, "", s:nord10_term, "", "", "")
+      call s:hi("LspDiagnosticsUnderlineWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
+      call s:hi("LspDiagnosticsUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
+      call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
+      call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
+    endif
   endif
 endif
 
@@ -768,22 +768,24 @@ if exists('g:vim_pandoc_syntax_exists')
   hi! link pandocUListItemBullet Operator
 endif
   
-" tree-sitter
-" > nvim-treesitter/nvim-treesitter
-if exists('g:loaded_nvim_treesitter')
-  hi! link TSAnnotation Annotation
-  hi! link TSConstBuiltin Constant
-  hi! link TSConstructor Function
-  hi! link TSEmphasis Italic
-  hi! link TSFuncBuiltin Function
-  hi! link TSFuncMacro Function
-  hi! link TSStringRegex SpecialChar
-  hi! link TSStrong Bold
-  hi! link TSStructure Structure
-  hi! link TSTagDelimiter TSTag
-  hi! link TSUnderline Underline
-  hi! link TSVariable Variable
-  hi! link TSVariableBuiltin Keyword
+if has('nvim')
+  " tree-sitter
+  " > nvim-treesitter/nvim-treesitter
+  if exists('g:loaded_nvim_treesitter')
+    hi! link TSAnnotation Annotation
+    hi! link TSConstBuiltin Constant
+    hi! link TSConstructor Function
+    hi! link TSEmphasis Italic
+    hi! link TSFuncBuiltin Function
+    hi! link TSFuncMacro Function
+    hi! link TSStringRegex SpecialChar
+    hi! link TSStrong Bold
+    hi! link TSStructure Structure
+    hi! link TSTagDelimiter TSTag
+    hi! link TSUnderline Underline
+    hi! link TSVariable Variable
+    hi! link TSVariableBuiltin Keyword
+  endif
 endif
 
 " TypeScript
