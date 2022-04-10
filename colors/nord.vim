@@ -726,9 +726,11 @@ endif
 "+--- Languages ---+
 " Haskell
 " > neovimhaskell/haskell-vim
-call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
-call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
-hi! link haskellPragma haskellPreProc
+if exist('g:cabal_indent_section')
+  call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
+  call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
+  hi! link haskellPragma haskellPreProc
+endif
 
 " JavaScript
 " > pangloss/vim-javascript
@@ -790,44 +792,46 @@ endif
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
-call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
-call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
-call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
-" TypeScript JSX
- call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
-hi! link typescriptOperator Operator
-hi! link typescriptBinaryOp Operator
-hi! link typescriptAssign Operator
-hi! link typescriptMember Identifier
-hi! link typescriptDOMStorageMethod Identifier
-hi! link typescriptArrowFuncArg Identifier
-hi! link typescriptGlobal typescriptClassName
-hi! link typescriptBOMWindowProp Function
-hi! link typescriptArrowFuncDef Function
-hi! link typescriptAliasDeclaration Function
-hi! link typescriptPredefinedType Type
-hi! link typescriptTypeReference typescriptClassName
-hi! link typescriptTypeAnnotation Structure
-hi! link typescriptDocNamedParamType SpecialComment
-hi! link typescriptDocNotation Keyword
-hi! link typescriptDocTags Keyword
-hi! link typescriptImport Keyword
-hi! link typescriptExport Keyword
-hi! link typescriptTry Keyword
-hi! link typescriptVariable Keyword
-hi! link typescriptBraces Normal
-hi! link typescriptObjectLabel Normal
-hi! link typescriptCall Normal
-hi! link typescriptClassHeritage typescriptClassName
-hi! link typescriptFuncTypeArrow Structure
-hi! link typescriptMemberOptionality Structure
-hi! link typescriptNodeGlobal typescriptGlobal
-hi! link typescriptTypeBrackets Structure
-hi! link tsxEqual Operator
-hi! link tsxIntrinsicTagName htmlTag
-hi! link tsxTagName tsxIntrinsicTagName
+if exists('g:typescript_compiler_options')
+  call s:hi("typescriptBOMWindowMethod", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
+  call s:hi("typescriptClassName", s:nord7_gui, "", s:nord7_term, "", "", "")
+  call s:hi("typescriptDecorator", s:nord12_gui, "", s:nord12_term, "", "", "")
+  call s:hi("typescriptInterfaceName", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+  call s:hi("typescriptRegexpString", s:nord13_gui, "", s:nord13_term, "", "", "")
+  " TypeScript JSX
+   call s:hi("tsxAttrib", s:nord7_gui, "", s:nord7_term, "", "", "")
+  hi! link typescriptOperator Operator
+  hi! link typescriptBinaryOp Operator
+  hi! link typescriptAssign Operator
+  hi! link typescriptMember Identifier
+  hi! link typescriptDOMStorageMethod Identifier
+  hi! link typescriptArrowFuncArg Identifier
+  hi! link typescriptGlobal typescriptClassName
+  hi! link typescriptBOMWindowProp Function
+  hi! link typescriptArrowFuncDef Function
+  hi! link typescriptAliasDeclaration Function
+  hi! link typescriptPredefinedType Type
+  hi! link typescriptTypeReference typescriptClassName
+  hi! link typescriptTypeAnnotation Structure
+  hi! link typescriptDocNamedParamType SpecialComment
+  hi! link typescriptDocNotation Keyword
+  hi! link typescriptDocTags Keyword
+  hi! link typescriptImport Keyword
+  hi! link typescriptExport Keyword
+  hi! link typescriptTry Keyword
+  hi! link typescriptVariable Keyword
+  hi! link typescriptBraces Normal
+  hi! link typescriptObjectLabel Normal
+  hi! link typescriptCall Normal
+  hi! link typescriptClassHeritage typescriptClassName
+  hi! link typescriptFuncTypeArrow Structure
+  hi! link typescriptMemberOptionality Structure
+  hi! link typescriptNodeGlobal typescriptGlobal
+  hi! link typescriptTypeBrackets Structure
+  hi! link tsxEqual Operator
+  hi! link tsxIntrinsicTagName htmlTag
+  hi! link tsxTagName tsxIntrinsicTagName
+endif
 
 " Markdown
 " > plasticboy/vim-markdown
@@ -855,12 +859,14 @@ hi! link mkdDelimiter Keyword
 
 " PHP
 " > StanAngeloff/php.vim
-call s:hi("phpClass", s:nord7_gui, "", s:nord7_term, "", "", "")
-call s:hi("phpClassImplements", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
-hi! link phpClassExtends phpClass
-hi! link phpFunction Function
-hi! link phpMethod Function
-hi! link phpUseClass phpClass
+if exist('g:php_version_id')
+  call s:hi("phpClass", s:nord7_gui, "", s:nord7_term, "", "", "")
+  call s:hi("phpClassImplements", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
+  hi! link phpClassExtends phpClass
+  hi! link phpFunction Function
+  hi! link phpMethod Function
+  hi! link phpUseClass phpClass
+endif
 
 " Vimwiki
 " > vimwiki/vimwiki
