@@ -859,7 +859,7 @@ hi! link mkdDelimiter Keyword
 
 " PHP
 " > StanAngeloff/php.vim
-if exist('g:php_version_id')
+if exists('g:php_version_id')
   call s:hi("phpClass", s:nord7_gui, "", s:nord7_term, "", "", "")
   call s:hi("phpClassImplements", s:nord7_gui, "", s:nord7_term, "", s:bold, "")
   hi! link phpClassExtends phpClass
