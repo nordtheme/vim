@@ -726,7 +726,7 @@ endif
 "+--- Languages ---+
 " Haskell
 " > neovimhaskell/haskell-vim
-if exist('g:cabal_indent_section')
+if exists('g:cabal_indent_section')
   call s:hi("haskellPreProc", s:nord10_gui, "", s:nord10_term, "", "", "")
   call s:hi("haskellType", s:nord7_gui, "", s:nord7_term, "", "", "")
   hi! link haskellPragma haskellPreProc
