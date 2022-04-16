@@ -73,13 +73,13 @@ let s:nord3_gui_brightened = [
 \ ]
 
 let g:nord_bold = get(g:, "nord_bold", 1)
-let s:bold = (g:nord_bold == 0) ? "": "bold,"
+let s:bold = (g:nord_bold == 0) ? "" : "bold,"
 
 let g:nord_underline = get(g:, "nord_underline", 1)
-let s:underline = (g:nord_underline == 0) ? "NONE,": "underline,"
+let s:underline = (g:nord_underline == 0) ? "NONE," : "underline,"
 
 let g:nord_italic = get(g:, "nord_italic", (has("gui_running") || $TERM_ITALICS == "true"))
-let s:italic = (g:nord_italic == 0) ? "": "italic,"
+let s:italic = (g:nord_italic == 0) ? "" : "italic,"
 
 let s:italicize_comments = ""
 if get(g:, "nord_italic_comments", 0)
