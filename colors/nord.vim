@@ -72,68 +72,36 @@ let s:nord3_gui_brightened = [
   \ "#7b88a1",
 \ ]
 
-if !exists("g:nord_bold")
-  let g:nord_bold = 1
-endif
+let g:nord_bold = get(g:, "nord_bold", 1)
+let s:bold = (g:nord_bold == 0) ? "" : "bold,"
 
-let s:bold = "bold,"
-if g:nord_bold == 0
-  let s:bold = ""
-endif
+let g:nord_underline = get(g:, "nord_underline", 1)
+let s:underline = (g:nord_underline == 0) ? "NONE," : "underline,"
 
-if !exists("g:nord_italic")
-  if has("gui_running") || $TERM_ITALICS == "true"
-    let g:nord_italic = 1
-  else
-    let g:nord_italic = 0
-  endif
-endif
-
-let s:italic = "italic,"
-if g:nord_italic == 0
-  let s:italic = ""
-endif
-
-let s:underline = "underline,"
-if ! get(g:, "nord_underline", 1)
-  let s:underline = "NONE,"
-endif
+let g:nord_italic = get(g:, "nord_italic", (has("gui_running") || $TERM_ITALICS == "true"))
+let s:italic = (g:nord_italic == 0) ? "" : "italic,"
 
 let s:italicize_comments = ""
-if exists("g:nord_italic_comments")
-  if g:nord_italic_comments == 1
-    let s:italicize_comments = s:italic
-  endif
+if get(g:, "nord_italic_comments", 0)
+  let s:italicize_comments = s:italic
 endif
 
-if !exists('g:nord_uniform_status_lines')
-  let g:nord_uniform_status_lines = 0
-endif
-
-function! s:logWarning(msg)
-  echohl WarningMsg
-  echomsg 'nord: warning: ' . a:msg
-  echohl None
-endfunction
+let g:nord_uniform_status_lines = get(g:, "nord_uniform_status_lines", 0)
 
 if exists("g:nord_comment_brightness")
-  call s:logWarning('Variable g:nord_comment_brightness has been deprecated and will be removed in version 1.0.0!' .
+  echohl WarningMsg
+  echomsg 'nord: warning: Variable g:nord_comment_brightness has been deprecated and will be removed in version 1.0.0!' .
                    \' The comment color brightness has been increased by 10% by default.' .
-                   \' Please see https://github.com/arcticicestudio/nord-vim/issues/145 for more details.')
+                   \' Please see https://github.com/arcticicestudio/nord-vim/issues/145 for more details.'
+  echohl None
   let g:nord_comment_brightness = 10
 endif
 
-if !exists("g:nord_uniform_diff_background")
-  let g:nord_uniform_diff_background = 0
-endif
+let g:nord_uniform_diff_background = get(g:, "nord_uniform_diff_background", 0)
 
-if !exists("g:nord_cursor_line_number_background")
-  let g:nord_cursor_line_number_background = 0
-endif
+let g:nord_cursor_line_number_background = get(g:, "nord_cursor_line_number_background", 0)
 
-if !exists("g:nord_bold_vertical_split_line")
-  let g:nord_bold_vertical_split_line = 0
-endif
+let g:nord_bold_vertical_split_line = get(g:, "nord_bold_vertical_split_line", 0)
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
   if a:guifg != ""
