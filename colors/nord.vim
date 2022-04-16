@@ -5,16 +5,16 @@
 " Repository: https://github.com/arcticicestudio/nord-vim
 " License: MIT
 
-if version > 580
+set background=dark
+if v:version > 580
   hi clear
-  if exists("syntax_on")
+  if exists("syntax_on") && (v:version < 800)
     syntax reset
   endif
 endif
 
 let g:colors_name = "nord"
 let s:nord_vim_version="0.18.0"
-set background=dark
 
 let s:nord0_gui = "#2E3440"
 let s:nord1_gui = "#3B4252"
