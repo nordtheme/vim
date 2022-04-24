@@ -99,23 +99,27 @@ let g:nord_cursor_line_number_background = get(g:, "nord_cursor_line_number_back
 let g:nord_uniform_diff_background = get(g:, "nord_uniform_diff_background", 0)
 
 function! s:hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
+  let cmd = ""
   if a:guifg != ""
-    exec "hi " . a:group . " guifg=" . a:guifg
+    let cmd = cmd . " guifg=" . a:guifg
   endif
   if a:guibg != ""
-    exec "hi " . a:group . " guibg=" . a:guibg
+    let cmd = cmd . " guibg=" . a:guibg
   endif
   if a:ctermfg != ""
-    exec "hi " . a:group . " ctermfg=" . a:ctermfg
+    let cmd = cmd . " ctermfg=" . a:ctermfg
   endif
   if a:ctermbg != ""
-    exec "hi " . a:group . " ctermbg=" . a:ctermbg
+    let cmd = cmd . " ctermbg=" . a:ctermbg
   endif
   if a:attr != ""
-    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . substitute(a:attr, "undercurl", s:underline, "")
+    let cmd = cmd . " gui=" . a:attr . " cterm=" . substitute(a:attr, "undercurl", s:underline, "")
   endif
   if a:guisp != ""
-    exec "hi " . a:group . " guisp=" . a:guisp
+    let cmd = cmd . " guisp=" . a:guisp
+  endif
+  if cmd != ""
+    exec "hi " . a:group . cmd
   endif
 endfunction
 
@@ -188,12 +192,12 @@ if has('nvim')
   call s:hi("DiagnosticUnderlineError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
   call s:hi("DiagnosticUnderlineInfo" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
   call s:hi("DiagnosticUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
-  
+
   "+- Neovim DocumentHighlight -+
   call s:hi("LspReferenceText", "", s:nord3_gui, "", s:nord3_term, "", "")
   call s:hi("LspReferenceRead", "", s:nord3_gui, "", s:nord3_term, "", "")
   call s:hi("LspReferenceWrite", "", s:nord3_gui, "", s:nord3_term, "", "")
-  
+
   "+- Neovim LspSignatureHelp -+
   call s:hi("LspSignatureActiveParameter", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
 endif
@@ -805,12 +809,12 @@ else
   for s:i in range(1,6)
     call s:hi("VimwikiHeader".s:i, s:vimwiki_hcolor_guifg[s:i-1] , "", s:vimwiki_hcolor_ctermfg[s:i-1], "", s:bold, "")
   endfor
-endif  
+endif
 call s:hi("VimwikiLink", s:nord8_gui, "", s:nord8_term, "", s:underline, "")
 hi! link VimwikiHeaderChar markdownHeadingDelimiter
 hi! link VimwikiHR Keyword
 hi! link VimwikiList markdownListMarker
-  
+
 " YAML
 " > stephpy/vim-yaml
 call s:hi("yamlKey", s:nord7_gui, "", s:nord7_term, "", "", "")
