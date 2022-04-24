@@ -81,8 +81,10 @@ let s:underline = (g:nord_underline == 0) ? "NONE," : "underline,"
 let g:nord_italic = get(g:, "nord_italic", (has("gui_running") || $TERM_ITALICS == "true"))
 let s:italic = (g:nord_italic == 0) ? "" : "italic,"
 
-let g:nord_italic_comments = get(g:, "nord_italic_comments", 0)
-let s:italicize_comments = (g:nord_italic_comments == 0) ? "" : get(s:, "italic")
+let s:italicize_comments = ""
+if get(g:, "nord_italic_comments", 0)
+  let s:italicize_comments = s:italic
+endif
 
 let g:nord_uniform_status_lines = get(g:, "nord_uniform_status_lines", 0)
 
