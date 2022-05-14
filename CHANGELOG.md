@@ -633,13 +633,13 @@ This has been fixed by using `nord5` as foreground color. …[#11][34] was used 
 let g:nord_cursor_line_number_background = 1
 ```
 
-<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background-default.png" /></p>
+<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-config-cursor-line-number-background-default.png" /></p>
 
-<p align="center"><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-cursor-line-number-background.png" /></p>
+<p align="center"><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-config-cursor-line-number-background.png" /></p>
 
 ❯ Added a new [configuration to allow users to globally toggle underlines][32] for cases where the terminal emulator might not be capable to handle underlines in terminal mode. It can be enabled by setting the `g:nord_underline` variable to `1`. (#106 in PR #127 (supersedes #109), @dylnmc @markand , 01cfd1be)
 
-<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-underline.png"/></p>
+<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-config-underline.png"/></p>
 
 ❯ Added support for the status line of the `:terminal` window mode for Vim or Neovim. (PR #108 (supersedes #103), @dylnmc, 922504fb)
 
@@ -711,7 +711,7 @@ let g:nord_cursor_line_number_background = 1
 
 ❯ The lightline screenshots in the documentation have been made using the [lightline's advanced configurations][26]. This confused users when the lighline does not equal the one seen on the screenshot due to the default lightline configuration. This has now been clarified including a additional screenshot showing the appearance of the lightline when using the default configuration. (#74 in PR #94, @lokesh-krishna, 3c14c961)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
 
 ## Bug Fixes
 
@@ -774,9 +774,9 @@ Setting `g:nord_uniform_diff_background` to `1` enables the uniform diff backgro
 
 ❯ Added a new [configuration to use uniform activate- and inactive status line backgrounds][24]. (#37 in PR #58, @dylnmc @DenniJensen, 93056802)
 
-<p align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines-default.png"/></p>
+<p align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-config-uniform-status-lines-default.png"/></p>
 
-<p align="center"><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-config-uniform-status-lines.png"/></p>
+<p align="center"><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-config-uniform-status-lines.png"/></p>
 
 ❯ Added a new [configuration to explicitly enable italic text formatting][23]. (#88 in PR #89, @lokesh-krishna @dylnmc, dbfc55ff)
 
@@ -1039,19 +1039,19 @@ order. (@shuei72, #5, f8ffce24)
 
 ## Features
 
-Detailed information about features, supported plugins/languages and install instructions can be found in the [README](https://github.com/arcticicestudio/nord-vim/blob/develop/README.md#installation) and in the [project wiki](https://github.com/arcticicestudio/nord-vim/wiki).
+Detailed information about features, supported plugins/languages and install instructions can be found in the [README](https://github.com/arcticicestudio/nord-vim/blob/master/readme.md#installation) and in the [project wiki](https://github.com/arcticicestudio/nord-vim/wiki).
 
-❯ Implemented the main color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim). (@arcticicestudio, #1, e2832b9)
+❯ Implemented the main color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/master/colors/nord.vim). (@arcticicestudio, #1, e2832b9)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-lang-javascript.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-lang-javascript.png"/></p>
 
-❯ Implemented the [lightline](https://github.com/itchyny/lightline.vim) color scheme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim). (@arcticicestudio, #2, f9891ffe)
+❯ Implemented the [lightline](https://github.com/itchyny/lightline.vim) color scheme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/master/autoload/lightline/colorscheme/nord.vim). (@arcticicestudio, #2, f9891ffe)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-lightline.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-plugin-support-ui-lightline.png"/></p>
 
-❯ Implemented the [airline](https://github.com/vim-airline/vim-airline) color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/airline/themes/nord.vim). (@arcticicestudio, #3, e54464a7)
+❯ Implemented the [airline](https://github.com/vim-airline/vim-airline) color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/master/autoload/airline/themes/nord.vim). (@arcticicestudio, #3, e54464a7)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/develop/assets/scrot-plugin-support-ui-airline.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/master/assets/scrot-plugin-support-ui-airline.png"/></p>
 
 # Project Initialization
 
@@ -1080,12 +1080,12 @@ otherwise Markdown elements are not parsed and rendered!
 <!-- Base -->
 
 [1]: https://www.nordtheme.com
-[2]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/lightline/colorscheme/nord.vim
+[2]: https://github.com/arcticicestudio/nord-vim/blob/master/autoload/lightline/colorscheme/nord.vim
 [3]: https://github.com/arcticicestudio/nord
 
 <!-- Shared -->
 
-[4]: https://github.com/arcticicestudio/nord-vim/blob/develop/autoload/airline/themes/nord.vim
+[4]: https://github.com/arcticicestudio/nord-vim/blob/master/autoload/airline/themes/nord.vim
 [5]: https://github.com/liuchengxu/vim-clap
 [6]: https://github.com/neoclide/coc.nvim
 [7]: https://neovim.io/doc/user/lsp.html
