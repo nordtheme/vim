@@ -573,6 +573,10 @@ if has('nvim')
     call s:hi("LspDiagnosticsUnderlineInformation" , s:nord8_gui, "", s:nord8_term, "", "undercurl", "")
     call s:hi("LspDiagnosticsUnderlineHint" , s:nord10_gui, "", s:nord10_term, "", "undercurl", "")
   endif
+  
+  " Gitsigns
+  " > lewis6991/gitsigns.nvim
+  hi! link GitSignsCurrentLineBlame Comment
 endif
 
 " GitGutter
@@ -581,12 +585,6 @@ call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("GitGutterChange", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("GitGutterChangeDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("GitGutterDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
-
-if has('nvim')
-  " Gitsigns
-  " > lewis6991/gitsigns.nvim
-  hi! link GitSignsCurrentLineBlame Comment
-endif
 
 " Signify
 " > mhinz/vim-signify
