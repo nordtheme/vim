@@ -582,9 +582,11 @@ call s:hi("GitGutterChange", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("GitGutterChangeDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("GitGutterDelete", s:nord11_gui, "", s:nord11_term, "", "", "")
 
-" Gitsigns
-" > lewis6991/gitsigns.nvim
-hi! link GitSignsCurrentLineBlame Comment
+if has('nvim')
+  " Gitsigns
+  " > lewis6991/gitsigns.nvim
+  hi! link GitSignsCurrentLineBlame Comment
+endif
 
 " Signify
 " > mhinz/vim-signify
