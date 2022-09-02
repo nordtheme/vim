@@ -670,6 +670,16 @@ hi! link StartifyBracket Delimiter
 hi! link StartifySlash Normal
 hi! link StartifySpecial Comment
 
+" nvim-ts-rainbow
+" > p00f/nvim-ts-rainbow
+call s:hi("rainbowcol1", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("rainbowcol2", s:nord12_gui, "", s:nord12_term, "", "", "")
+call s:hi("rainbowcol3", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("rainbowcol4", s:nord14_gui, "", s:nord14_term, "", "", "")
+call s:hi("rainbowcol5", s:nord9_gui, "", s:nord9_term, "", "", "")
+call s:hi("rainbowcol6", s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("rainbowcol7", s:nord15_gui, "", s:nord15_term, "", "", "")
+
 "+--- Languages ---+
 " Haskell
 " > neovimhaskell/haskell-vim
