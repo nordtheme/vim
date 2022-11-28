@@ -48,30 +48,6 @@ let s:nord13_term = "3"
 let s:nord14_term = "2"
 let s:nord15_term = "5"
 
-let s:nord3_gui_brightened = [
-  \ s:nord3_gui,
-  \ "#4e586d",
-  \ "#505b70",
-  \ "#525d73",
-  \ "#556076",
-  \ "#576279",
-  \ "#59647c",
-  \ "#5b677f",
-  \ "#5d6982",
-  \ "#5f6c85",
-  \ "#616e88",
-  \ "#63718b",
-  \ "#66738e",
-  \ "#687591",
-  \ "#6a7894",
-  \ "#6d7a96",
-  \ "#6f7d98",
-  \ "#72809a",
-  \ "#75829c",
-  \ "#78859e",
-  \ "#7b88a1",
-\ ]
-
 let g:nord_bold = get(g:, "nord_bold", 1)
 let s:bold = (g:nord_bold == 0) ? "" : "bold,"
 
