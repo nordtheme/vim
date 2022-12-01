@@ -713,9 +713,24 @@ hi! link pandocStrong markdownBold
 hi! link pandocTableHeaderWord pandocAtxHeader
 hi! link pandocUListItemBullet Operator
   
-if has('nvim')
+if has('nvim-0.8.1')
   " tree-sitter
   " > nvim-treesitter/nvim-treesitter
+  " new syntax adopted in: https://github.com/nvim-treesitter/nvim-treesitter/commit/42ab95d5e11f247c6f0c8f5181b02e816caa4a4f#commitcomment-87014462
+  hi! link @annotation Annotation
+  hi! link @constant.builtin Constant
+  hi! link @constructor Function
+  hi! link @text.emphasis Italic
+  hi! link @function.builtin Function
+  hi! link @function.macro Function
+  hi! link @string.regex SpecialChar
+  hi! link @text.strong Bold
+  hi! link @structure Structure
+  hi! link @tag.delimiter @tag
+  hi! link @text.underline Underline
+  hi! link @variable Variable
+  hi! link @variable.builtin Keyword
+elseif has('nvim')
   hi! link TSAnnotation Annotation
   hi! link TSConstBuiltin Constant
   hi! link TSConstructor Function
@@ -730,6 +745,7 @@ if has('nvim')
   hi! link TSVariable Variable
   hi! link TSVariableBuiltin Keyword
 endif
+
 
 " TypeScript
 " > HerringtonDarkholme/yats.vim
