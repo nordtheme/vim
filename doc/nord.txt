@@ -1,0 +1,223 @@
+nord.txt
+
+================================================================================
+CONTENTS                                                           *nord-contents*
+
+1. INTRO..............................................................|nord-intro|
+2. USAGE..............................................................|nord-usage|
+3. CONFIGURATION..............................................|nord-configuration|
+    3.1. UI ELEMENTS............................................|nord-ui_elements|
+        3.1.1. Active Cursor Line Number Background.|nord-active_cursor_line_number_background|
+        3.1.2. Uniform Status Lines....................|nord-uniform_status_lines|
+        3.1.3. Bold Vertical Split Lines..........|nord-bold_vertical_split_lines|
+        3.1.4. Syntax Highlighting......................|nord-syntax_highlighting|
+        3.1.5. Uniform diff Background..............|nord-uniform_diff_background|
+    3.2. FONT RENDERING......................................|nord-font_rendering|
+        3.2.1. Bold Style........................................|nord-bold_style|
+        3.2.2. Italic Style....................................|nord-italic_style|
+        3.2.3. Italic Comments..............................|nord-italic_comments|
+        3.2.4. Underline Style..............................|nord-underline_style|
+    3.3. CUSTOMIZATION........................................|nord-customization|
+
+================================================================================
+INTRO                                                                 *nord-intro*
+
+An arctic, north-bluish clean and elegant Vim color theme. Designed for a fluent
+and clear workflow based on the Nord color palette. Build for Vim's terminal-
+and GUI mode with true colors with support for many third-party syntax and UI
+plugins including bundled themes for lightline.vim and vim-airline.
+
+================================================================================
+USAGE                                                                 *nord-usage*
+
+To activate and use Nord Vim as your default color theme set it in your vimrc:
+>
+    colorscheme nord
+<
+
+To switch to the theme on-the-fly run the `:colorscheme nord` Vim command.
+
+================================================================================
+CONFIGURATION                                                 *nord-configuration*
+
+All theme configuration variables must be added to either Vim's user-level or
+system-wide configuration file(s) that are referred to as vimrc in this
+documentation. The location of of the files and more details can be found in
+Vim's official vimrc documentation. All configuration variables must be set
+before the colorscheme activation command! This ensures the configurations
+are applied correctly when the color scheme file gets loaded, otherwise the
+theme will load without taking these configurations into account.
+
+--------------------------------------------------------------------------------
+UI ELEMENTS                                                     *nord-ui_elements*
+
+ACTIVE CURSOR LINE NUMBER BACKGROUND   *nord-active_cursor_line_number_background*
+
+By default, the background of line numbers for the currently active cursor line
+are not styled especially. Default line number background style for the active
+cursor line. This can be changed by to use the same background color
+highlighting like the background of the active cursor line by enabling the theme
+configuration variable `nord_cursor_line_number_background`:
+>
+    let g:nord_cursor_line_number_background = 1
+<
+
+UNIFORM STATUS LINES                                   *nord-uniform_status_lines*
+
+By default, Nord Vim uses a slightly brighter background for the current split
+buffer. This is designed to draw attention to the currently active buffer
+without being distracting. Default style of activate- and inactive status
+lines. To use a uniform style for activate- and inactive status lines with `nord3`
+as background the `nord_uniform_status_lines` configuration variable can be set:
+>
+    let g:nord_uniform_status_lines = 1
+<
+
+BOLD VERTICAL SPLIT LINES                         *nord-bold_vertical_split_lines*
+
+To provide a lightweight and uncluttered overall appearance for split views the
+vertical split lines, only the separator characters are styled while the
+background color is equal to the theme's base background. To use also highlight
+the background of separators, making them appear more bold, the
+`nord_bold_vertical_split_line` theme configuration variable can be set:
+>
+    let g:nord_bold_vertical_split_line = 1
+<
+
+To also change the separator character used to display the vertical line please
+see the documentation about Vim's fillchars variable (`:help fillchars`).
+
+SYNTAX HIGHLIGHTING                                     *nord-syntax_highlighting*
+
+UNIFORM DIFF BACKGROUND                             *nord-uniform_diff_background*
+
+By default, Nord Vim uses colorful backgrounds for Vim's diff mode (vimdiff, vim
+-d) which is a common pattern to clearly highlight the elements through colors
+that convey the meaning of each change.
+To use a uniform background highlighting where the foreground color is used to
+mark the changes instead, the `nord_uniform_diff_background` theme configuration
+variable can be set:
+>
+    let g:nord_uniform_diff_background = 1
+<
+
+--------------------------------------------------------------------------------
+FONT RENDERING                                               *nord-font_rendering*
+
+Only use font rendering theme configurations with compatible terminals! Special
+font rendering styles like italic, underline or bold require support from the
+side of the used terminal in order to work properly. Please check if your used
+terminal supports these font styles before enabling any of the configurations in
+this section, otherwise the might be unexpected rendering issues or the
+configuration won't have any effect at all. Please ensure the used terminal is
+capable of rendering special font styles before activating any of Nord Vim's
+font rendering configurations!
+
+BOLD STYLE                                                       *nord-bold_style*
+
+Next to color highlighting Nord Vim makes use of bold font styles
+
+for various syntax elements to make them stand out more as well as better
+representing their syntactic meaning.
+
+Bold font styles are enabled by default in both GUI and terminal mode.
+
+Almost every common and still actively used terminal supports bold font styles
+while in GUI mode Vim's runtime ensures the rendering compatibility for special
+font styles without the risk to break the overall appearance.
+
+The theme includes bold font styles for specific syntax elements. To disable
+bold font styles, set the nord_bold theme configuration variable:
+>
+    let g:nord_bold = 0
+<
+
+If you encounter font rendering problems with bold styles, please ensure the
+used terminal is capable of rendering such special font styles or disable Nord
+Vim's bold font rendering like described above.
+
+ITALIC STYLE                                                   *nord-italic_style*
+
+In terminal mode Nord Vim doesn't make use of italic font styles in order to
+prevent unexpected styles and color highlighting. This design decision is based
+on the known problems of most terminals related to special font styles like
+italic.
+
+In GUI mode (while using GVim) italic font styles are enabled by default.
+
+Since Vim's runtime should ensure the rendering compatibility for special font
+styles Nord Vim can make use of italics without the risk to break the overall
+appearance. The theme includes italic font styles for specific syntax elements,
+but requires to set the nord_italic theme configuration variable:
+>
+    let g:nord_italic = 1
+<
+
+Please ensure the used terminal is capable of rendering italic font styles
+before activating this configuration!
+
+ITALIC COMMENTS                                             *nord-italic_comments*
+
+This configuration requires the nord_italic font rendering configuration to be
+enabled! It wont' have any effect if the requirement is not fulfilled since
+theme is not configured to render italic font styles at all. For uncluttered and
+clearly readable comments, Nord Vim uses normal font styles for comments, but it
+is a common design pattern for syntax themes to use italic font styles
+instead.
+
+To enable italic comment for Nord Vim the `nord_italic_comments` theme
+configuration variable can be set:
+>
+    let g:nord_italic_comments = 1
+<
+
+UNDERLINE STYLE                                             *nord-underline_style*
+
+In terminal mode Nord Vim doesn't make use of underline font styles in order to
+prevent unexpected styles and color highlighting. This design decision is based
+on the known problems of most terminals related to special font styles like
+underline.
+
+In GUI mode (while using GVim) underline font styles are enabled by default.
+
+Since Vim's runtime should ensure the rendering compatibility for special font
+styles Nord Vim can make use of italics without the risk to break the overall
+appearance. The theme includes <underline font styles for specific syntax
+elements, but requires to set the nord_underline theme configuration variable:
+>
+    let g:nord_underline = 1
+<
+
+Please ensure the used terminal is capable of rendering underline font styles
+before activating this configuration!
+
+--------------------------------------------------------------------------------
+CUSTOMIZATION                                                 *nord-customization*
+
+Even though Nord Vim comes with sane defaults and a bunch of theme
+configurations, it can still be customized down to it's core, using Vim's
+builtin features, by overriding every style defined by the theme. It is even
+possible to set new styles not defined or supported by the theme yet.
+
+Vim's autocmd feature allows to specify commands to be executed automatically
+when reading or writing files like the user-level or system-wide vimrc file. In
+combination with the augroup feature, that allows to create a uniquely named
+group of commands for a specific purpose, the color scheme overrides can be
+scoped to only apply for Nord Vim while leaving other themes unaffected.
+
+To override or define new styles of Nord Vim, create a auto command group in the
+vimrc with a unique name like nord-theme-overrides and add the desired syntax
+highlight commands:
+>
+    augroup nord-theme-overrides
+      autocmd!
+      " Use 'nord7' as foreground color for Vim comment titles.
+      autocmd ColorScheme nord highlight vimCommentTitle ctermfg=14 guifg=#8FBCBB
+    augroup END
+<
+
+Read Vim's documentation about how to use syntax highlighting and the syntax
+highlighting features for more details and the highlight command usage.
+
+vim:tw=80:ft=help
+
