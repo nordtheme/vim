@@ -150,6 +150,7 @@ call s:hi("SpellBad", "", s:nord0_gui, s:nord11_term, "NONE", "undercurl", s:nor
 call s:hi("SpellCap", "", s:nord0_gui, s:nord13_term, "NONE", "undercurl", s:nord13_gui)
 call s:hi("SpellLocal","", s:nord0_gui, s:nord5_term, "NONE", "undercurl", s:nord5_gui)
 call s:hi("SpellRare", "", s:nord0_gui, s:nord6_term, "NONE", "undercurl", s:nord6_gui)
+call s:hi("Terminal", s:nord4_gui, s:nord0_gui, "NONE", "NONE", "", "")
 call s:hi("Visual", "", s:nord2_gui, "", s:nord1_term, "", "")
 call s:hi("VisualNOS", "", s:nord2_gui, "", s:nord1_term, "", "")
 
