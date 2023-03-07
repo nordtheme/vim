@@ -1,14 +1,30 @@
-<p align="center"><a href="https://www.nordtheme.com/ports/vim" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/vim/repository-hero.svg?sanitize=true"/></a></p>
+<p align="center">
+  <a href="https://www.nordtheme.com/ports/vim" target="_blank">
+    <picture>
+      <source srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" />
+    </picture>
+  </a>
+</p>
 
-<p align="center"><a href="https://github.com/arcticicestudio/nord-vim/releases/latest" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/></a> <a href="https://www.nordtheme.com/docs/ports/vim" target="_blank" rel="noreferrer"><img src="https://img.shields.io/github/release/arcticicestudio/nord-vim.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/></a></p>
+<p align="center">
+  <a href="https://github.com/nordtheme/vim/releases/latest" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/vim.svg?style=flat-square&label=Release&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0"/>
+  </a>
+  <a href="https://www.nordtheme.com/docs/ports/vim" target="_blank">
+    <img src="https://img.shields.io/github/release/nordtheme/vim.svg?style=flat-square&label=Docs&colorA=4c566a&colorB=88c0d0&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI%2BCiAgICA8cGF0aCBmaWxsPSIjZDhkZWU5IiBkPSJNMTMuNzQ2IDIuODEzYS42Ny42NyAwIDAgMC0uNTU5LS4xMzNMOCAzLjg0OGwtNS4xODgtMS4xOGEuNjY5LjY2OSAwIDAgMC0uNTcuMTMzLjY3Ny42NzcgMCAwIDAtLjI0Mi41MzF2OC4xMzNjLS4wMDguMzIuMjEuNTk4LjUyLjY2OGw1LjMzMiAxLjE5OWguMjk2bDUuMzMyLTEuMmEuNjY4LjY2OCAwIDAgMCAuNTItLjY2N1YzLjMzMmEuNjU5LjY1OSAwIDAgMC0uMjU0LS41MnpNMy4zMzIgNC4xNjhsNCAuODk4djYuNzY2bC00LS44OTh6bTkuMzM2IDYuNzY2bC00IC44OThWNS4wNjZsNC0uODk4em0wIDAiLz4KPC9zdmc%2BCg%3D%3D"/>
+  </a>
+</p>
 
-<p align="center">Changelog for <a href="https://www.nordtheme.com/ports/vim" target="_blank" rel="noreferrer">Nord Vim</a> — An arctic, north-bluish clean and elegant <a href="https://www.vim.org" target="_blank" rel="noreferrer">Vim</a> color theme.</p>
+<p align="center">
+  Changelog for <a href="https://www.nordtheme.com/ports/vim" target="_blank">Nord Vim</a> — An arctic, north-bluish clean and elegant <a href="https://www.vim.org" target="_blank">Vim</a> color theme.
+</p>
 
 <!--lint disable no-duplicate-headings-->
 
 # 0.19.0
 
-![Release Date: 2022-05-14](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2022-05-14&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.19.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/users/arcticicestudio/projects/9/views/9) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.19.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/21)
+![Release Date: 2022-05-14](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2022-05-14&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.19.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/orgs/nordtheme/projects/1/views/10) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.19.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/milestone/21)
 
 ⇅ [Show all commits][111]
 
@@ -91,7 +107,7 @@ Also see the [LSP specification about "Document Highlights Request"][115] for mo
 
 # 0.18.0
 
-![Release Date: 2021-09-12](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-09-12&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/24) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/20)
+![Release Date: 2021-09-12](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-09-12&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/projects/24) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.18.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/milestone/20)
 
 ⇅ [Show all commits][106]
 
@@ -145,7 +161,7 @@ Syntax errors can still be highlighted through linters and parsers like [Neovim'
 
 # 0.17.0
 
-![Release Date: 2021-07-10](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-07-10&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/23) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/19)
+![Release Date: 2021-07-10](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-07-10&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/projects/23) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.17.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/milestone/19)
 
 ⇅ [Show all commits][101]
 
@@ -165,7 +181,7 @@ Even though Neovim divides more and more from Vim through specific features like
 
 # 0.16.0
 
-![Release Date: 2021-06-09](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-06-09&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/projects/22) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/arcticicestudio/nord-vim/milestone/18)
+![Release Date: 2021-06-09](https://img.shields.io/static/v1.svg?style=flat-square&label=Release%20Date&message=2021-06-09&colorA=4c566a&colorB=88c0d0) [![Project Board](https://img.shields.io/static/v1.svg?style=flat-square&label=Project%20Board&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/projects/22) [![Milestone](https://img.shields.io/static/v1.svg?style=flat-square&label=Milestone&message=0.16.0&logo=github&logoColor=eceff4&colorA=4c566a&colorB=88c0d0)](https://github.com/nordtheme/vim/milestone/18)
 
 ⇅ [Show all commits][88]
 
@@ -185,7 +201,7 @@ Even though Neovim divides more and more from Vim through specific features like
 <details>
 <summary><strong>Support for the <a href="https://github.com/StanAngeloff/php.vim" target="_blank" rel="noreferrer">php.vim</a> plugin</strong> — #218, #262 ⇄ #263 (⊶ b3c46c87, 07452c71) by <a href="https://github.com/pirey" target="_blank" rel="noreferrer">@pirey</a></summary>
 
-↠ In [arcticicestudio/nord-vim#218][84] new highlighting groups for the bundled PHP syntax were added to improve the highlighting of classes, function and methods and the overall syntax token detection, but they are actually defined by the [php.vim][98] plugin. Therefore the added highlighting calls have been moved to a plugin section.
+↠ In [nordtheme/vim#218][84] new highlighting groups for the bundled PHP syntax were added to improve the highlighting of classes, function and methods and the overall syntax token detection, but they are actually defined by the [php.vim][98] plugin. Therefore the added highlighting calls have been moved to a plugin section.
 Additionally, the `phpClassExtends` and `phpClassImplements` groups have been added to improve the highlighting for classes that implement or extended interfaces/classes. The `phpUseClass` has also been added to improve the highlighting for imports.
 
 To improve the highlighting with the bundled PHP syntax, the [following options][99] can be set:
@@ -293,7 +309,7 @@ This mismatch was never really noticed because most of the time users rely on pl
 
 # 0.15.0
 
-![Release Date: 2020-07-06](https://img.shields.io/badge/Release_Date-2020--07--06-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/21) [![Milestone](https://img.shields.io/badge/Milestone-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/17)
+![Release Date: 2020-07-06](https://img.shields.io/badge/Release_Date-2020--07--06-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/21) [![Milestone](https://img.shields.io/badge/Milestone-0.15.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/17)
 
 ## Features
 
@@ -330,7 +346,7 @@ This provides, among many other good changes, better highlighting for syntax ele
 
 # 0.14.0
 
-![Release Date: 2020-06-16](https://img.shields.io/badge/Release_Date-2020--06--16-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/20) [![Milestone](https://img.shields.io/badge/Milestone-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/16)
+![Release Date: 2020-06-16](https://img.shields.io/badge/Release_Date-2020--06--16-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/20) [![Milestone](https://img.shields.io/badge/Milestone-0.14.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/16)
 
 ## Features
 
@@ -369,14 +385,14 @@ This provides, among many other good changes, better highlighting for syntax ele
 
 # 0.13.0
 
-![Release Date: 2019-12-17](https://img.shields.io/badge/Release_Date-2019--12--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/19) [![Milestone](https://img.shields.io/badge/Milestone-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/15)
+![Release Date: 2019-12-17](https://img.shields.io/badge/Release_Date-2019--12--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/19) [![Milestone](https://img.shields.io/badge/Milestone-0.13.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/15)
 
 ## Features
 
 ### UI
 
 **Support uniform status line background configuration for _vim-airline_ and _lightline.vim_ themes** — #168 ⇄ #169 (⊶ 73b3d340) by [@jmurinello][66]
-↠ Added support for the [uniform status line][73] theme configuration, [introduced in version 0.7.0][63] through [arcticicestudio/nord-vim#58][62], for the bundled _vim-airline_ and _lightline.vim_ themes.
+↠ Added support for the [uniform status line][73] theme configuration, [introduced in version 0.7.0][63] through [nordtheme/vim#58][62], for the bundled _vim-airline_ and _lightline.vim_ themes.
 
 <p align="center"><code>lightline.vim</code></p>
 <p align="center"><strong>Before</strong></p>
@@ -421,7 +437,7 @@ This change resulted in gutter line numbers being underlined which has now been 
 
 # 0.12.0
 
-![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/14)
+![Release Date: 2019-05-25](https://img.shields.io/badge/Release_Date-2019--05--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/18) [![Milestone](https://img.shields.io/badge/Milestone-0.12.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/14)
 
 ## Features
 
@@ -464,7 +480,7 @@ It is enabled by default when running for both in GUI and terminal mode since mo
 
 # 0.11.0
 
-![Release Date: 2019-04-18](https://img.shields.io/badge/Release_Date-2019--04--18-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/16) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/13)
+![Release Date: 2019-04-18](https://img.shields.io/badge/Release_Date-2019--04--18-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/16) [![Milestone](https://img.shields.io/badge/Milestone-0.11.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/13)
 
 ## Features
 
@@ -580,7 +596,7 @@ The README includes information and hints how to change the separator character 
 
 # 0.10.0
 
-![Release Date: 2019-03-21](https://img.shields.io/badge/Release_Date-2019--03--21-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/15) [![Milestone](https://img.shields.io/badge/Milestone-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/12)
+![Release Date: 2019-03-21](https://img.shields.io/badge/Release_Date-2019--03--21-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/15) [![Milestone](https://img.shields.io/badge/Milestone-0.10.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/12)
 
 ## Features
 
@@ -592,7 +608,7 @@ The README includes information and hints how to change the separator character 
 **Comment Color Brightness** — #145 ⇄ #146 (⊶ 9e0249ca)
 ↠ Implemented the increase of the comment color (`nord3`) brightness by 10% from a lightness level of ~35% to ~45%.
 
-➜ **Please see [arcticicestudio/nord#94][36] for all details about this design change decision**!
+➜ **Please see [nordtheme/nord#94][36] for all details about this design change decision**!
 
 ⚠ **NOTE**: This change also **deprecates the [comment contrast][11] configuration** that will be removed in Nord Vim version 1.0.0!
 The default comment color has been adjusted so the configuration is not required anymore for users to increase the brightness on their own.
@@ -607,7 +623,7 @@ This has been fixed by using `nord5` as foreground color. …[#11][34] was used 
 
 # 0.9.0
 
-![Release Date: 2018-06-24](https://img.shields.io/badge/Release_Date-2018--06--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/13) [![Milestone](https://img.shields.io/badge/Milestone-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/11)
+![Release Date: 2018-06-24](https://img.shields.io/badge/Release_Date-2018--06--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/13) [![Milestone](https://img.shields.io/badge/Milestone-0.9.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/11)
 
 ## Features
 
@@ -633,13 +649,13 @@ This has been fixed by using `nord5` as foreground color. …[#11][34] was used 
 let g:nord_cursor_line_number_background = 1
 ```
 
-<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-config-cursor-line-number-background-default.png" /></p>
+<p align="center"><strong>No background (default)</strong><br><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-config-cursor-line-number-background-default.png" /></p>
 
-<p align="center"><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-config-cursor-line-number-background.png" /></p>
+<p align="center"><strong>Enabled background</strong><br><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-config-cursor-line-number-background.png" /></p>
 
 ❯ Added a new [configuration to allow users to globally toggle underlines][32] for cases where the terminal emulator might not be capable to handle underlines in terminal mode. It can be enabled by setting the `g:nord_underline` variable to `1`. (#106 in PR #127 (supersedes #109), @dylnmc @markand , 01cfd1be)
 
-<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-config-underline.png"/></p>
+<p align="center"><strong>Underlined Text</strong><br><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-config-underline.png"/></p>
 
 ❯ Added support for the status line of the `:terminal` window mode for Vim or Neovim. (PR #108 (supersedes #103), @dylnmc, 922504fb)
 
@@ -685,7 +701,7 @@ let g:nord_cursor_line_number_background = 1
 
 # 0.8.0
 
-![Release Date: 2018-01-05](https://img.shields.io/badge/Release_Date-2018--01--05-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/11) [![Milestone](https://img.shields.io/badge/Milestone-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/10)
+![Release Date: 2018-01-05](https://img.shields.io/badge/Release_Date-2018--01--05-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/11) [![Milestone](https://img.shields.io/badge/Milestone-0.8.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/10)
 
 ## Features
 
@@ -711,7 +727,7 @@ let g:nord_cursor_line_number_background = 1
 
 ❯ The lightline screenshots in the documentation have been made using the [lightline's advanced configurations][26]. This confused users when the lighline does not equal the one seen on the screenshot due to the default lightline configuration. This has now been clarified including a additional screenshot showing the appearance of the lightline when using the default configuration. (#74 in PR #94, @lokesh-krishna, 3c14c961)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-plugin-support-ui-lightline-default.png"/></p>
 
 ## Bug Fixes
 
@@ -723,7 +739,7 @@ let g:nord_cursor_line_number_background = 1
 
 # 0.7.0
 
-![Release Date: 2017-12-30](https://img.shields.io/badge/Release_Date-2017--12--30-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/10) [![Milestone](https://img.shields.io/badge/Milestone-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/9)
+![Release Date: 2017-12-30](https://img.shields.io/badge/Release_Date-2017--12--30-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/10) [![Milestone](https://img.shields.io/badge/Milestone-0.7.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/9)
 
 ## Features
 
@@ -774,9 +790,9 @@ Setting `g:nord_uniform_diff_background` to `1` enables the uniform diff backgro
 
 ❯ Added a new [configuration to use uniform activate- and inactive status line backgrounds][24]. (#37 in PR #58, @dylnmc @DenniJensen, 93056802)
 
-<p align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-config-uniform-status-lines-default.png"/></p>
+<p align="center"><strong>Default status lines</strong><br><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-config-uniform-status-lines-default.png"/></p>
 
-<p align="center"><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-config-uniform-status-lines.png"/></p>
+<p align="center"><strong>Uniform status lines</strong><br><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-config-uniform-status-lines.png"/></p>
 
 ❯ Added a new [configuration to explicitly enable italic text formatting][23]. (#88 in PR #89, @lokesh-krishna @dylnmc, dbfc55ff)
 
@@ -876,7 +892,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 # 0.6.0
 
-![Release Date: 2017-08-03](https://img.shields.io/badge/Release_Date-2017--08--03-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/9) [![Milestone](https://img.shields.io/badge/Milestone-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/8)
+![Release Date: 2017-08-03](https://img.shields.io/badge/Release_Date-2017--08--03-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/9) [![Milestone](https://img.shields.io/badge/Milestone-0.6.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/8)
 
 ## Features
 
@@ -922,7 +938,7 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 # 0.5.0
 
-![Release Date: 2017-04-17](https://img.shields.io/badge/Release_Date-2017--04--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/8) [![Milestone](https://img.shields.io/badge/Milestone-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/7)
+![Release Date: 2017-04-17](https://img.shields.io/badge/Release_Date-2017--04--17-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/8) [![Milestone](https://img.shields.io/badge/Milestone-0.5.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/7)
 
 ## Improvements
 
@@ -940,17 +956,17 @@ To optimally improve the highlighting `nord3` will now be used as background col
 
 ### Documentation
 
-❯ Fixed a typo in the project description. (@arcticicestudio, #28, b2134029)
+❯ Fixed a typo in the project description. (@svengreb, #28, b2134029)
 
 # 0.4.0
 
-![Release Date: 2017-02-23](https://img.shields.io/badge/Release_Date-2017--02--23-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/7) [![Milestone](https://img.shields.io/badge/Milestone-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/6)
+![Release Date: 2017-02-23](https://img.shields.io/badge/Release_Date-2017--02--23-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/7) [![Milestone](https://img.shields.io/badge/Milestone-0.4.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/6)
 
 ## Features
 
 ### Configurations
 
-❯ Added a configuration to enable [italic comments](https://github.com/arcticicestudio/nord-vim#italic-comments).
+❯ Added a configuration to enable [italic comments](https://github.com/nordtheme/vim#italic-comments).
 To adhere to the Nord style guide this option is disabled by default. It can be enabled by setting the `g:nord_italic_comments` variable to `1`.
 
 ```vim
@@ -977,11 +993,11 @@ let g:nord_italic_comments = 1
 ### Documentation
 
 ❯ Added the new terminal emulator port project [Nord Hyper](https://github.com/arcticicestudio/nord-hyper)
-[![Nord Hyper](https://cdn.rawgit.com/arcticicestudio/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)
+[![Nord Hyper](https://cdn.rawgit.com/nordtheme/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)
 
 # 0.3.0
 
-![Release Date: 2017-01-24](https://img.shields.io/badge/Release_Date-2017--01--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/6) [![Milestone](https://img.shields.io/badge/Milestone-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/5)
+![Release Date: 2017-01-24](https://img.shields.io/badge/Release_Date-2017--01--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/6) [![Milestone](https://img.shields.io/badge/Milestone-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/5)
 
 ## Improvements
 
@@ -996,17 +1012,17 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 
 ### Documentation
 
-❯ Fixed a typo in the [README installation guide](https://github.com/arcticicestudio/nord-vim#via-pluginruntimepath-manager) for Vundle. (@kepbod, #10, 29145bbb)
+❯ Fixed a typo in the [README installation guide](https://github.com/nordtheme/vim#via-pluginruntimepath-manager) for Vundle. (@kepbod, #10, 29145bbb)
 
-❯ Fixed the banner of the [Nord iTerm2](https://github.com/arcticicestudio/nord-iterm2) port project showing the [Nord GNOME Terminal](https://github.com/arcticicestudio/nord-gnome-terminal) banner instead. (@shvetsovdm, #8 / [nord/#9](https://github.com/arcticicestudio/nord/issues/9), 7a447b40)
+❯ Fixed the banner of the [Nord iTerm2](https://github.com/arcticicestudio/nord-iterm2) port project showing the [Nord GNOME Terminal](https://github.com/arcticicestudio/nord-gnome-terminal) banner instead. (@shvetsovdm, #8 / [nord/#9](https://github.com/nordthenme/nord/issues/9), 7a447b40)
 
 # 0.2.0
 
-![Release Date: 2017-01-02](https://img.shields.io/badge/Release_Date-2017--01--02-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/5) [![Milestone](https://img.shields.io/badge/Milestone-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/4)
+![Release Date: 2017-01-02](https://img.shields.io/badge/Release_Date-2017--01--02-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/5) [![Milestone](https://img.shields.io/badge/Milestone-0.2.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/4)
 
 ## Improvements
 
-❯ Characters under block cursors are now colored darker (`nord0`) while the block cursor is visible to achieve a optimal contrast and to avoid unreadability due to the same cursor- and foreground color (`nord4`). (@arcticicestudio / @scottwillmoore, #9, 30e1f7e3)
+❯ Characters under block cursors are now colored darker (`nord0`) while the block cursor is visible to achieve a optimal contrast and to avoid unreadability due to the same cursor- and foreground color (`nord4`). (@svengreb / @scottwillmoore, #9, 30e1f7e3)
 
 <p align="center"><strong>Before</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21586772/f08a56d2-d0d4-11e6-84e0-37e3021317ad.png"/><br><strong>After</strong><br><img src="https://cloud.githubusercontent.com/assets/7836623/21586785/23ef246c-d0d5-11e6-8573-2e0d8391186c.gif"/></p>
 
@@ -1018,7 +1034,7 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 
 _2017-01-01_
 
-![Release Date: 2017-01-01](https://img.shields.io/badge/Release_Date-2017--01--01-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/4) [![Milestone](https://img.shields.io/badge/Milestone-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/3)
+![Release Date: 2017-01-01](https://img.shields.io/badge/Release_Date-2017--01--01-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/4) [![Milestone](https://img.shields.io/badge/Milestone-0.1.2-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/3)
 
 ## Bug Fixes
 
@@ -1027,7 +1043,7 @@ order. (@shuei72, #5, f8ffce24)
 
 # 0.1.1
 
-![Release Date: 2016-12-26](https://img.shields.io/badge/Release_Date-2016--12--26-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/3) [![Milestone](https://img.shields.io/badge/Milestone-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/2)
+![Release Date: 2016-12-26](https://img.shields.io/badge/Release_Date-2016--12--26-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/3) [![Milestone](https://img.shields.io/badge/Milestone-0.1.1-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/2)
 
 ## Bug Fixes
 
@@ -1035,23 +1051,23 @@ order. (@shuei72, #5, f8ffce24)
 
 # 0.1.0
 
-![Release Date: 2016-12-25](https://img.shields.io/badge/Release_Date-2016--12--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/projects/2) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/arcticicestudio/nord-vim/milestone/1)
+![Release Date: 2016-12-25](https://img.shields.io/badge/Release_Date-2016--12--25-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/2) [![Milestone](https://img.shields.io/badge/Milestone-0.1.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/1)
 
 ## Features
 
-Detailed information about features, supported plugins/languages and install instructions can be found in the [README](https://github.com/arcticicestudio/nord-vim/blob/main/readme.md#installation) and in the [project wiki](https://github.com/arcticicestudio/nord-vim/wiki).
+Detailed information about features, supported plugins/languages and install instructions can be found in the [README](https://github.com/nordtheme/vim/blob/main/readme.md#installation) and in the [project wiki](https://github.com/nordtheme/vim/wiki).
 
-❯ Implemented the main color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/main/colors/nord.vim). (@arcticicestudio, #1, e2832b9)
+❯ Implemented the main color theme file [`nord.vim`](https://github.com/nordtheme/vim/blob/main/colors/nord.vim). (@svengreb, #1, e2832b9)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-lang-javascript.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-lang-javascript.png"/></p>
 
-❯ Implemented the [lightline](https://github.com/itchyny/lightline.vim) color scheme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/main/autoload/lightline/colorscheme/nord.vim). (@arcticicestudio, #2, f9891ffe)
+❯ Implemented the [lightline](https://github.com/itchyny/lightline.vim) color scheme file [`nord.vim`](https://github.com/nordtheme/vim/blob/main/autoload/lightline/colorscheme/nord.vim). (@svengreb, #2, f9891ffe)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-plugin-support-ui-lightline.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-plugin-support-ui-lightline.png"/></p>
 
-❯ Implemented the [airline](https://github.com/vim-airline/vim-airline) color theme file [`nord.vim`](https://github.com/arcticicestudio/nord-vim/blob/main/autoload/airline/themes/nord.vim). (@arcticicestudio, #3, e54464a7)
+❯ Implemented the [airline](https://github.com/vim-airline/vim-airline) color theme file [`nord.vim`](https://github.com/nordtheme/vim/blob/main/autoload/airline/themes/nord.vim). (@svengreb, #3, e54464a7)
 
-<p align="center"><img src="https://raw.githubusercontent.com/arcticicestudio/nord-vim/main/assets/scrot-plugin-support-ui-airline.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/nordtheme/vim/main/assets/scrot-plugin-support-ui-airline.png"/></p>
 
 # Project Initialization
 
@@ -1080,20 +1096,20 @@ otherwise Markdown elements are not parsed and rendered!
 <!-- Base -->
 
 [1]: https://www.nordtheme.com
-[2]: https://github.com/arcticicestudio/nord-vim/blob/main/autoload/lightline/colorscheme/nord.vim
-[3]: https://github.com/arcticicestudio/nord
+[2]: https://github.com/nordtheme/vim/blob/main/autoload/lightline/colorscheme/nord.vim
+[3]: https://github.com/nordtheme/nord
 
 <!-- Shared -->
 
-[4]: https://github.com/arcticicestudio/nord-vim/blob/main/autoload/airline/themes/nord.vim
+[4]: https://github.com/nordtheme/vim/blob/main/autoload/airline/themes/nord.vim
 [5]: https://github.com/liuchengxu/vim-clap
 [6]: https://github.com/neoclide/coc.nvim
 [7]: https://neovim.io/doc/user/lsp.html
 [8]: https://github.com/neovim/nvim-lspconfig
 [9]: https://pandoc.org
 [10]: https://github.com/w0rp/ale
-[11]: https://github.com/arcticicestudio/nord-vim#comment-contrast
-[12]: https://github.com/arcticicestudio/nord-vim#uniform-diff-background
+[11]: https://github.com/nordtheme/vim#comment-contrast
+[12]: https://github.com/nordtheme/vim#uniform-diff-background
 [13]: https://github.com/vim-pandoc/vim-pandoc-syntax
 [44]: https://github.com/meck
 
@@ -1103,7 +1119,7 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.7.0 -->
 
-[15]: https://github.com/arcticicestudio/nord/issues/55
+[15]: https://github.com/nordtheme/nord/issues/55
 [16]: https://gist.github.com/XVilka/8346728
 [17]: https://github.com/itchyny/lightline.vim/pull/257
 [18]: http://lesscss.org/functions/#color-operations-lighten
@@ -1111,8 +1127,8 @@ otherwise Markdown elements are not parsed and rendered!
 [20]: https://github.com/junegunn/vim-plug
 [21]: https://github.com/plasticboy/vim-markdown
 [22]: https://github.com/tpope/vim-fugitive
-[23]: https://github.com/arcticicestudio/nord-vim#italic-support
-[24]: https://github.com/arcticicestudio/nord-vim#uniform-status-lines
+[23]: https://github.com/nordtheme/vim#italic-support
+[24]: https://github.com/nordtheme/vim#uniform-status-lines
 [25]: http://vimdoc.sourceforge.net/htmldoc/syntax.html#hl-DiffAdd
 
 <!-- 0.8.0 -->
@@ -1125,15 +1141,15 @@ otherwise Markdown elements are not parsed and rendered!
 [28]: https://github.com/kshenoy/vim-signature
 [29]: https://github.com/stephpy/vim-yaml
 [30]: https://github.com/vimwiki/vimwiki
-[31]: https://github.com/arcticicestudio/nord-vim#line-number-background
-[32]: https://github.com/arcticicestudio/nord-vim#underline-support
+[31]: https://github.com/nordtheme/vim#line-number-background
+[32]: https://github.com/nordtheme/vim#underline-support
 [33]: http://yaml.org
 
 <!-- 0.10.0 -->
 
-[34]: https://github.com/arcticicestudio/nord-vim/issues/11
+[34]: https://github.com/nordtheme/vim/issues/11
 [35]: https://github.com/itchyny/lightline.vim
-[36]: https://github.com/arcticicestudio/nord/issues/94
+[36]: https://github.com/nordtheme/nord/issues/94
 [37]: https://github.com/edkolev/tmuxline.vim
 [38]: https://github.com/cg433n
 
@@ -1167,8 +1183,8 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.13.0 -->
 
-[62]: https://github.com/arcticicestudio/nord-vim/pull/58
-[63]: https://github.com/arcticicestudio/nord-vim/releases/tag/v0.7.0
+[62]: https://github.com/nordtheme/vim/pull/58
+[63]: https://github.com/nordtheme/vim/releases/tag/v0.7.0
 [64]: https://github.com/alexandremjacques
 [65]: https://github.com/hennessey
 [66]: https://github.com/jmurinello
@@ -1198,11 +1214,11 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.16.0 -->
 
-[84]: https://github.com/arcticicestudio/nord-vim/pull/218
-[85]: https://github.com/arcticicestudio/nord-vim/blob/main/colors/nord.vim
+[84]: https://github.com/nordtheme/vim/pull/218
+[85]: https://github.com/nordtheme/vim/blob/main/colors/nord.vim
 [86]: https://crispgm.com/page/neovim-is-overpowering.html
 [87]: https://www.nordtheme.com/docs/colors-and-palettes
-[88]: https://github.com/arcticicestudio/nord-vim/compare/v0.15.0...v0.16.0
+[88]: https://github.com/nordtheme/vim/compare/v0.15.0...v0.16.0
 [89]: https://github.com/clason
 [90]: https://github.com/crispgm
 [91]: https://github.com/ojroques
@@ -1218,7 +1234,7 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.17.0 -->
 
-[101]: https://github.com/arcticicestudio/nord-vim/compare/v0.16.0...v0.17.0
+[101]: https://github.com/nordtheme/vim/compare/v0.16.0...v0.17.0
 [102]: https://github.com/neovim/neovim/releases/tag/v0.5.0
 [103]: https://github.com/nvim-treesitter/nvim-treesitter/blob/90f15d9/plugin/nvim-treesitter.vim
 [104]: https://github.com/nvim-treesitter/nvim-treesitter
@@ -1226,7 +1242,7 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.18.0 -->
 
-[106]: https://github.com/arcticicestudio/nord-vim/compare/v0.17.0...v0.18.0
+[106]: https://github.com/nordtheme/vim/compare/v0.17.0...v0.18.0
 [107]: https://neovim.io/doc/user/lsp.html#lsp-highlight-codelens
 [108]: https://github.com/nvim-treesitter/nvim-treesitter/blob/fb5d6e04/doc/nvim-treesitter.txt#L493-L495
 [109]: https://github.com/nvim-treesitter/nvim-treesitter/issues/1016#issuecomment-797049591
@@ -1234,7 +1250,7 @@ otherwise Markdown elements are not parsed and rendered!
 
 <!-- 0.19.0 -->
 
-[111]: https://github.com/arcticicestudio/nord-vim/compare/v0.18.0...v0.19.0
+[111]: https://github.com/nordtheme/vim/compare/v0.18.0...v0.19.0
 [112]: https://github.com/neovim/neovim/releases/tag/v0.6.0
 [113]: https://github.com/neovim/neovim/commit/a5bbb932f9094098bd656d3f6be3c58344576709#diff-51fab2b766d0a3b606462e95de492190df173b7296147912307cdad636cd492aR77
 [114]: https://github.com/neovim/neovim/blob/f92a2457c2e7ad14d9a5a907ef4213fa770b6d95/runtime/doc/lsp.txt#L423
