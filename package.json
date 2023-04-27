@@ -1,0 +1,51 @@
+{
+  "name": "@nordtheme/vim",
+  "version": "0.19.0",
+  "description": "An arctic, north-bluish clean and elegant Vim theme",
+  "author": {
+    "name": "Sven Greb",
+    "email": "development@svengreb.de",
+    "url": "https://www.svengreb.de"
+  },
+  "homepage": "https://www.nordtheme.com/ports/vim",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordtheme/vim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nordtheme/vim/issues"
+  },
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=15.13",
+    "npm": ">=7.7"
+  },
+  "scripts": {
+    "format": "run-s format:*",
+    "format:js": "eslint --fix .",
+    "format:pretty": "prettier --ignore-unknown --no-editorconfig --write \"**\"",
+    "lint": "run-s lint:js lint:md lint:pretty",
+    "lint:ci": "run-s --continue-on-error lint:js lint:md lint:ci:pretty",
+    "lint:ci:pretty": "prettier --check --ignore-unknown --loglevel silent --no-editorconfig --no-error-on-unmatched-pattern \"**\"",
+    "lint:js": "eslint .",
+    "lint:md": "remark --no-stdout . .github/",
+    "lint:pretty": "prettier --check --ignore-unknown --no-editorconfig \"**\"",
+    "prepare:husky": "husky install",
+    "prepare": "run-s prepare:*"
+  },
+  "devDependencies": {
+    "@arcticicestudio/eslint-config-base": ">=0.11.0 <=1.0.0",
+    "@arcticicestudio/remark-preset-lint": ">=0.4.0 <1.0.0",
+    "eslint": "8.38.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.3",
+    "lint-staged": "13.1.2",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.8.7",
+    "prettier-plugin-sh": "0.12.8",
+    "remark-cli": "11.0.0"
+  }
+}
