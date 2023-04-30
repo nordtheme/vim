@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://www.nordtheme.com/ports/vim" target="_blank">
     <picture>
-      <source srcset="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-      <img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" />
+      <source srcset="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+      <img src="https://raw.githubusercontent.com/nordtheme/web/main/assets/images/ports/vim/repository-hero.svg?sanitize=true" width="100%" />
     </picture>
   </a>
 </p>
@@ -990,11 +990,6 @@ let g:nord_italic_comments = 1
 
 ❯ Implemented optimized styles for the SQL syntax groups `sqlSpecial` which is now linked to the `sqlKeyword` group to colorize constants like `true`/`false` and `null` as keywords. (@mkalinski, #23, dcfb441e)
 
-### Documentation
-
-❯ Added the new terminal emulator port project [Nord Hyper](https://github.com/arcticicestudio/nord-hyper)
-[![Nord Hyper](https://cdn.rawgit.com/nordtheme/nord/develop/src/assets/nord-hyper-banner.svg)](https://github.com/arcticicestudio/nord-hyper)
-
 # 0.3.0
 
 ![Release Date: 2017-01-24](https://img.shields.io/badge/Release_Date-2017--01--24-88C0D0.svg?style=flat-square) [![Project Board](https://img.shields.io/badge/Project_Board-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/projects/6) [![Milestone](https://img.shields.io/badge/Milestone-0.3.0-88C0D0.svg?style=flat-square)](https://github.com/nordtheme/vim/milestone/5)
@@ -1013,8 +1008,6 @@ This has been fixed by using `nord5` as foreground color. (@scottwillmoore, #11,
 ### Documentation
 
 ❯ Fixed a typo in the [README installation guide](https://github.com/nordtheme/vim#via-pluginruntimepath-manager) for Vundle. (@kepbod, #10, 29145bbb)
-
-❯ Fixed the banner of the [Nord iTerm2](https://github.com/arcticicestudio/nord-iterm2) port project showing the [Nord GNOME Terminal](https://github.com/arcticicestudio/nord-gnome-terminal) banner instead. (@shvetsovdm, #8 / [nord/#9](https://github.com/nordthenme/nord/issues/9), 7a447b40)
 
 # 0.2.0
 
@@ -1123,7 +1116,7 @@ otherwise Markdown elements are not parsed and rendered!
 [16]: https://gist.github.com/XVilka/8346728
 [17]: https://github.com/itchyny/lightline.vim/pull/257
 [18]: http://lesscss.org/functions/#color-operations-lighten
-[19]: https://github.com/arcticicestudio/nord-atom-syntax/pull/47
+[19]: https://github.com/nordtheme/nord-atom-syntax/pull/47
 [20]: https://github.com/junegunn/vim-plug
 [21]: https://github.com/plasticboy/vim-markdown
 [22]: https://github.com/tpope/vim-fugitive
@@ -1178,7 +1171,7 @@ otherwise Markdown elements are not parsed and rendered!
 
 [58]: https://github.com/aborzunov
 [59]: https://github.com/tobydeh
-[60]: https://github.com/arcticicestudio/nord-docs/issues/143
+[60]: https://github.com/nordtheme/web/issues/143
 [61]: https://www.nordtheme.com/ports/vim/configuration#bold-styles
 
 <!-- 0.13.0 -->
