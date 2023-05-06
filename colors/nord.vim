@@ -685,8 +685,11 @@ hi! link haskellPragma haskellPreProc
 " > pangloss/vim-javascript
 call s:hi("jsGlobalNodeObjects", s:nord8_gui, "", s:nord8_term, "", s:italic, "")
 hi! link jsBrackets Delimiter
+hi! link jsBuiltinValues Keyword
 hi! link jsFuncCall Function
 hi! link jsFuncParens Delimiter
+hi! link jsModuleBraces Delimiter
+hi! link jsObjectBraces Delimiter
 hi! link jsThis Keyword
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
