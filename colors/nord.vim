@@ -273,7 +273,7 @@ call s:hi("Number", s:nord15_gui, "", s:nord15_term, "", "", "")
 call s:hi("Operator", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("PreProc", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Repeat", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Special", s:nord4_gui, "", "NONE", "", "", "")
+call s:hi("Special", s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("SpecialChar", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("SpecialComment", s:nord8_gui, "", s:nord8_term, "", s:italicize_comments, "")
 call s:hi("Statement", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -520,6 +520,18 @@ hi! link shDerefVar Identifier
 
 hi! link sqlKeyword Keyword
 hi! link sqlSpecial Keyword
+
+call s:hi("texSubscript", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("texSuperscripts", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("texTodo", s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("texDelimiter", s:nord15_gui, "", s:nord15_term, "", "", "")
+call s:hi("texSpecialChar", s:nord15_gui, "", s:nord15_term, "", "", "")
+hi! link texStatement Keyword
+hi! link texBeginEndName Function
+hi! link texMathMatcher Function
+hi! link texMathDelim Function
+hi! link texCite Function
+hi! link texRefZone Function
 
 call s:hi("vimAugroup", s:nord7_gui, "", s:nord7_term, "", "", "")
 call s:hi("vimMapRhs", s:nord7_gui, "", s:nord7_term, "", "", "")
