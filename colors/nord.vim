@@ -562,6 +562,7 @@ call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
 call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
+call s:hi("CocErrorFloat" , s:nord15_gui, "", s:nord15_term, "", "", "")
 
 if has('nvim')
   " Neovim LSP
